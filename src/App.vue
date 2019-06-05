@@ -1,31 +1,67 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <nav-bar></nav-bar>
+    <transition name="slide-fade" mode="out-in">
+        <router-view/>
+    </transition>
+    <footer-x></footer-x>
   </div>
 </template>
 
+<script>
+    import NavBar from './components/Navbar.vue';
+    import FooterX from './components/Footer'
+
+    export default {
+        name: 'App',
+        components: {
+            NavBar,
+            FooterX
+        }
+    };
+
+</script>
+
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-}
+    @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
+    html,
+    body {
+        font-family: 'Roboto ', sans-serif;
+    }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
+    #app {
+        min-height: 90vh;
+    }
+
+    body {
+        background: #FAFAFA
+    }
+
+    .fade-enter-active,
+    .fade-leave-active {
+        transition-duration: 0.5s;
+        transition-property: opacity;
+        transition-timing-function: ease;
+    }
+
+    .fade-enter,
+    .fade-leave-active {
+        opacity: 0
+    }
+
+    .slide-fade-enter-active {
+        transition: all .3s ease;
+    }
+
+    .slide-fade-leave-active {
+        transition: all .5s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+    }
+
+    .slide-fade-enter,
+    .slide-fade-leave-to {
+        transform: translateX(20px);
+        opacity: 0;
+    }
+
 </style>
