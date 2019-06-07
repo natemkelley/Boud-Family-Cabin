@@ -2,7 +2,8 @@
     <div class="photos">
         <div class="container">
             <div class="row swag"> 
-                <h2 class="center-align">Cabin Memories</h2>
+                <h2 class="center-align">Photos</h2>
+                <gallery-x></gallery-x>
             </div>
         </div>
         
@@ -21,11 +22,13 @@
 
 <script>
     import PhotosModal from '../components/photosModal.vue';
+    import GalleryX from '../components/Gallery.vue';
 
     export default {
         name: 'Photos',
         components: {
             PhotosModal,
+            GalleryX
         }
     }
 </script>
