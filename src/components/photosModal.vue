@@ -83,9 +83,14 @@
             writePhotoToDatabase: function(url, fileName) {
                 let db = this.database;
                 let timeStamp = new Date().getTime() + "_" + Math.floor(Math.random() * 10000) + 1;
+                let userName = firebase.auth().currentUser.displayName;
+                var time = Date.now();
+
                 db.ref('photos/' + timeStamp).set({
                     photoURL: url,
                     fileName: fileName,
+                    timestamp: time,
+                    user: userName
                 });
             },
             loopFiles: function(inc) {

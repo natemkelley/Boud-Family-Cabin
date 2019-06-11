@@ -10,6 +10,8 @@
   "dependencies": {
     "core-js": "^2.6.5",
     "firebase": "^6.1.0",
+    "imagesloaded": "^4.1.4",
+    "masonry-layout": "^4.2.2",
     "material-icons": "^0.3.1",
     "materialize-css": "^1.0.0-rc.2",
     "postscribe": "^2.0.8",

@@ -15,9 +15,6 @@
         
         <photos-modal></photos-modal>
     </div>
-
-    
-
 </template>
 
 <script>
