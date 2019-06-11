@@ -105,7 +105,7 @@
         background: gray;
     }
     
-    @media (max-width : 390px) {
+    @media (max-width : 494px) {
         .grid-sizer,
         .grid-item {
           width: 48%;
