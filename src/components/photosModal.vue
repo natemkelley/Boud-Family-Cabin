@@ -8,7 +8,6 @@
                         <div class="determinate light-blue darken-4" :style="{ width: progress + '%' }"></div>
                       </div>
                   </transition>
-                
                     <div class="file-field input-field" style="margin-top:35px;">
                       <div class="btn blue darken-3">
                         <span class="white-text">Click</span>
@@ -21,6 +20,7 @@
             </div>
             <div class="modal-footer">
               <a href="#!" class="waves-effect waves-green btn blue darken-3" v-on:click="loopFiles(0)" id="file-submit">Upload</a>
+              <a href="#!" class="waves-effect waves-green btn blue darken-3" v-on:click="manipulateImage(0)">Manipulate</a>
             </div>
           </div>
         
@@ -35,6 +35,10 @@
 
 <script>
     import firebase from "firebase"
+    import Jimp from 'jimp/es';
+    let img = require('@/assets/bcc1.jpeg')
+    const image2base64 = require('image-to-base64');
+
 
     export default {
         name: 'photosModal',
@@ -51,14 +55,12 @@
                 var that = this;
                 return new Promise(function(resolve, reject) {
                     let file = document.getElementById('imageID').files[fileNum];
-                    console.log(fileNum)
                     let fileName = file.name + '_' + file.lastModified;
                     fileName = fileName.replace(/[^\w\s]/gi, '');
                     var uploadTask = that.storageRef.child(fileName).put(file);
                     uploadTask.on('state_changed', function(snapshot) {
                         let progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
                         that.progress = progress;
-                        console.log(progress);
                     }, function(error) {
                         alert('There was an error with the upload...')
                     }, function() {
@@ -128,5 +130,7 @@
     .progress {
         height: 7px;
     }
+    
+    /*https://www.npmjs.com/package/vue-image-upload-resize*/
 
 </style>
