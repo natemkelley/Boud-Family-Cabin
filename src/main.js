@@ -8,9 +8,7 @@ import 'material-icons'
 
 import firebase from 'firebase'
 
-
 Vue.config.productionTip = false
-
 
 let app = '';
 const firebaseConfig = {

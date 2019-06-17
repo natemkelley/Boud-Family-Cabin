@@ -20,7 +20,6 @@
             </div>
             <div class="modal-footer">
               <a href="#!" class="waves-effect waves-green btn blue darken-3" v-on:click="loopFiles(0)" id="file-submit">Upload</a>
-              <a href="#!" class="waves-effect waves-green btn blue darken-3" v-on:click="manipulateImage(0)">Manipulate</a>
             </div>
           </div>
         
@@ -35,11 +34,7 @@
 
 <script>
     import firebase from "firebase"
-    import Jimp from 'jimp/es';
-    let img = require('@/assets/bcc1.jpeg')
-    const image2base64 = require('image-to-base64');
-
-
+    
     export default {
         name: 'photosModal',
         data() {
@@ -55,6 +50,7 @@
                 var that = this;
                 return new Promise(function(resolve, reject) {
                     let file = document.getElementById('imageID').files[fileNum];
+                    let dateModified = file.lastModified;
                     let fileName = file.name + '_' + file.lastModified;
                     fileName = fileName.replace(/[^\w\s]/gi, '');
                     var uploadTask = that.storageRef.child(fileName).put(file);
@@ -66,7 +62,7 @@
                     }, function() {
                         uploadTask.snapshot.ref.getDownloadURL().then(function(downloadURL) {
                             that.progress = 0;
-                            that.writePhotoToDatabase(downloadURL, fileName);
+                            that.writePhotoToDatabase(downloadURL, fileName, dateModified);
                             M.toast({
                                 html: 'Photo has been uploaded!',
                                 classes: 'green darken-1'
@@ -82,17 +78,20 @@
                 var instance = M.Modal.getInstance(elem);
                 instance.close();
             },
-            writePhotoToDatabase: function(url, fileName) {
+            writePhotoToDatabase: function(url, fileName, dateModified) {
                 let db = this.database;
                 let timeStamp = new Date().getTime() + "_" + Math.floor(Math.random() * 10000) + 1;
                 let userName = firebase.auth().currentUser.displayName;
                 var time = Date.now();
+                let location = 'photos/' + timeStamp;
 
-                db.ref('photos/' + timeStamp).set({
+                db.ref(location).set({
                     photoURL: url,
                     fileName: fileName,
-                    timestamp: time,
-                    user: userName
+                    timestampUpload: time,
+                    timestamp: dateModified,
+                    user: userName,
+                    location: location
                 });
             },
             loopFiles: function(inc) {

@@ -6,13 +6,6 @@
                 <gallery-x></gallery-x>
             </div>
         </div>
-        
-        <div class="fixed-action-btn">
-          <a class="btn-floating btn-large red">
-            <i class="large material-icons">mode_edit</i>
-          </a>
-        </div>
-        
         <photos-modal></photos-modal>
     </div>
 </template>
@@ -26,6 +19,8 @@
         components: {
             PhotosModal,
             GalleryX
+        },
+        mounted(){
         }
     }
 </script>
