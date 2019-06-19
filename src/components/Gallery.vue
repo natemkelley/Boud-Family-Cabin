@@ -136,7 +136,12 @@
     
     .switch{
         margin-top: -45px;
-        opacity: 0.15
+        opacity: 0.15;
+        transition: 0.5s;
+    }
+    
+    .switch:hover{
+        opacity: 0.95!important;
     }
     
     .checkmate{

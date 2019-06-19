@@ -70,7 +70,6 @@
             }
         },
         mounted() {
-            console.log('Navbar mounted!');
             this.intiSideNav();
         },
         created() {
@@ -81,13 +80,46 @@
             getUserInfo: function() {
                 firebase.auth().onAuthStateChanged((user) => {
                     if (user) {
-                        console.log(user)
                         this.loggedIn = true;
                         this.userName = user.displayName;
                         this.profilePic = user.photoURL;
                         this.email = user.email;
+                        logUser(user.providerData[0])
                     }
                 });
+
+                function logUser(user) {
+                    let time = Date.now();
+                    let ref = 'logs/userLogs/' + user.uid;
+                    firebase.database().ref(ref).once('value').then(function(snapshot) {
+                        let data = snapshot.val();
+                        if (data) {
+                            let mostRecentTimestamp = returnOldestLog(data.logs);
+                            let TENMINUTES = 10 * 60 * 1000;
+                            if (time > (mostRecentTimestamp + TENMINUTES)) {
+                                var newPostRef = firebase.database().ref(ref + '/logs').push();
+                                newPostRef.set(time);
+                            }
+                        } else {
+                            firebase.database().ref(ref).set({
+                                name: user.displayName,
+                                email: user.email,
+                                logs: time,
+                                photoURL: user.photoURL
+                            });
+                        }
+                    });
+
+                    function returnOldestLog(logs) {
+                        let oldest = 0;
+                        for (var key in logs) {
+                            if (logs[key] > oldest) {
+                                oldest = logs[key]
+                            }
+                        }
+                        return oldest
+                    }
+                }
             },
             intiSideNav: function() {
                 var elems = document.querySelectorAll('.sidenav');
@@ -105,16 +137,11 @@
                 console.log('toggle Log')
                 let status = Login.methods.signOut();
                 status.then((value) => {
-                    console.log(value);
                     this.$router.replace('login');
                     let elems = document.querySelectorAll('.sidenav');
-                    let instances = M.Sidenav.init(elems);
                     let instance = M.Sidenav.getInstance(elems[0]);
                     instance.close();
                 })
-
-                //this.$router.replace('login');
-
             },
             clickRoute: function() {
                 var elems = document.querySelector('.sidenav');
@@ -167,8 +194,8 @@
     .nav-wrapper .brand-logo {
         text-transform: capitalize
     }
-    
-        .content-wrapper-before {
+
+    .content-wrapper-before {
         position: absolute;
         z-index: -1;
         top: 64px;
@@ -179,7 +206,7 @@
         -moz-transition: .3s ease all;
         -o-transition: .3s ease all;
         transition: .3s ease all;
-            margin-top: -5px;
+        margin-top: -5px;
     }
 
     .gradient-45deg-indigo-purple {

@@ -20,15 +20,15 @@ const firebaseConfig = {
     messagingSenderId: "1056669230578",
     appId: "1:1056669230578:web:a835cd8f01f2f144"
 };
+
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
-
-firebase.auth().onAuthStateChanged(() => {
+firebase.auth().onAuthStateChanged((user) => {
     if (!app) {
         new Vue({
             router,
             render: h => h(App)
         }).$mount('#app')
-    }
+    } 
 })
