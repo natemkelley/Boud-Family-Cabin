@@ -1,0 +1,80 @@
+<template>
+  <div class="hello container">
+    <h1>Logs</h1>
+    <datatable
+      title="User Logins"
+      :columns="tableColumns"
+      :rows="tableRows"
+      :printable=false
+      :perPage="[50, 100, 250]"
+      :defaultPerPage=50
+       v-on:row-click="onRowClick"
+    ></datatable>
+
+  </div>
+</template>
+
+<script>
+    import DataTable from 'vue-materialize-datatable';
+
+    export default {
+        name: 'Logs',
+        data() {
+            return {
+                tableColumns: [
+                    {
+                        label: "Name",
+                        field: "charName",
+                        numeric: false,
+                        html: false
+                    },
+                    {
+                        label: "First appearance",
+                        field: "firstAppearance",
+                        numeric: false,
+                        html: false
+                    },
+                    {
+                        label: "Created by",
+                        field: "createdBy",
+                        numeric: false,
+                        html: false
+                    },
+                    {
+                        label: "Voiced by",
+                        field: "voicedBy",
+                        numeric: false,
+                        html: false
+                    }
+                ],
+                tableRows: [
+                    {
+                        charName: "Abu",
+                        firstAppearance: "Alladin (1992)",
+                        createdBy: "Joe Grant",
+                        voicedBy: "Frank Welker"
+                    }
+                ],
+            }
+        },
+        mounted() {},
+        methods: {
+            onRowClick: function (row) {
+                console.log(row)
+            }
+        },
+        components: {
+            "datatable": DataTable
+        }
+    }
+
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+    .hello {
+        min-height: 75vh;
+        padding-bottom: 25px;
+    }
+
+</style>

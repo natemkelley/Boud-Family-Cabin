@@ -40,7 +40,7 @@
             <li><a class="waves-effect" href="#!">Animals</a></li>
             <li><a class="waves-effect" href="#!">Quotes</a></li>
             <li><a class="waves-effect" href="#!">Suggestions</a></li>
-            <li><a class="waves-effect" href="#!">Logs</a></li>
+            <li><router-link @click.native="clickRoute" to="/logs">Logs</router-link></li>
 
             <li><a v-on:click="toggleLog" class="logout">Logout</a></li>
         </ul>
@@ -90,34 +90,44 @@
 
                 function logUser(user) {
                     let time = Date.now();
-                    let ref = 'logs/userLogs/' + user.uid;
-                    firebase.database().ref(ref).once('value').then(function(snapshot) {
+                    let ref = 'logs/userLogs/' + time;
+                    let userName = user.displayName;
+                    firebase.database().ref('logs/userLogs/').once('value').then(function(snapshot) {
                         let data = snapshot.val();
-                        if (data) {
-                            let mostRecentTimestamp = returnOldestLog(data.logs);
-                            let TENMINUTES = 10 * 60 * 1000;
-                            if (time > (mostRecentTimestamp + TENMINUTES)) {
-                                var newPostRef = firebase.database().ref(ref + '/logs').push();
-                                newPostRef.set(time);
-                            }
-                        } else {
+                        let proceed = logOlderThanTenMinutes(data, time, userName)
+                        if (proceed) {
                             firebase.database().ref(ref).set({
                                 name: user.displayName,
-                                email: user.email,
-                                logs: time,
+                                log: time,
                                 photoURL: user.photoURL
                             });
                         }
                     });
 
-                    function returnOldestLog(logs) {
-                        let oldest = 0;
-                        for (var key in logs) {
-                            if (logs[key] > oldest) {
-                                oldest = logs[key]
+                    function logOlderThanTenMinutes(logs, time, uname) {
+                        let TENMINUTES = 10 * 60 * 1000;
+                        let newest = getNewestLogByName(uname);
+                        let returnVal = false;
+
+                        if (newest) {
+                            if (time > (newest + TENMINUTES)) {
+                                returnVal = true
                             }
+                        } else {
+                            returnVal = true;
                         }
-                        return oldest
+
+                        return returnVal
+
+                        function getNewestLogByName(name) {
+                            let newest = 0;
+                            for (var key in logs) {
+                                if (logs[key].log > newest) {
+                                    newest = logs[key].log
+                                }
+                            }
+                            return newest
+                        }
                     }
                 }
             },
@@ -134,7 +144,6 @@
                 }
             },
             toggleLog: function() {
-                console.log('toggle Log')
                 let status = Login.methods.signOut();
                 status.then((value) => {
                     this.$router.replace('login');
