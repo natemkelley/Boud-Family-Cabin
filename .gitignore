@@ -21,3 +21,5 @@ yarn-error.log*
 *.sw?
 .firebase/hosting.ZGlzdA.cache
 .firebase/hosting.ZGlzdA.cache
+firebase-debug.log
+.firebase/hosting.ZGlzdA.cache

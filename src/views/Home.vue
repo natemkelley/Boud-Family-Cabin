@@ -6,7 +6,7 @@
         </div>
       </div>
       <div class="row" > 
-        <div class="col s12 m5 l5 weather">
+        <div class="col s12 m12 l5 weather">
           <div class="card">
             <div class="card-content weather">
               <span class="card-title">Weather</span>
@@ -14,7 +14,7 @@
             </div>
           </div>
         </div>  
-        <div class="col s12 m7 l7">
+        <div class="col s12 m12 l7">
           <div class="card">
             <div class="card-content">
               <span class="card-title">Quick Links</span>
@@ -37,7 +37,7 @@
     export default {
         name: 'Home',
         mounted() {
-            let weather = "<script type='text/javascript' src='https://darksky.net/widget/small/42.360082,-71.05888/us12/en.js?width=100%&height=105&title=Boud Family Cabin&textColor=333333&bgColor=transparent&transparency=true&skyColor=undefined&fontFamily=Default&customFont=&units=us'></\script>";
+            let weather = "<script type='text/javascript' src='https://darksky.net/widget/default/42.360082,-71.05888/us12/en.js?width=100%&height=315&title=Boud Family Cabin&textColor=333333&bgColor=transparent&transparency=true&skyColor=undefined&fontFamily=Default&customFont=&units=us&htColor=333333&ltColor=C7C7C7&displaySum=yes&displayHeader=yes'><\/script>";
             if (!document.getElementById("weather").innerHTML) {
                 postscribe('#weather', weather);
             }
@@ -79,7 +79,7 @@
     }
 
     .weather {
-        min-height: 255px;
+        min-height: 345px!important;
     }
 
     .row {
