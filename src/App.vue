@@ -17,6 +17,9 @@
         components: {
             NavBar,
             FooterX
+        },
+        mounted(){
+
         }
     };
 

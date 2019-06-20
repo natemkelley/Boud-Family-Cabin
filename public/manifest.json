@@ -1,0 +1,15 @@
+{
+  "short_name": "Boud Family Cabin",
+  "name": "Boud Family Cabin",
+  "icons": [
+    {
+      "src":"",
+      "sizes": "",
+      "type": ""
+    }
+  ],
+  "start_url": "/home",
+  "background_color": "#01579b",
+  "Theme_color": "#01579b",
+  "display": "standalone"
+}
