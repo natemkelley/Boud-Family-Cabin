@@ -3,6 +3,7 @@
           <div id="modal1" class="modal">
             <div class="modal-content">
                 <h4>Photo Uploader</h4>
+                <p>Unfortunately, we only support one photo upload at a time for the time being.</p>
                   <transition name="fade">
                       <div class="progress cyan lighten-5" v-if="progress > 1">
                         <div class="determinate light-blue darken-4" :style="{ width: progress + '%' }"></div>
@@ -11,7 +12,19 @@
                     <div class="file-field input-field" style="margin-top:35px;">
                       <div class="btn blue darken-3">
                         <span class="white-text">Click</span>
-                        <input type="file" multiple id="imageID" accept="image/*"/>
+                        <!--<input type="file" multiple id="imageID" accept="image/*"/>-->
+                        <image-uploader
+                            :preview="false"
+                            :debug="1"
+                            doNotResize="gif"
+                            :autoRotate="true"
+                            outputFormat="verbose"
+                            :maxWidth="1150"
+                            :quality="0.85"
+                            @input="returnProcessedImage"
+                            id="imageID"
+                          >
+                        </image-uploader>
                       </div>
                       <div class="file-path-wrapper">
                         <input class="file-path validate" type="text">
@@ -19,11 +32,12 @@
                     </div>
             </div>
             <div class="modal-footer">
-              <a href="#!" class="waves-effect waves-green btn blue darken-3" v-on:click="loopFiles(0)" id="file-submit">Upload</a>
+                <transition name="fade">
+                    <a href="#!" class="waves-effect waves-green btn blue darken-3" v-on:click="loopFiles(0)" id="file-submit" v-if="showUpload">Upload</a>
+                </transition>
             </div>
           </div>
         
-
         <div class="fixed-action-btn" >
           <a class="modal-trigger btn-floating btn-large red" href="#modal1">
             <i class="large material-icons">add</i>
@@ -34,7 +48,10 @@
 
 <script>
     import firebase from "firebase"
-    
+    import ImageUploader from 'vue-image-upload-resize'
+    import Vue from 'vue'
+    Vue.use(ImageUploader);
+
     export default {
         name: 'photosModal',
         data() {
@@ -42,18 +59,32 @@
                 storageService: '',
                 storageRef: '',
                 progress: 0,
-                database: ''
+                database: '',
+                imageDataURL: null,
+                showUpload: false
             }
         },
         methods: {
-            startUpload: function(fileNum) {
+            startUpload: function(file, type, originalFile) {
                 var that = this;
+                var uploadTask = null;
+                let fileName = 'default';
+                let dateModified = new Date();
+                
                 return new Promise(function(resolve, reject) {
-                    let file = document.getElementById('imageID').files[fileNum];
-                    let dateModified = file.lastModified;
-                    let fileName = file.name + '_' + file.lastModified;
-                    fileName = fileName.replace(/[^\w\s]/gi, '');
-                    var uploadTask = that.storageRef.child(fileName).put(file);
+                    if (type == 'dataURL') {
+                        dateModified = originalFile.lastModified;
+                        fileName = originalFile.name + '_' + originalFile.lastModified;
+                        fileName = fileName.replace(/[^\w\s]/gi, '');
+                        var storageRef = firebase.storage().ref();
+                        uploadTask = storageRef.child(fileName).putString(file, 'data_url');
+                    } else {
+                        dateModified = file.lastModified;
+                        fileName = file.name + '_' + file.lastModified;
+                        fileName = fileName.replace(/[^\w\s]/gi, '');
+                        uploadTask = that.storageRef.child(fileName).put(file);
+                    }
+
                     uploadTask.on('state_changed', function(snapshot) {
                         let progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
                         that.progress = progress;
@@ -73,11 +104,6 @@
 
                 })
             },
-            closeModal: function() {
-                var elem = document.querySelector('.modal');
-                var instance = M.Modal.getInstance(elem);
-                instance.close();
-            },
             writePhotoToDatabase: function(url, fileName, dateModified) {
                 let db = this.database;
                 let timeStamp = new Date().getTime() + "_" + Math.floor(Math.random() * 10000) + 1;
@@ -96,22 +122,29 @@
             },
             loopFiles: function(inc) {
                 let files = document.getElementById('imageID').files;
-                 
-                console.log(files);
-                                
-                if(files.length == (inc)){
+
+                if (files.length == (inc)) {
                     this.closeModal();
                     return
                 }
 
-                this.startUpload(inc).then(value => {
+                var dataURL = this.imageDataURL;
+
+                this.startUpload(dataURL, 'dataURL', files[0]).then(value => {
                     inc++
                     this.loopFiles(inc);
                 });
-                
             },
-            checkIfDuplicate: function(fileName){
-                console.log(fileName)
+            closeModal: function() {
+                var elem = document.querySelector('.modal');
+                var instance = M.Modal.getInstance(elem);
+                instance.close();
+                this.showUpload = false;
+            },
+            returnProcessedImage: function(file) {
+                this.imageDataURL = file.dataUrl;
+                this.showUpload = true;
+                console.log(file)
             }
         },
         mounted() {
@@ -125,11 +158,15 @@
 
 </script>
 
-<style scoped>
+<style>
     .progress {
         height: 7px;
     }
     
-    /*https://www.npmjs.com/package/vue-image-upload-resize*/
-
+    #file-submit{
+        margin-right: 10px;
+        margin-top: -5px;
+    }
+    
+    
 </style>

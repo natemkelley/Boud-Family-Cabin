@@ -161,6 +161,10 @@
         .grid-item {
             width: 48%;
         }
+        
+        .switch{
+              transform: scale(0.75);
+        }
     }
 
     /*https://github.com/MatteoGabriele/vue-progressive-image*/

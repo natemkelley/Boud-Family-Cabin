@@ -1,80 +1,130 @@
 <template>
-  <div class="hello container">
-    <h1>Logs</h1>
-    <datatable
-      title="User Logins"
-      :columns="tableColumns"
-      :rows="tableRows"
-      :printable=false
-      :perPage="[50, 100, 250]"
-      :defaultPerPage=50
-       v-on:row-click="onRowClick"
-    ></datatable>
-
-  </div>
+    <div>
+          <div id="modal1" class="modal">
+            <div class="modal-content">
+                <h4>Photo Uploader</h4>
+                  <transition name="fade">
+                      <div class="progress cyan lighten-5" v-if="progress > 1">
+                        <div class="determinate light-blue darken-4" :style="{ width: progress + '%' }"></div>
+                      </div>
+                  </transition>
+                    <div class="file-field input-field" style="margin-top:35px;">
+                      <div class="btn blue darken-3">
+                        <span class="white-text">Click</span>
+                        <input type="file" multiple id="imageID" accept="image/*"/>
+                      </div>
+                      <div class="file-path-wrapper">
+                        <input class="file-path validate" type="text">
+                      </div>
+                    </div>
+            </div>
+            <div class="modal-footer">
+              <a href="#!" class="waves-effect waves-green btn blue darken-3" v-on:click="loopFiles(0)" id="file-submit">Upload</a>
+            </div>
+          </div>
+        <div class="fixed-action-btn" >
+          <a class="modal-trigger btn-floating btn-large red" href="#modal1">
+            <i class="large material-icons">add</i>
+          </a>
+        </div>
+    </div>
 </template>
 
 <script>
-    import DataTable from 'vue-materialize-datatable';
-
+    import firebase from "firebase"
+    
     export default {
-        name: 'Logs',
+        name: 'photosModal',
         data() {
             return {
-                tableColumns: [
-                    {
-                        label: "Name",
-                        field: "charName",
-                        numeric: false,
-                        html: false
-                    },
-                    {
-                        label: "First appearance",
-                        field: "firstAppearance",
-                        numeric: false,
-                        html: false
-                    },
-                    {
-                        label: "Created by",
-                        field: "createdBy",
-                        numeric: false,
-                        html: false
-                    },
-                    {
-                        label: "Voiced by",
-                        field: "voicedBy",
-                        numeric: false,
-                        html: false
-                    }
-                ],
-                tableRows: [
-                    {
-                        charName: "Abu",
-                        firstAppearance: "Alladin (1992)",
-                        createdBy: "Joe Grant",
-                        voicedBy: "Frank Welker"
-                    }
-                ],
+                storageService: '',
+                storageRef: '',
+                progress: 0,
+                database: ''
             }
         },
-        mounted() {},
         methods: {
-            onRowClick: function (row) {
-                console.log(row)
+            startUpload: function(fileNum) {
+                var that = this;
+                return new Promise(function(resolve, reject) {
+                    let file = document.getElementById('imageID').files[fileNum];
+                    let dateModified = file.lastModified;
+                    let fileName = file.name + '_' + file.lastModified;
+                    fileName = fileName.replace(/[^\w\s]/gi, '');
+                    var uploadTask = that.storageRef.child(fileName).put(file);
+                    uploadTask.on('state_changed', function(snapshot) {
+                        let progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+                        that.progress = progress;
+                    }, function(error) {
+                        alert('There was an error with the upload...')
+                    }, function() {
+                        uploadTask.snapshot.ref.getDownloadURL().then(function(downloadURL) {
+                            that.progress = 0;
+                            that.writePhotoToDatabase(downloadURL, fileName, dateModified);
+                            M.toast({
+                                html: 'Photo has been uploaded!',
+                                classes: 'green darken-1'
+                            })
+                            resolve(true);
+                        });
+                    });
+
+                })
+            },
+            closeModal: function() {
+                var elem = document.querySelector('.modal');
+                var instance = M.Modal.getInstance(elem);
+                instance.close();
+            },
+            writePhotoToDatabase: function(url, fileName, dateModified) {
+                let db = this.database;
+                let timeStamp = new Date().getTime() + "_" + Math.floor(Math.random() * 10000) + 1;
+                let userName = firebase.auth().currentUser.displayName;
+                var time = Date.now();
+                let location = 'photos/' + timeStamp;
+
+                db.ref(location).set({
+                    photoURL: url,
+                    fileName: fileName,
+                    timestampUpload: time,
+                    timestamp: dateModified,
+                    user: userName,
+                    location: location
+                });
+            },
+            loopFiles: function(inc) {
+                let files = document.getElementById('imageID').files;
+                 
+                console.log(files);
+                                
+                if(files.length == (inc)){
+                    this.closeModal();
+                    return
+                }
+
+                this.startUpload(inc).then(value => {
+                    inc++
+                    this.loopFiles(inc);
+                });
+                
+            },
+            checkIfDuplicate: function(fileName){
+                console.log(fileName)
             }
         },
-        components: {
-            "datatable": DataTable
+        mounted() {
+            var elems = document.querySelectorAll('.modal');
+            var instances = M.Modal.init(elems);
+            this.storageService = firebase.storage();
+            this.storageRef = this.storageService.ref();
+            this.database = firebase.database();
         }
     }
 
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-    .hello {
-        min-height: 75vh;
-        padding-bottom: 25px;
+    .progress {
+        height: 7px;
     }
-
 </style>

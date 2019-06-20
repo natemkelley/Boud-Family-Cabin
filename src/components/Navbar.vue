@@ -40,13 +40,12 @@
             <li><a class="waves-effect" href="#!">Animals</a></li>
             <li><a class="waves-effect" href="#!">Quotes</a></li>
             <li><a class="waves-effect" href="#!">Suggestions</a></li>
-            <li><router-link @click.native="clickRoute" to="/logs">Logs</router-link></li>
+            <li><router-link @click.native="clickRoute" to="/logs" v-if="admin">Logs</router-link></li>
 
             <li><a v-on:click="toggleLog" class="logout">Logout</a></li>
         </ul>
         
-                  <div class="content-wrapper-before gradient-45deg-indigo-purple"></div>
-
+        <div class="content-wrapper-before gradient-45deg-indigo-purple"></div>
     </div>
 </template>
 
@@ -63,19 +62,25 @@
                 userName: 'Log In',
                 color: 'light-green',
                 textColor: 'text-white',
-                profilePic: 'https://www.w3schools.com/howto/img_avatar.png',
+                profilePic: '../assets/img_avatar.png',
                 email: '',
                 activePage: 'Boud Cabin',
-                temp: '-'
+                admin: false
             }
         },
         mounted() {
             this.intiSideNav();
+            this.updateRouteName();
         },
         created() {
             this.randomColor();
             this.getUserInfo();
         },
+        watch:{
+            $route (to, from){
+                this.updateRouteName(to.name)
+            }
+        }, 
         methods: {
             getUserInfo: function() {
                 firebase.auth().onAuthStateChanged((user) => {
@@ -85,9 +90,13 @@
                         this.profilePic = user.photoURL;
                         this.email = user.email;
                         logUser(user.providerData[0])
+                        if(user.displayName.includes('Kelley')){
+                            this.admin = true;
+                            M.toast({html: 'Howdy Admin'})
+                        }
                     }
                 });
-
+                
                 function logUser(user) {
                     let time = Date.now();
                     let ref = 'logs/userLogs/' + time;
@@ -153,11 +162,16 @@
                 })
             },
             clickRoute: function() {
+                console.log('click')
                 var elems = document.querySelector('.sidenav');
                 var instance = M.Sidenav.init(elems);
                 instance.close();
-                this.activePage = this.$route.name
+                this.updateRouteName();
             },
+            updateRouteName: function(routeName){
+                var name = location.pathname.split('/')[1];
+                this.activePage = routeName || name || 'Boud Cabin';
+            }
         },
         components: {
             TapTarget
@@ -188,7 +202,7 @@
         bottom: 0;
         width: 299px;
         left: 0;
-        margin-bottom: 60px;
+        margin-bottom: 1px;
         background-color: rgba(255, 32, 32, 0.03)!important;
     }
 

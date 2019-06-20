@@ -3,7 +3,7 @@
         <li>
             <div class="user-view">
                 <div class="background">
-                    <img src="../assets/bcc1.jpeg">
+                    <img src="../assets/bcc2.jpeg">
                 </div>
                 <a href="#user"><img class="circle" v-bind:src="profilePic"></a>
                 <a href="#name"><span class="white-text name">{{userName}}</span></a>

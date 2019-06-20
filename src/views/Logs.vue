@@ -54,9 +54,7 @@
                 console.log(row)
             },
             addRowTable: function(data) {
-                console.log(data)
                 for (let key in data) {
-                    console.log(data[key])
                     let time = moment(data[key].log).format("lll")
                     this.rowData.push({
                         name: data[key].name,

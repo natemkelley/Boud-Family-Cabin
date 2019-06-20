@@ -84,7 +84,7 @@
 </script>
 
 <style scoped>
-    .photocolumn,    
+    .photocolumn,
     th:first-child,
     th:first-child {
         width: 12%;
@@ -96,39 +96,39 @@
         margin-left: 4px;
     }
 
-    td{
+    td {
         padding: 5.5px 5px;
     }
 
-th.active .arrow {
-  opacity: 1;
-    background: transparent
-}
-    
+    th.active .arrow {
+        opacity: 1;
+        background: transparent
+    }
+
     .arrow {
-    display: inline-block;
-    vertical-align: middle;
-    width: 0;
-    height: 0;
-    margin-left: 5px;
-    opacity: 0.66;
+        display: inline-block;
+        vertical-align: middle;
+        width: 0;
+        height: 0;
+        margin-left: 5px;
+        opacity: 0.36;
     }
 
     .arrow.asc {
-    border-left: 4px solid transparent;
-    border-right: 4px solid transparent;
-    border-bottom: 4px solid #000;
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent;
+        border-bottom: 4px solid #000;
     }
 
     .arrow.dsc {
-    border-left: 4px solid transparent;
-    border-right: 4px solid transparent;
-    border-top: 4px solid #000;
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent;
+        border-top: 4px solid #000;
     }
-    
+
     th.active .arrow[data-v-6f75ebdf] {
-    opacity: 1;
-    background: transparent;
-}
+        opacity: 1;
+        background: transparent;
+    }
 
 </style>
