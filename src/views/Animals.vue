@@ -2,39 +2,94 @@
   <div class="hello container">
     <h1>Animals</h1>
 
-  </div>
+    <div class="row">          
+        <div v-if="animals">
+              <nav>
+                <div class="nav-wrapper light-green darken-3">
+                  <form>
+                    <div class="input-field">
+                      <input id="search" type="search" v-model="searchQuery">
+                      <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                      <i class="material-icons">close</i>
+                    </div>
+                  </form>
+                </div>
+              </nav>
+            
+              <ul class="collapsible popout">
+                <li v-for="tax of taxonomies">
+                  <div class="collapsible-header">{{tax}}</div>
+                  <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                </li>
+              </ul>
+            <!--<div class="col s6 m7" v-for="animal of animals" >
+                  <img class="materialboxed" :src="animal.localImage"/>
+              </div>-->
+        </div>
+        <div v-else class="center bigger">
+            <circle-loader></circle-loader>
+        </div>
+    </div>
+</div>
 </template>
 
 <script>
     import firebase from 'firebase';
     import wiki from 'wikijs';
+    import CircleLoader from '../components/CircleLoader.vue'
 
     export default {
         name: 'Animals',
         data() {
             return {
-                searchQuery: '',
+                animals: false,
+                publicPath: process.env.BASE_URL,
+                taxonomies: ''
             }
         },
-        mounted() {            
-            wiki().page('Pine Grosbeak')
-                .then(page => {
-                    console.log(page)
-                    console.log(page.url())
-                    page.summary().then(console.log)
-                    page.fullInfo().then(console.log)
-                    page.mainImage().then(console.log)
-                    page.rawImages().then(console.log)
-                    
-                    //fullInfo to get map and then loop raw images for title and then get url
-                    //the status could be intering?
-                })
-
-
+        created() {},
+        mounted() {
+            this.getAnimals()
         },
-        updated() {},
+        updated() {
+            let elems = document.querySelectorAll('.collapsible');
+            let instances = M.Collapsible.init(elems);
+        },
         methods: {
-            queryWiki: function() {}
+            getAnimals: function() {
+                firebase.database().ref('/animals').once('value').then(snapshot => {
+                    console.log(snapshot.val())
+                    this.createTaxArray(snapshot.val())
+                        .then(() => {
+                            let animalsArray = snapshot.val()
+                            let array = [];
+                            let that = this
+                            animalsArray.forEach(function(obj) {
+                                if (!obj.localImage.includes('http')) {
+                                    obj.localImage = that.publicPath + obj.localImage
+                                }
+                                array.push(obj)
+                            })
+                            this.animals = array
+                        })
+                })
+            },
+            createTaxArray: function(animals) {
+                let that = this;
+                return new Promise(function(resolve, reject) {
+                    let array = []
+                    animals.forEach(function(obj) {
+                        if (array.indexOf(obj.TaxonomicGroup) === -1) {
+                            array.push(obj.TaxonomicGroup);
+                        }
+                    })
+                    that.taxonomies = array
+                    resolve(true)
+                })
+            }
+        },
+        components: {
+            CircleLoader
         }
     }
 
@@ -46,23 +101,30 @@
         margin-top: 35px
     }
 
-    /*
+    .bigger {
+        transform: scale(1.75);
+        margin-top: 15%;
+    }
+
+    img {
+        background: #afadad;
+        transition: 0.25s;
+    }
+
+    nav {
+        margin: 15px 0px
+    }
+
+
     
-    https://www.inaturalist.org/guides/2181
-https://www.inaturalist.org/guides/7945
-https://www.inaturalist.org/guides/5506
-http://api.inaturalist.org/v1/docs/
+    input {
+        color:white
+    }
 
+    input:focus {
+        color: black!important
+    }
 
-https://mol.org/regions/?region=Utah&regionid=b2f8b3dd-c3e2-4b70-b35b-b112dfcafc39&bounds=-114.0541,36.9986,-109.0409,42.0042
-
-https://npm.runkit.com/wikipedia
-https://www.npmjs.com/package/wikijs
-https://www.npmjs.com/package/wtf_wikipedia
-https://www.npmjs.com/package/wikipedia-js 
-
-
-naturalist search or taxa?
-    */
+    /*https://listjs.com/*/
 
 </style>
