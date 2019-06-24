@@ -41,9 +41,8 @@
         },
         mounted() {
             var ref = firebase.database().ref('/photos');
-            var that = this;
-            ref.on('value', function(snapshot) {
-                that.addToImageArray(snapshot.val())
+            ref.on('value', snapshot => {
+                this.addToImageArray(snapshot.val())
             });
             this.createGrid();
             this.materializePhotos();

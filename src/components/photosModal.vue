@@ -61,7 +61,7 @@
                 progress: 0,
                 database: '',
                 imageDataURL: null,
-                showUpload: false
+                showUpload: false,
             }
         },
         methods: {
@@ -70,7 +70,7 @@
                 var uploadTask = null;
                 let fileName = 'default';
                 let dateModified = new Date();
-                
+
                 return new Promise(function(resolve, reject) {
                     if (type == 'dataURL') {
                         dateModified = originalFile.lastModified;
@@ -145,7 +145,7 @@
                 this.imageDataURL = file.dataUrl;
                 this.showUpload = true;
                 console.log(file)
-            }
+            },
         },
         mounted() {
             var elems = document.querySelectorAll('.modal');
@@ -153,7 +153,7 @@
             this.storageService = firebase.storage();
             this.storageRef = this.storageService.ref();
             this.database = firebase.database();
-        }
+        },
     }
 
 </script>
@@ -162,11 +162,16 @@
     .progress {
         height: 7px;
     }
-    
-    #file-submit{
+
+    #file-submit {
         margin-right: 10px;
         margin-top: -5px;
     }
-    
-    
+</style>
+
+<style scoped>
+    .loader {
+        position: absolute;
+        margin-left: -45px;
+    }
 </style>

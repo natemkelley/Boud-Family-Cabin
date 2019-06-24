@@ -20,7 +20,7 @@
             <li>
                 <div class="user-view">
                     <div class="background">
-                        <img src="../assets/bcc1.jpeg">
+                        <img src="../assets/bcc2.jpg">
                     </div>
                     <a><img class="circle" v-bind:src="profilePic"></a>
                     <a><span class="white-text name">{{userName}}</span></a>
@@ -37,7 +37,7 @@
             <li>
                 <div class="divider"></div>
             </li>
-            <li><a class="waves-effect" href="#!">Animals</a></li>
+            <li><router-link @click.native="clickRoute" to="/animals">Animals</router-link></li>
             <li><a class="waves-effect" href="#!">Quotes</a></li>
             <li><a class="waves-effect" href="#!">Suggestions</a></li>
             <li><router-link @click.native="clickRoute" to="/logs" v-if="admin">Logs</router-link></li>
@@ -103,7 +103,7 @@
                     let userName = user.displayName;
                     firebase.database().ref('logs/userLogs/').once('value').then(function(snapshot) {
                         let data = snapshot.val();
-                        let proceed = logOlderThanTenMinutes(data, time, userName)
+                        let proceed = logOlderThanTwentyMinutes(data, time, userName)
                         if (proceed) {
                             firebase.database().ref(ref).set({
                                 name: user.displayName,
@@ -113,8 +113,8 @@
                         }
                     });
 
-                    function logOlderThanTenMinutes(logs, time, uname) {
-                        let TENMINUTES = 10 * 60 * 1000;
+                    function logOlderThanTwentyMinutes(logs, time, uname) {
+                        let TENMINUTES = 20 * 60 * 1000;
                         let newest = getNewestLogByName(uname);
                         let returnVal = false;
 
@@ -142,7 +142,7 @@
             },
             intiSideNav: function() {
                 var elems = document.querySelectorAll('.sidenav');
-                var instances = M.Sidenav.init(elems);
+                var instances = M.Sidenav.init(elems,{preventScrolling:true});
             },
             randomColor: function() {
                 var colorArray = ['light-blue darken-4', 'white', 'white', 'white']

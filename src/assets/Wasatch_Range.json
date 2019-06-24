@@ -1,0 +1,3956 @@
+[
+  {
+    "Scientific Name": "Buteo regalis",
+    "Common Name": "Ferruginous Hawk",
+    "Family": "Accipitridae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Bubulcus ibis",
+    "Common Name": "Cattle Egret",
+    "Family": "Ardeidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Sturnus vulgaris",
+    "Common Name": "Common Starling",
+    "Family": "Sturnidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Amphispiza belli",
+    "Common Name": "Sage Sparrow",
+    "Family": "Emberizidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Carpodacus mexicanus",
+    "Common Name": "House Finch",
+    "Family": "Fringillidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Dendroica petechia",
+    "Common Name": "Yellow Warbler",
+    "Family": "Parulidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Icterus galbula",
+    "Common Name": "Baltimore Oriole",
+    "Family": "Icteridae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Sterna forsteri",
+    "Common Name": "Forster's Tern",
+    "Family": "Laridae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Spizella arborea",
+    "Common Name": "American Tree Sparrow",
+    "Family": "Emberizidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Progne subis",
+    "Common Name": "Purple Martin",
+    "Family": "Hirundinidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Megascops kennicottii",
+    "Common Name": "Western Screech Owl",
+    "Family": "Strigidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Calidris alpina",
+    "Common Name": "Dunlin",
+    "Family": "Scolopacidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Dendroica townsendi",
+    "Common Name": "Townsend's Warbler",
+    "Family": "Parulidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Picoides tridactylus",
+    "Common Name": "Eurasian Three-Toed Woodpecker",
+    "Family": "Picidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Aix sponsa",
+    "Common Name": "Wood Duck",
+    "Family": "Anatidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Phalacrocorax auritus",
+    "Common Name": "Double-Crested Cormorant",
+    "Family": "Phalacrocoracidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Quiscalus quiscula",
+    "Common Name": "Common Grackle",
+    "Family": "Icteridae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Dolichonyx oryzivorus",
+    "Common Name": "Bobolink",
+    "Family": "Icteridae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Pinicola enucleator",
+    "Common Name": "Pine Grosbeak",
+    "Family": "Fringillidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Turdus migratorius",
+    "Common Name": "American Robin",
+    "Family": "Turdidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Vireo gilvus",
+    "Common Name": "Warbling Vireo",
+    "Family": "Vireonidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Dumetella carolinensis",
+    "Common Name": "Gray Catbird",
+    "Family": "Mimidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Catharus ustulatus",
+    "Common Name": "Swainson's Thrush",
+    "Family": "Turdidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Charadrius vociferus",
+    "Common Name": "Kildeer",
+    "Family": "Charadriidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Tachycineta thalassina",
+    "Common Name": "Violet-Green Swallow",
+    "Family": "Hirundinidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Regulus satrapa",
+    "Common Name": "Golden-Crowned Kinglet",
+    "Family": "Reguliidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Pipilo erythrophthalmus",
+    "Common Name": "Eastern Towhee",
+    "Family": "Emberizidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Loxia leucoptera",
+    "Common Name": "White-Winged Crossbill",
+    "Family": "Fringillidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Icteria virens",
+    "Common Name": "Yellow-Breasted Chat",
+    "Family": "Parulidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Anthus rubescens",
+    "Common Name": "Buff-Bellied Pipit",
+    "Family": "Motacillidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Aphelocoma californica",
+    "Common Name": "Western Scrub Jay",
+    "Family": "Corvidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Asio flammeus",
+    "Common Name": "Short-Eared Owl",
+    "Family": "Strigidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Ammodramus savannarum",
+    "Common Name": "Grasshopper Sparrow",
+    "Family": "Emberizidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Amphispiza bilineata",
+    "Common Name": "Black-Throated Sparrow",
+    "Family": "Emberizidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Bucephala albeola",
+    "Common Name": "Bufflehead",
+    "Family": "Anatidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Calidris minutilla",
+    "Common Name": "Least Sandpiper",
+    "Family": "Scolopacidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Falco columbarius",
+    "Common Name": "Merlin",
+    "Family": "Falconidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Passer domesticus",
+    "Common Name": "House Sparrow",
+    "Family": "Passeridae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Pica hudsonia",
+    "Common Name": "Black-Billed Magpie",
+    "Family": "Corvidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Pandion haliaetus",
+    "Common Name": "Osprey",
+    "Family": "Accipitridae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Aeronautes saxatalis",
+    "Common Name": "White-Throated Swift",
+    "Family": "Apodidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Chondestes grammacus",
+    "Common Name": "Lark Sparrow",
+    "Family": "Emberizidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Bucephala islandica",
+    "Common Name": "Barrow's Goldeneye",
+    "Family": "Anatidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Tympanuchus phasianellus",
+    "Common Name": "Sharp-Tailed Grouse",
+    "Family": "Phasianidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Ardea herodias",
+    "Common Name": "Great Blue Heron",
+    "Family": "Ardeidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Myiarchus cinerascens",
+    "Common Name": "Ash-Throated Flycatcher",
+    "Family": "Tyrannidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Dendroica nigrescens",
+    "Common Name": "Black-Throated Grey Warbler",
+    "Family": "Parulidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Actitis macularius",
+    "Common Name": "Spotted Sandpiper",
+    "Family": "Scolopacidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Porzana carolina",
+    "Common Name": "Sora",
+    "Family": "Rallidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Petrochelidon pyrrhonota",
+    "Common Name": "Cliff Swallow",
+    "Family": "Hirundinidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Gallinago gallinago",
+    "Common Name": "Common Snipe",
+    "Family": "Scolopacidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Catoptrophorus semipalmatus",
+    "Common Name": "Willet",
+    "Family": "Scolopacidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Catherpes mexicanus",
+    "Common Name": "Canyon Wren",
+    "Family": "Troglodytidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Zenaida macroura",
+    "Common Name": "Mourning Dove",
+    "Family": "Columbidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Polioptila caerulea",
+    "Common Name": "Blue-Grey Gnatcatcher",
+    "Family": "Polioptilidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Hirundo rustica",
+    "Common Name": "Barn Swallow",
+    "Family": "Hirundinidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Falco mexicanus",
+    "Common Name": "Prairie Falcon",
+    "Family": "Falconidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Lanius excubitor",
+    "Common Name": "Great Grey Shrike",
+    "Family": "Laniidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Mergus serrator",
+    "Common Name": "Red-Breasted Merganser",
+    "Family": "Anatidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Aechmophorus clarkii",
+    "Common Name": "Clark's Grebe",
+    "Family": "Podicipedidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Troglodytes troglodytes",
+    "Common Name": "Winter Wren",
+    "Family": "Troglodytidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Falco peregrinus",
+    "Common Name": "Peregrine Falcon",
+    "Family": "Falconidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Quiscalus mexicanus",
+    "Common Name": "Great-Tailed Grackle",
+    "Family": "Icteridae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Accipiter striatus",
+    "Common Name": "Plain-Breasted Hawk",
+    "Family": "Accipitridae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Empidonax oberholseri",
+    "Common Name": "Oberholser's Flycatcher",
+    "Family": "Tyrannidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Dendroica aestiva",
+    "Common Name": "American Yellow Warbler",
+    "Family": "Parulidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Sterna caspia",
+    "Common Name": "Caspian Tern",
+    "Family": "Laridae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Empidonax hammondii",
+    "Common Name": "Hammond's Flycatcher",
+    "Family": "Tyrannidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Vireo cassinii",
+    "Common Name": "Cassin's Vireo",
+    "Family": "Vireonidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Passerina amoena",
+    "Common Name": "Lazuli Bunting",
+    "Family": "Emberizidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Leucosticte tephrocotis",
+    "Common Name": "Gray-Crowned Rosy-Finch",
+    "Family": "Fringillidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Pluvialis squatarola",
+    "Common Name": "Grey Plover",
+    "Family": "Charadriidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Megaceryle alcyon",
+    "Common Name": "Belted Kingfisher",
+    "Family": "Alcedinidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Eremophila alpestris",
+    "Common Name": "Horned Lark",
+    "Family": "Alaudidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Larus delawarensis",
+    "Common Name": "Ring-Billed Gull",
+    "Family": "Laridae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Otus flammeolus",
+    "Common Name": "Flammulated Owl",
+    "Family": "Strigidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Molothrus ater",
+    "Common Name": "Brown-Headed Cowbird",
+    "Family": "Icteridae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Asio otus",
+    "Common Name": "Long-Eared Owl",
+    "Family": "Strigidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Cinclus mexicanus",
+    "Common Name": "North American Dipper",
+    "Family": "Cinclidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Lophodytes cucullatus",
+    "Common Name": "Hooded Merganser",
+    "Family": "Anatidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Lanius ludovicianus",
+    "Common Name": "Loggerhead Shrike",
+    "Family": "Laniidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Chlidonias niger",
+    "Common Name": "Black Tern",
+    "Family": "Laridae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Coccyzus americanus",
+    "Common Name": "Yellow-Billed Cuckoo",
+    "Family": "Cuculidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Aythya collaris",
+    "Common Name": "Ring-Necked Duck",
+    "Family": "Anatidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Platalea ajaja",
+    "Common Name": "Roseate Spoonbill",
+    "Family": "Threskiornithidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Larus californicus",
+    "Common Name": "California Gull",
+    "Family": "Laridae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Mimus polyglottos",
+    "Common Name": "Northern Mockingbird",
+    "Family": "Mimidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Anas platyrhynchos",
+    "Common Name": "Mallard",
+    "Family": "Anatidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Limnodromus scolopaceus",
+    "Common Name": "Long-Billed Dowitcher",
+    "Family": "Scolopacidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Psaltriparus minimus",
+    "Common Name": "Bushtit",
+    "Family": "Aegithalidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Branta canadensis",
+    "Common Name": "Canada Goose",
+    "Family": "Anatidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Setophaga ruticilla",
+    "Common Name": "American Redstart",
+    "Family": "Parulidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Picoides villosus",
+    "Common Name": "Hairy Woodpecker",
+    "Family": "Picidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Selasphorus platycercus",
+    "Common Name": "Broad-Tailed Hummingbird",
+    "Family": "Trochilidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Parus gambeli",
+    "Common Name": "Mountain Chickadee",
+    "Family": "Paridae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Bonasa umbellus",
+    "Common Name": "Ruffed Grouse",
+    "Family": "Phasianidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Aechmophorus occidentalis",
+    "Common Name": "Western Grebe",
+    "Family": "Podicipedidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Riparia riparia",
+    "Common Name": "Sand Martin",
+    "Family": "Hirundinidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Euphagus cyanocephalus",
+    "Common Name": "Brewer's Blackbird",
+    "Family": "Icteridae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Aquila chrysaetos",
+    "Common Name": "Golden Eagle",
+    "Family": "Accipitridae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Anas acuta",
+    "Common Name": "Northern Pintail",
+    "Family": "Anatidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Recurvirostra americana",
+    "Common Name": "American Avocet",
+    "Family": "Recurvirostridae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Haliaeetus leucocephalus",
+    "Common Name": "Bald Eagle",
+    "Family": "Accipitridae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Glaucidium californicum",
+    "Common Name": "California Pygmy-Owl",
+    "Family": "Strigidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Aythya affinis",
+    "Common Name": "Lesser Scaup",
+    "Family": "Anatidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Phalaropus lobatus",
+    "Common Name": "Red-Necked Phalarope",
+    "Family": "Scolopacidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Podiceps nigricollis",
+    "Common Name": "Black-Necked Grebe",
+    "Family": "Podicipedidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Accipiter gentilis",
+    "Common Name": "Goshawk",
+    "Family": "Accipitridae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Anas discors",
+    "Common Name": "Blue-Winged Teal",
+    "Family": "Anatidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Catharus guttatus",
+    "Common Name": "Hermit Thrush",
+    "Family": "Turdidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Perdix perdix",
+    "Common Name": "Grey Partridge",
+    "Family": "Phasianidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Bubo virginianus",
+    "Common Name": "Great Horned Owl",
+    "Family": "Strigidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Dendroica coronata",
+    "Common Name": "Yellow-Rumped Warbler",
+    "Family": "Parulidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Tringa melanoleuca",
+    "Common Name": "Greater Yellowlegs",
+    "Family": "Scolopacidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Melospiza lincolnii",
+    "Common Name": "Lincoln's Sparrow",
+    "Family": "Emberizidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Dendrocygna bicolor",
+    "Common Name": "Fulvous Whistling-Duck",
+    "Family": "Anatidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Empidonax occidentalis",
+    "Common Name": "Cordilleran Flycatcher",
+    "Family": "Tyrannidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Nucifraga columbiana",
+    "Common Name": "Clark's Nutcracker",
+    "Family": "Corvidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Cyanocitta stelleri",
+    "Common Name": "Steller's Jay",
+    "Family": "Corvidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Botaurus lentiginosus",
+    "Common Name": "American Bittern",
+    "Family": "Ardeidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Steganopus tricolor",
+    "Common Name": "Wilson's Phalarope",
+    "Family": "Scolopacidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Egretta thula",
+    "Common Name": "Snowy Egret",
+    "Family": "Ardeidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Spizella passerina",
+    "Common Name": "Chipping Sparrow",
+    "Family": "Emberizidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Callipepla californica",
+    "Common Name": "California Quail",
+    "Family": "Odontophoridae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Sphyrapicus thyroideus",
+    "Common Name": "Williamson's Sapsucker",
+    "Family": "Picidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Contopus sordidulus",
+    "Common Name": "Western Wood-Pewee",
+    "Family": "Tyrannidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Oporornis tolmiei",
+    "Common Name": "Macgillivray's Warbler",
+    "Family": "Parulidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Certhia americana",
+    "Common Name": "American Creeper",
+    "Family": "Certhiidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Geothlypis trichas",
+    "Common Name": "Common Yellowthroat",
+    "Family": "Parulidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Anas americana",
+    "Common Name": "American Wigeon",
+    "Family": "Anatidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Numenius americanus",
+    "Common Name": "Long-Billed Curlew",
+    "Family": "Scolopacidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Patagioenas fasciata",
+    "Common Name": "Band-Tailed Pigeon",
+    "Family": "Columbidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Plegadis chihi",
+    "Common Name": "White-Faced Ibis",
+    "Family": "Threskiornithidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Anas crecca",
+    "Common Name": "Common Teal",
+    "Family": "Anatidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Passerculus sandwichensis",
+    "Common Name": "Savannah Sparrow",
+    "Family": "Emberizidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Cygnus columbianus",
+    "Common Name": "Tundra Swan",
+    "Family": "Anatidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Calcarius lapponicus",
+    "Common Name": "Lapland Longspur",
+    "Family": "Emberizidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Corvus corax",
+    "Common Name": "Common Raven",
+    "Family": "Corvidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Alectoris chukar",
+    "Common Name": "Chukar",
+    "Family": "Phasianidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Bombycilla garrulus",
+    "Common Name": "Bohemian Waxwing",
+    "Family": "Bombycillidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Buteo lagopus",
+    "Common Name": "Rough-Legged Buzzard",
+    "Family": "Accipitridae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Seiurus noveboracensis",
+    "Common Name": "Northern Waterthrush",
+    "Family": "Parulidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Stellula calliope",
+    "Common Name": "Calliope Hummingbird",
+    "Family": "Trochilidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Podiceps auritus",
+    "Common Name": "Horned Grebe",
+    "Family": "Podicipedidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Wilsonia pusilla",
+    "Common Name": "Wilson's Warbler",
+    "Family": "Parulidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Icterus parisorum",
+    "Common Name": "Scott's Oriole",
+    "Family": "Icteridae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Cistothorus palustris",
+    "Common Name": "Marsh Wren",
+    "Family": "Troglodytidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Columba livia",
+    "Common Name": "Rock Dove",
+    "Family": "Columbidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Bubo scandiaca",
+    "Common Name": "Snowy Owl",
+    "Family": "Strigidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Buteo swainsoni",
+    "Common Name": "Swainson's Hawk",
+    "Family": "Accipitridae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Baeolophus ridgwayi",
+    "Common Name": "Juniper Titmouse",
+    "Family": "Paridae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Pheucticus melanocephalus",
+    "Common Name": "Black-Headed Grosbeak",
+    "Family": "Cardinalidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Vermivora ruficapilla",
+    "Common Name": "Nashville Warbler",
+    "Family": "Parulidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Icterus bullockii",
+    "Common Name": "Bullock's Oriole",
+    "Family": "Icteridae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Bucephala clangula",
+    "Common Name": "Common Goldeneye",
+    "Family": "Anatidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Coccothraustes vespertinus",
+    "Common Name": "Evening Grosbeak",
+    "Family": "Fringillidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Picoides pubescens",
+    "Common Name": "Downy Woodpecker",
+    "Family": "Picidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Contopus cooperi",
+    "Common Name": "Olive-Sided Flycatcher",
+    "Family": "Tyrannidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Junco hyemalis",
+    "Common Name": "Dark-Eyed Junco",
+    "Family": "Emberizidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Tyto alba",
+    "Common Name": "Barn Owl",
+    "Family": "Tytonidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Carduelis flammea",
+    "Common Name": "Common Redpoll",
+    "Family": "Fringillidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Chen caerulescens",
+    "Common Name": "Snow Goose",
+    "Family": "Anatidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Larus pipixcan",
+    "Common Name": "Franklin's Gull",
+    "Family": "Laridae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Parkesia noveboracensis",
+    "Common Name": "Northern Waterthrush",
+    "Family": "Parulidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Pipilo maculatus",
+    "Common Name": "Spotted Towhee",
+    "Family": "Emberizidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Gymnorhinus cyanocephalus",
+    "Common Name": "Pinyon Jay",
+    "Family": "Corvidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Oreoscoptes montanus",
+    "Common Name": "Sage Thrasher",
+    "Family": "Mimidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Buteo jamaicensis",
+    "Common Name": "Red-Tailed Hawk",
+    "Family": "Accipitridae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Columbina passerina",
+    "Common Name": "Common Ground-Dove",
+    "Family": "Columbidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Falco sparverius",
+    "Common Name": "American Kestrel",
+    "Family": "Falconidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Troglodytes aedon",
+    "Common Name": "House Wren",
+    "Family": "Troglodytidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Cathartes aura",
+    "Common Name": "Turkey Vulture",
+    "Family": "Cathartidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Chordeiles minor",
+    "Common Name": "Common Nighthawk",
+    "Family": "Caprimulgidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Oxyura jamaicensis",
+    "Common Name": "Ruddy Duck",
+    "Family": "Anatidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Centrocercus minimus",
+    "Common Name": "Gunnison Sage Grouse",
+    "Family": "Phasianidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Athene cunicularia",
+    "Common Name": "Burrowing Owl",
+    "Family": "Strigidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Cygnus buccinator",
+    "Common Name": "Trumpeter Swan",
+    "Family": "Anatidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Picoides dorsalis",
+    "Common Name": "American Three-Toed Woodpecker",
+    "Family": "Picidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Aythya americana",
+    "Common Name": "Redhead",
+    "Family": "Anatidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Tyrannus forficatus",
+    "Common Name": "Scissor-Tailed Flycatcher",
+    "Family": "Tyrannidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Fulica americana",
+    "Common Name": "American Coot",
+    "Family": "Rallidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Phasianus colchicus",
+    "Common Name": "Common Pheasant",
+    "Family": "Phasianidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Melanerpes lewis",
+    "Common Name": "Lewis' Woodpecker",
+    "Family": "Picidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Pipilo chlorurus",
+    "Common Name": "Green-Tailed Towhee",
+    "Family": "Emberizidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Parus atricapillus",
+    "Common Name": "Black-Capped Chickadee",
+    "Family": "Paridae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Thryomanes bewickii",
+    "Common Name": "Bewick's Wren",
+    "Family": "Troglodytidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Agelaius phoeniceus",
+    "Common Name": "Red-Winged Blackbird",
+    "Family": "Icteridae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Butorides virescens",
+    "Common Name": "Green Heron",
+    "Family": "Ardeidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Tyrannus verticalis",
+    "Common Name": "Western Kingbird",
+    "Family": "Tyrannidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Meleagris gallopavo",
+    "Common Name": "Common Turkey",
+    "Family": "Phasianidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Anas strepera",
+    "Common Name": "Gadwall",
+    "Family": "Anatidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Colaptes auratus",
+    "Common Name": "Northern Flicker",
+    "Family": "Picidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Catharus fuscescens",
+    "Common Name": "Veery",
+    "Family": "Turdidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Strix occidentalis",
+    "Common Name": "Spotted Owl",
+    "Family": "Strigidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Mergus merganser",
+    "Common Name": "Goosander",
+    "Family": "Anatidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Plectrophenax nivalis",
+    "Common Name": "Snow Bunting",
+    "Family": "Emberizidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Fringilla montifringilla",
+    "Common Name": "Brambling",
+    "Family": "Fringillidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Corvus brachyrhynchos",
+    "Common Name": "American Crow",
+    "Family": "Corvidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Gavia immer",
+    "Common Name": "Common Loon",
+    "Family": "Gaviidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Rallus limicola",
+    "Common Name": "Virginia Rail",
+    "Family": "Rallidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Tyrannus tyrannus",
+    "Common Name": "Eastern Kingbird",
+    "Family": "Tyrannidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Vireo plumbeus",
+    "Common Name": "Plumbeous Vireo",
+    "Family": "Vireonidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Falco rusticolus",
+    "Common Name": "Gyr Falcon",
+    "Family": "Falconidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Dendragapus obscurus",
+    "Common Name": "Dusky Grouse",
+    "Family": "Phasianidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Selasphorus rufus",
+    "Common Name": "Rufous Hummingbird",
+    "Family": "Trochilidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Piranga ludoviciana",
+    "Common Name": "Western Tanager",
+    "Family": "Cardinalidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Carduelis pinus",
+    "Common Name": "Pine Siskin",
+    "Family": "Fringillidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Anthus spragueii",
+    "Common Name": "Sprague's Pipit",
+    "Family": "Motacillidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Carduelis tristis",
+    "Common Name": "American Goldfinch",
+    "Family": "Fringillidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Stelgidopteryx serripennis",
+    "Common Name": "Northern Rough-Winged Swallow",
+    "Family": "Hirundinidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Loxia curvirostra",
+    "Common Name": "Red Crossbill",
+    "Family": "Fringillidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Passerella iliaca",
+    "Common Name": "Fox Sparrow",
+    "Family": "Emberizidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Leucosticte atrata",
+    "Common Name": "Black Rosy Finch",
+    "Family": "Fringillidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Perisoreus canadensis",
+    "Common Name": "Grey Jay",
+    "Family": "Corvidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Carpodacus cassinii",
+    "Common Name": "Cassin's Finch",
+    "Family": "Fringillidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Centrocercus urophasianus",
+    "Common Name": "Sage Grouse",
+    "Family": "Phasianidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Toxostoma bendirei",
+    "Common Name": "Bendire's Thrasher",
+    "Family": "Mimidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Zonotrichia leucophrys",
+    "Common Name": "White-Crowned Sparrow",
+    "Family": "Emberizidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Charadrius alexandrinus",
+    "Common Name": "Kentish Plover",
+    "Family": "Charadriidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Regulus calendula",
+    "Common Name": "Ruby-Crowned Kinglet",
+    "Family": "Reguliidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Anas cyanoptera",
+    "Common Name": "Cinnamon Teal",
+    "Family": "Anatidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Melospiza melodia",
+    "Common Name": "Song Sparrow",
+    "Family": "Emberizidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Grus canadensis",
+    "Common Name": "Sandhill Crane",
+    "Family": "Gruidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Tachycineta bicolor",
+    "Common Name": "Tree Swallow",
+    "Family": "Hirundinidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Larus argentatus",
+    "Common Name": "Herring Gull",
+    "Family": "Laridae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Empidonax traillii",
+    "Common Name": "Willow Flycatcher",
+    "Family": "Tyrannidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Circus cyaneus",
+    "Common Name": "Hen Harrier",
+    "Family": "Accipitridae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Archilochus alexandri",
+    "Common Name": "Black-Chinned Hummingbird",
+    "Family": "Trochilidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Glaucidium gnoma",
+    "Common Name": "Northern Pygmy-Owl",
+    "Family": "Strigidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Spizella breweri",
+    "Common Name": "Brewer's Sparrow",
+    "Family": "Emberizidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Xanthocephalus xanthocephalus",
+    "Common Name": "Yellow-Headed Blackbird",
+    "Family": "Icteridae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Podilymbus podiceps",
+    "Common Name": "Pied-Billed Grebe",
+    "Family": "Podicipedidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Sayornis saya",
+    "Common Name": "Say's Phoebe",
+    "Family": "Tyrannidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Sitta pygmaea",
+    "Common Name": "Pygmy Nuthatch",
+    "Family": "Sittidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Bombycilla cedrorum",
+    "Common Name": "Cedar Waxwing",
+    "Family": "Bombycillidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Vermivora celata",
+    "Common Name": "Orange-Crowned Warbler",
+    "Family": "Parulidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Grus americana",
+    "Common Name": "Whooping Crane",
+    "Family": "Gruidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Sialia currucoides",
+    "Common Name": "Mountain Bluebird",
+    "Family": "Turdidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Egretta tricolor",
+    "Common Name": "Tricoloured Heron",
+    "Family": "Ardeidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Aythya valisineria",
+    "Common Name": "Canvasback",
+    "Family": "Anatidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Salpinctes obsoletus",
+    "Common Name": "Rock Wren",
+    "Family": "Troglodytidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Tringa flavipes",
+    "Common Name": "Lesser Yellow-Legs",
+    "Family": "Scolopacidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Sitta canadensis",
+    "Common Name": "Red-Breasted Nuthatch",
+    "Family": "Sittidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Phalaenoptilus nuttallii",
+    "Common Name": "Common Poorwill",
+    "Family": "Caprimulgidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Accipiter cooperii",
+    "Common Name": "Cooper's Hawk",
+    "Family": "Accipitridae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Nycticorax nycticorax",
+    "Common Name": "Black-Crowned Night-Heron",
+    "Family": "Ardeidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Sphyrapicus nuchalis",
+    "Common Name": "Red-Naped Sapsucker",
+    "Family": "Picidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Empidonax wrightii",
+    "Common Name": "Grey Flycatcher",
+    "Family": "Tyrannidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Vermivora virginiae",
+    "Common Name": "Virginia's Warbler",
+    "Family": "Parulidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Carduelis psaltria",
+    "Common Name": "Dark-Backed Goldfinch",
+    "Family": "Fringillidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Anas clypeata",
+    "Common Name": "Northern Shoveler",
+    "Family": "Anatidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Pelecanus erythrorhynchos",
+    "Common Name": "American White Pelican",
+    "Family": "Pelecanidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Larus philadelphia",
+    "Common Name": "Bonaparte's Gull",
+    "Family": "Laridae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Aegolius acadicus",
+    "Common Name": "Northern Saw-Whet Owl",
+    "Family": "Strigidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Pooecetes gramineus",
+    "Common Name": "Vesper Sparrow",
+    "Family": "Emberizidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Sturnella neglecta",
+    "Common Name": "Western Meadowlark",
+    "Family": "Icteridae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Himantopus mexicanus",
+    "Common Name": "Black-Necked Stilt",
+    "Family": "Recurvirostridae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Sitta carolinensis",
+    "Common Name": "White-Breasted Nuthatch",
+    "Family": "Sittidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Myadestes townsendi",
+    "Common Name": "Townsend's Solitaire",
+    "Family": "Turdidae",
+    "Taxonomic Group": "Birds"
+  },
+  {
+    "Scientific Name": "Sorex vagrans",
+    "Common Name": "Vagrant Shrew",
+    "Family": "Soricidae",
+    "Taxonomic Group": "Mammals"
+  },
+  {
+    "Scientific Name": "Thomomys bottae",
+    "Common Name": "Botta's Pocket Gopher",
+    "Family": "Geomyidae",
+    "Taxonomic Group": "Mammals"
+  },
+  {
+    "Scientific Name": "Canis lupus",
+    "Common Name": "Wolf",
+    "Family": "Canidae",
+    "Taxonomic Group": "Mammals"
+  },
+  {
+    "Scientific Name": "Neotoma lepida",
+    "Common Name": "Desert Woodrat",
+    "Family": "Cricetidae",
+    "Taxonomic Group": "Mammals"
+  },
+  {
+    "Scientific Name": "Dipodomys ordii",
+    "Common Name": "Ord's Kangaroo Rat",
+    "Family": "Heteromyidae",
+    "Taxonomic Group": "Mammals"
+  },
+  {
+    "Scientific Name": "Sylvilagus audubonii",
+    "Common Name": "Desert Cottontail",
+    "Family": "Leporidae",
+    "Taxonomic Group": "Mammals"
+  },
+  {
+    "Scientific Name": "Peromyscus crinitus",
+    "Common Name": "Canyon Mouse",
+    "Family": "Cricetidae",
+    "Taxonomic Group": "Mammals"
+  },
+  {
+    "Scientific Name": "Lepus americanus",
+    "Common Name": "Snowshoe Hare",
+    "Family": "Leporidae",
+    "Taxonomic Group": "Mammals"
+  },
+  {
+    "Scientific Name": "Microtus pennsylvanicus",
+    "Common Name": "Meadow Vole",
+    "Family": "Cricetidae",
+    "Taxonomic Group": "Mammals"
+  },
+  {
+    "Scientific Name": "Antilocapra americana",
+    "Common Name": "Pronghorn",
+    "Family": "Antilocapridae",
+    "Taxonomic Group": "Mammals"
+  },
+  {
+    "Scientific Name": "Nyctinomops macrotis",
+    "Common Name": "Big Free-Tailed Bat",
+    "Family": "Molossidae",
+    "Taxonomic Group": "Mammals"
+  },
+  {
+    "Scientific Name": "Tamiasciurus hudsonicus",
+    "Common Name": "Red Squirrel",
+    "Family": "Sciuridae",
+    "Taxonomic Group": "Mammals"
+  },
+  {
+    "Scientific Name": "Procyon lotor",
+    "Common Name": "Raccoon",
+    "Family": "Procyonidae",
+    "Taxonomic Group": "Mammals"
+  },
+  {
+    "Scientific Name": "Sorex preblei",
+    "Common Name": "Preble's Shrew",
+    "Family": "Soricidae",
+    "Taxonomic Group": "Mammals"
+  },
+  {
+    "Scientific Name": "Myotis ciliolabrum",
+    "Common Name": "Western Small Footed Myotis",
+    "Family": "Vespertilionidae",
+    "Taxonomic Group": "Mammals"
+  },
+  {
+    "Scientific Name": "Bison bison",
+    "Common Name": "American Bison",
+    "Family": "Bovidae",
+    "Taxonomic Group": "Mammals"
+  },
+  {
+    "Scientific Name": "Perognathus parvus",
+    "Common Name": "Great Basin Pocket Mouse",
+    "Family": "Heteromyidae",
+    "Taxonomic Group": "Mammals"
+  },
+  {
+    "Scientific Name": "Glaucomys sabrinus",
+    "Common Name": "Northern Flying Squirrel",
+    "Family": "Sciuridae",
+    "Taxonomic Group": "Mammals"
+  },
+  {
+    "Scientific Name": "Bassariscus astutus",
+    "Common Name": "Ringtail",
+    "Family": "Procyonidae",
+    "Taxonomic Group": "Mammals"
+  },
+  {
+    "Scientific Name": "Alces alces",
+    "Common Name": "Eurasian Elk",
+    "Family": "Cervidae",
+    "Taxonomic Group": "Mammals"
+  },
+  {
+    "Scientific Name": "Antrozous pallidus",
+    "Common Name": "Pallid Bat",
+    "Family": "Vespertilionidae",
+    "Taxonomic Group": "Mammals"
+  },
+  {
+    "Scientific Name": "Ammospermophilus leucurus",
+    "Common Name": "White Tailed Antelope Squirrel",
+    "Family": "Sciuridae",
+    "Taxonomic Group": "Mammals"
+  },
+  {
+    "Scientific Name": "Myotis californicus",
+    "Common Name": "California Myotis",
+    "Family": "Vespertilionidae",
+    "Taxonomic Group": "Mammals"
+  },
+  {
+    "Scientific Name": "Brachylagus idahoensis",
+    "Common Name": "Pygmy Rabbit",
+    "Family": "Leporidae",
+    "Taxonomic Group": "Mammals"
+  },
+  {
+    "Scientific Name": "Dipodomys microps",
+    "Common Name": "House Rock Valley Kangaroo Rat",
+    "Family": "Heteromyidae",
+    "Taxonomic Group": "Mammals"
+  },
+  {
+    "Scientific Name": "Sorex nanus",
+    "Common Name": "Dwarf Shrew",
+    "Family": "Soricidae",
+    "Taxonomic Group": "Mammals"
+  },
+  {
+    "Scientific Name": "Ovis canadensis",
+    "Common Name": "Bighorn Sheep",
+    "Family": "Bovidae",
+    "Taxonomic Group": "Mammals"
+  },
+  {
+    "Scientific Name": "Ondatra zibethicus",
+    "Common Name": "Musk Rat",
+    "Family": "Cricetidae",
+    "Taxonomic Group": "Mammals"
+  },
+  {
+    "Scientific Name": "Vulpes vulpes",
+    "Common Name": "Red Fox",
+    "Family": "Canidae",
+    "Taxonomic Group": "Mammals"
+  },
+  {
+    "Scientific Name": "Microtus richardsoni",
+    "Common Name": "Water Vole",
+    "Family": "Cricetidae",
+    "Taxonomic Group": "Mammals"
+  },
+  {
+    "Scientific Name": "Lepus californicus",
+    "Common Name": "Black-Tailed Jackrabbit",
+    "Family": "Leporidae",
+    "Taxonomic Group": "Mammals"
+  },
+  {
+    "Scientific Name": "Ochotona princeps",
+    "Common Name": "American Pika",
+    "Family": "Ochotonidae",
+    "Taxonomic Group": "Mammals"
+  },
+  {
+    "Scientific Name": "Microtus montanus",
+    "Common Name": "Montane Vole",
+    "Family": "Cricetidae",
+    "Taxonomic Group": "Mammals"
+  },
+  {
+    "Scientific Name": "Sorex cinereus",
+    "Common Name": "Masked Shrew",
+    "Family": "Soricidae",
+    "Taxonomic Group": "Mammals"
+  },
+  {
+    "Scientific Name": "Lemmiscus curtatus",
+    "Common Name": "Sagebrush Vole",
+    "Family": "Cricetidae",
+    "Taxonomic Group": "Mammals"
+  },
+  {
+    "Scientific Name": "Odocoileus virginianus",
+    "Common Name": "White-Tailed Deer",
+    "Family": "Cervidae",
+    "Taxonomic Group": "Mammals"
+  },
+  {
+    "Scientific Name": "Myodes gapperi",
+    "Common Name": "Southern Red Backed Vole",
+    "Family": "Cricetidae",
+    "Taxonomic Group": "Mammals"
+  },
+  {
+    "Scientific Name": "Zapus princeps",
+    "Common Name": "Western Jumping Mouse",
+    "Family": "Dipodidae",
+    "Taxonomic Group": "Mammals"
+  },
+  {
+    "Scientific Name": "Martes americana",
+    "Common Name": "American Marten",
+    "Family": "Mustelidae",
+    "Taxonomic Group": "Mammals"
+  },
+  {
+    "Scientific Name": "Myotis melanorhinus",
+    "Common Name": "Dark-Nosed Small-Footed Myotis",
+    "Family": "Vespertilionidae",
+    "Taxonomic Group": "Mammals"
+  },
+  {
+    "Scientific Name": "Cynomys parvidens",
+    "Common Name": "Utah Prairie Dog",
+    "Family": "Sciuridae",
+    "Taxonomic Group": "Mammals"
+  },
+  {
+    "Scientific Name": "Neovison vison",
+    "Common Name": "American Mink",
+    "Family": "Mustelidae",
+    "Taxonomic Group": "Mammals"
+  },
+  {
+    "Scientific Name": "Myotis thysanodes",
+    "Common Name": "Fringed Myotis",
+    "Family": "Vespertilionidae",
+    "Taxonomic Group": "Mammals"
+  },
+  {
+    "Scientific Name": "Sorex monticolus",
+    "Common Name": "Montane Shrew",
+    "Family": "Soricidae",
+    "Taxonomic Group": "Mammals"
+  },
+  {
+    "Scientific Name": "Phenacomys intermedius",
+    "Common Name": "Western Heather Vole",
+    "Family": "Cricetidae",
+    "Taxonomic Group": "Mammals"
+  },
+  {
+    "Scientific Name": "Reithrodontomys megalotis",
+    "Common Name": "Western Harvest Mouse",
+    "Family": "Cricetidae",
+    "Taxonomic Group": "Mammals"
+  },
+  {
+    "Scientific Name": "Onychomys leucogaster",
+    "Common Name": "Northern Grasshopper Mouse",
+    "Family": "Cricetidae",
+    "Taxonomic Group": "Mammals"
+  },
+  {
+    "Scientific Name": "Urocyon cinereoargenteus",
+    "Common Name": "Gray Fox",
+    "Family": "Canidae",
+    "Taxonomic Group": "Mammals"
+  },
+  {
+    "Scientific Name": "Thomomys talpoides",
+    "Common Name": "Northern Pocket Gopher",
+    "Family": "Geomyidae",
+    "Taxonomic Group": "Mammals"
+  },
+  {
+    "Scientific Name": "Marmota flaviventris",
+    "Common Name": "Yellow Bellied Marmot",
+    "Family": "Sciuridae",
+    "Taxonomic Group": "Mammals"
+  },
+  {
+    "Scientific Name": "Thomomys idahoensis",
+    "Common Name": "Idaho Pocket Gopher",
+    "Family": "Geomyidae",
+    "Taxonomic Group": "Mammals"
+  },
+  {
+    "Scientific Name": "Oreamnos americanus",
+    "Common Name": "Mountain Goat",
+    "Family": "Bovidae",
+    "Taxonomic Group": "Mammals"
+  },
+  {
+    "Scientific Name": "Pipistrellus hesperus",
+    "Common Name": "Western Pipistrelle",
+    "Family": "Vespertilionidae",
+    "Taxonomic Group": "Mammals"
+  },
+  {
+    "Scientific Name": "Cynomys leucurus",
+    "Common Name": "White-Tailed Prairie Dog",
+    "Family": "Sciuridae",
+    "Taxonomic Group": "Mammals"
+  },
+  {
+    "Scientific Name": "Ursus americanus",
+    "Common Name": "American Black Bear",
+    "Family": "Ursidae",
+    "Taxonomic Group": "Mammals"
+  },
+  {
+    "Scientific Name": "Peromyscus truei",
+    "Common Name": "Pinyon Mouse",
+    "Family": "Cricetidae",
+    "Taxonomic Group": "Mammals"
+  },
+  {
+    "Scientific Name": "Tadarida brasiliensis",
+    "Common Name": "Brazilian Free Tailed Bat",
+    "Family": "Molossidae",
+    "Taxonomic Group": "Mammals"
+  },
+  {
+    "Scientific Name": "Gambelia wislizenii",
+    "Common Name": "Longnose Leopard Lizard",
+    "Family": "Crotaphytidae",
+    "Taxonomic Group": "Reptiles"
+  },
+  {
+    "Scientific Name": "Diadophis punctatus",
+    "Common Name": "Ringneck Snake",
+    "Family": "Colubridae",
+    "Taxonomic Group": "Reptiles"
+  },
+  {
+    "Scientific Name": "Plestiodon skiltonianus",
+    "Common Name": "Western Skink",
+    "Family": "Scincidae",
+    "Taxonomic Group": "Reptiles"
+  },
+  {
+    "Scientific Name": "Pituophis catenifer",
+    "Common Name": "Gopher Snake",
+    "Family": "Colubridae",
+    "Taxonomic Group": "Reptiles"
+  },
+  {
+    "Scientific Name": "Charina bottae",
+    "Common Name": "Northern Rubber Boa",
+    "Family": "Boidae",
+    "Taxonomic Group": "Reptiles"
+  },
+  {
+    "Scientific Name": "Aspidoscelis tigris",
+    "Common Name": "Tiger Whiptail",
+    "Family": "Teiidae",
+    "Taxonomic Group": "Reptiles"
+  },
+  {
+    "Scientific Name": "Eumeces skiltonianus",
+    "Common Name": "Western Skink",
+    "Family": "Scincidae",
+    "Taxonomic Group": "Reptiles"
+  },
+  {
+    "Scientific Name": "Crotalus oreganus",
+    "Common Name": "Western Rattlesnake",
+    "Family": "Viperidae",
+    "Taxonomic Group": "Reptiles"
+  },
+  {
+    "Scientific Name": "Masticophis taeniatus",
+    "Common Name": "Striped Whipsnake",
+    "Family": "Colubridae",
+    "Taxonomic Group": "Reptiles"
+  },
+  {
+    "Scientific Name": "Hypsiglena torquata",
+    "Common Name": "Klauberi",
+    "Family": "Colubridae",
+    "Taxonomic Group": "Reptiles"
+  },
+  {
+    "Scientific Name": "Lampropeltis pyromelana",
+    "Common Name": "Sonoran Mountain Kingsnake",
+    "Family": "Colubridae",
+    "Taxonomic Group": "Reptiles"
+  },
+  {
+    "Scientific Name": "Sceloporus occidentalis",
+    "Common Name": "Pacific Blue-Bellied Lizard",
+    "Family": "Phrynosomatidae",
+    "Taxonomic Group": "Reptiles"
+  },
+  {
+    "Scientific Name": "Thamnophis elegans",
+    "Common Name": "Western Terrestrial Garter Snake",
+    "Family": "Colubridae",
+    "Taxonomic Group": "Reptiles"
+  },
+  {
+    "Scientific Name": "Thamnophis sirtalis",
+    "Common Name": "Common Garter Snake",
+    "Family": "Colubridae",
+    "Taxonomic Group": "Reptiles"
+  },
+  {
+    "Scientific Name": "Phrynosoma platyrhinos",
+    "Common Name": "Desert Horned Lizard",
+    "Family": "Phrynosomatidae",
+    "Taxonomic Group": "Reptiles"
+  },
+  {
+    "Scientific Name": "Sceloporus undulatus",
+    "Common Name": "Mescalero Dunes Fence Lizard",
+    "Family": "Phrynosomatidae",
+    "Taxonomic Group": "Reptiles"
+  },
+  {
+    "Scientific Name": "Crotaphytus bicinctores",
+    "Common Name": "Desert Collared Lizard",
+    "Family": "Crotaphytidae",
+    "Taxonomic Group": "Reptiles"
+  },
+  {
+    "Scientific Name": "Uta stansburiana",
+    "Common Name": "Eastern Side-Blotched Lizard",
+    "Family": "Phrynosomatidae",
+    "Taxonomic Group": "Reptiles"
+  },
+  {
+    "Scientific Name": "Phrynosoma hernandesi",
+    "Common Name": "Mountain Short-Horned Lizard",
+    "Family": "Phrynosomatidae",
+    "Taxonomic Group": "Reptiles"
+  },
+  {
+    "Scientific Name": "Lampropeltis triangulum",
+    "Common Name": "Eastern Milksnake",
+    "Family": "Colubridae",
+    "Taxonomic Group": "Reptiles"
+  },
+  {
+    "Scientific Name": "Rhinocheilus lecontei",
+    "Common Name": "Longnose Snake",
+    "Family": "Colubridae",
+    "Taxonomic Group": "Reptiles"
+  },
+  {
+    "Scientific Name": "Liochlorophis vernalis",
+    "Common Name": "Smooth Green Snake",
+    "Family": "Colubridae",
+    "Taxonomic Group": "Reptiles"
+  },
+  {
+    "Scientific Name": "Sceloporus graciosus",
+    "Common Name": "Mountain Swift",
+    "Family": "Phrynosomatidae",
+    "Taxonomic Group": "Reptiles"
+  },
+  {
+    "Scientific Name": "Coluber constrictor",
+    "Common Name": "Eastern Racer",
+    "Family": "Colubridae",
+    "Taxonomic Group": "Reptiles"
+  },
+  {
+    "Scientific Name": "Urosaurus ornatus",
+    "Common Name": "Tree Lizard",
+    "Family": "Phrynosomatidae",
+    "Taxonomic Group": "Reptiles"
+  },
+  {
+    "Scientific Name": "Ambystoma tigrinum",
+    "Common Name": "Tiger Salamander",
+    "Family": "Ambystomatidae",
+    "Taxonomic Group": "Amphibians"
+  },
+  {
+    "Scientific Name": "Ambystoma mavortium",
+    "Common Name": "Axolotl",
+    "Family": "Ambystomatidae",
+    "Taxonomic Group": "Amphibians"
+  },
+  {
+    "Scientific Name": "Spea intermontana",
+    "Common Name": "Great Basin Spadefoot",
+    "Family": "Scaphiopodidae",
+    "Taxonomic Group": "Amphibians"
+  },
+  {
+    "Scientific Name": "Anaxyrus cognatus",
+    "Common Name": "Texas Toad",
+    "Family": "Bufonidae",
+    "Taxonomic Group": "Amphibians"
+  },
+  {
+    "Scientific Name": "Rana luteiventris",
+    "Common Name": "Columbia Spotted Frog",
+    "Family": "Ranidae",
+    "Taxonomic Group": "Amphibians"
+  },
+  {
+    "Scientific Name": "Anaxyrus woodhousii",
+    "Common Name": "East Texas Toad",
+    "Family": "Bufonidae",
+    "Taxonomic Group": "Amphibians"
+  },
+  {
+    "Scientific Name": "Pseudacris maculata",
+    "Common Name": "Boreal Chorus Frog",
+    "Family": "Hylidae",
+    "Taxonomic Group": "Amphibians"
+  },
+  {
+    "Scientific Name": "Anaxyrus boreas",
+    "Common Name": "Boreal Toad",
+    "Family": "Bufonidae",
+    "Taxonomic Group": "Amphibians"
+  },
+  {
+    "Scientific Name": "Spea multiplicata",
+    "Common Name": "New Mexico Spadefoot Toad",
+    "Family": "Scaphiopodidae",
+    "Taxonomic Group": "Amphibians"
+  },
+  {
+    "Scientific Name": "Anaxyrus punctatus",
+    "Common Name": "Red-Spotted Toad",
+    "Family": "Bufonidae",
+    "Taxonomic Group": "Amphibians"
+  },
+  {
+    "Scientific Name": "Lithobates pipiens",
+    "Common Name": "Peeping Frog",
+    "Family": "Ranidae",
+    "Taxonomic Group": "Amphibians"
+  },
+  {
+    "Scientific Name": "Lithobates clamitans",
+    "Common Name": "Bronze Frog",
+    "Family": "Ranidae",
+    "Taxonomic Group": "Amphibians"
+  },
+  {
+    "Scientific Name": "Pseudacris regilla",
+    "Common Name": "Pacific Treefrog",
+    "Family": "Hylidae",
+    "Taxonomic Group": "Amphibians"
+  },
+  {
+    "Scientific Name": "Lithobates catesbeianus",
+    "Common Name": "Common Bullfrog",
+    "Family": "Ranidae",
+    "Taxonomic Group": "Amphibians"
+  },
+  {
+    "Scientific Name": "Rhinichthys cataractae",
+    "Common Name": "Longnose Dace",
+    "Family": "Cyprinidae",
+    "Taxonomic Group": "Fishes"
+  },
+  {
+    "Scientific Name": "Chasmistes liorus",
+    "Common Name": "June Sucker",
+    "Family": "Catostomidae",
+    "Taxonomic Group": "Fishes"
+  },
+  {
+    "Scientific Name": "Ptychocheilus lucius",
+    "Common Name": "Colorado Pikeminnow",
+    "Family": "Cyprinidae",
+    "Taxonomic Group": "Fishes"
+  },
+  {
+    "Scientific Name": "Euphydryas editha",
+    "Common Name": "Edith's Checkerspot",
+    "Family": "Nymphalidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Plebejus saepiolus",
+    "Common Name": "Greenish Blue",
+    "Family": "Lycaenidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Pieris sisymbrii",
+    "Common Name": null,
+    "Family": "Pieridae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Nymphalis milberti",
+    "Common Name": "Milbert's Tortoiseshell",
+    "Family": "Nymphalidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Speyeria callippe",
+    "Common Name": "Callippe Fritillary",
+    "Family": "Nymphalidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Danaus plexippus",
+    "Common Name": "Monarch",
+    "Family": "Nymphalidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Thorybes pylades",
+    "Common Name": "Northern Cloudywing",
+    "Family": "Hesperiidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Precis coenia",
+    "Common Name": "Common Buckeye",
+    "Family": "Nymphalidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Cercyonis sthenele",
+    "Common Name": "Great Basin Wood-Nymph",
+    "Family": "Nymphalidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Everes amyntula",
+    "Common Name": "Western Tailed-Blue",
+    "Family": "Lycaenidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Satyrium sylvinus",
+    "Common Name": "Sylvan Hairstreak",
+    "Family": "Lycaenidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Pyrgus ruralis",
+    "Common Name": "Two-Banded Checkered-Skipper",
+    "Family": "Hesperiidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Libytheana carinenta",
+    "Common Name": "American Snout",
+    "Family": "Nymphalidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Polites draco",
+    "Common Name": "Draco Skipper",
+    "Family": "Hesperiidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Euphydryas chalcedona",
+    "Common Name": "Variable Checkerspot",
+    "Family": "Nymphalidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Limenitis weidemeyerii",
+    "Common Name": "Weidemeyer's Admiral",
+    "Family": "Nymphalidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Harkenclenus titus",
+    "Common Name": "Coral Hairstreak",
+    "Family": "Lycaenidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Lycaena nivalis",
+    "Common Name": "Lilac-Bordered Copper",
+    "Family": "Lycaenidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Erynnis telemachus",
+    "Common Name": "Rocky Mountain Duskywing",
+    "Family": "Hesperiidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Pyrgus scriptura",
+    "Common Name": "Small Checkered-Skipper",
+    "Family": "Hesperiidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Pieris chloridice",
+    "Common Name": null,
+    "Family": "Pieridae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Chlosyne gabbii",
+    "Common Name": "Gabb's Checkerspot",
+    "Family": "Nymphalidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Phyciodes campestris",
+    "Common Name": "Field Crescent",
+    "Family": "Nymphalidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Neominois ridingsii",
+    "Common Name": "Ridings' Satyr",
+    "Family": "Nymphalidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Boloria titania",
+    "Common Name": "Titania's Fritillary",
+    "Family": "Nymphalidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Euphilotes spaldingi",
+    "Common Name": "Spalding's Blue",
+    "Family": "Lycaenidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Speyeria egleis",
+    "Common Name": "Great Basin Fritillary",
+    "Family": "Nymphalidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Poanes zabulon",
+    "Common Name": "Zabulon Skipper",
+    "Family": "Hesperiidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Callophrys eryphon",
+    "Common Name": "Western Pine Elfin",
+    "Family": "Lycaenidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Coenonympha tullia",
+    "Common Name": "Common Ringlet",
+    "Family": "Nymphalidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Limenitis bredowii",
+    "Common Name": "Mexican Sister",
+    "Family": "Nymphalidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Poladryas minuta",
+    "Common Name": "Dotted Checkerspot",
+    "Family": "Nymphalidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Apodemia mormo",
+    "Common Name": "Mormon Metalmark",
+    "Family": "Riodinidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Oeneis melissa",
+    "Common Name": "Melissa Arctic",
+    "Family": "Nymphalidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Callophrys affinis",
+    "Common Name": "Western Green Hairstreak",
+    "Family": "Lycaenidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Lycaena arota",
+    "Common Name": "Tailed Copper",
+    "Family": "Lycaenidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Phyciodes morpheus",
+    "Common Name": null,
+    "Family": "Nymphalidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Speyeria claudia",
+    "Common Name": null,
+    "Family": "Nymphalidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Plebejus shasta",
+    "Common Name": "Shasta Blue",
+    "Family": "Lycaenidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Hesperia dacotae",
+    "Common Name": "Dakota Skipper",
+    "Family": "Hesperiidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Phyciodes mylitta",
+    "Common Name": "Mylitta Crescent",
+    "Family": "Nymphalidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Satyrium behrii",
+    "Common Name": "Behr's Hairstreak",
+    "Family": "Lycaenidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Pyrgus centaurae",
+    "Common Name": null,
+    "Family": "Hesperiidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Erynnis pacuvius",
+    "Common Name": "Pacuvius Duskywing",
+    "Family": "Hesperiidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Brephidium exilis",
+    "Common Name": "Western Pygmy-Blue",
+    "Family": "Lycaenidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Pyrgus afranius",
+    "Common Name": null,
+    "Family": "Hesperiidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Euphilotes enoptes",
+    "Common Name": "Dotted Blue",
+    "Family": "Lycaenidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Hesperia juba",
+    "Common Name": "Juba Skipper",
+    "Family": "Hesperiidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Papilio zelicaon",
+    "Common Name": "Anise Swallowtail",
+    "Family": "Papilionidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Megathymus streckeri",
+    "Common Name": "Strecker's Giant-Skipper",
+    "Family": "Hesperiidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Polygonia progne",
+    "Common Name": "Gray Comma",
+    "Family": "Nymphalidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Limenitis archippus",
+    "Common Name": "Viceroy",
+    "Family": "Nymphalidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Ochlodes sylvanoides",
+    "Common Name": "Woodland Skipper",
+    "Family": "Hesperiidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Plebejus melissa",
+    "Common Name": "Melissa Blue",
+    "Family": "Lycaenidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Heliopetes ericetorum",
+    "Common Name": "Northern White-Skipper",
+    "Family": "Hesperiidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Megathymus yuccae",
+    "Common Name": "Yucca Giant-Skipper",
+    "Family": "Hesperiidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Satyrium saepium",
+    "Common Name": "Hedgerow Hairstreak",
+    "Family": "Lycaenidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Callophrys gryneus",
+    "Common Name": "Juniper Hairstreak",
+    "Family": "Lycaenidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Parnassius phoebus",
+    "Common Name": "Small Apollo",
+    "Family": "Papilionidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Battus philenor",
+    "Common Name": "Pipevine Swallowtail",
+    "Family": "Papilionidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Plebejus icarioides",
+    "Common Name": "Boisduval's Blue",
+    "Family": "Lycaenidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Plebejus glandon",
+    "Common Name": "Glandon Blue",
+    "Family": "Lycaenidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Carterocephalus palaemon",
+    "Common Name": "Arctic Skipper",
+    "Family": "Hesperiidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Plebejus acmon",
+    "Common Name": "Acmon Blue",
+    "Family": "Lycaenidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Colias philodice",
+    "Common Name": "Clouded Sulphur",
+    "Family": "Pieridae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Amblyscirtes vialis",
+    "Common Name": "Common Roadside-Skipper",
+    "Family": "Hesperiidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Cercyonis pegala",
+    "Common Name": "Common Wood-Nymph",
+    "Family": "Nymphalidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Vanessa carye",
+    "Common Name": null,
+    "Family": "Nymphalidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Lycaena heteronea",
+    "Common Name": "Blue Copper",
+    "Family": "Lycaenidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Speyeria nokomis",
+    "Common Name": "Nokomis Fritillary",
+    "Family": "Nymphalidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Euphilotes battoides",
+    "Common Name": "Square-Spotted Blue",
+    "Family": "Lycaenidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Colias cesonia",
+    "Common Name": "Southern Dogface",
+    "Family": "Pieridae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Hypaurotis crysalus",
+    "Common Name": "Colorado Hairstreak",
+    "Family": "Lycaenidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Callophrys spinetorum",
+    "Common Name": "Thicket Hairstreak",
+    "Family": "Lycaenidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Nathalis iole",
+    "Common Name": "Dainty Sulphur",
+    "Family": "Pieridae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Polygonia gracilis",
+    "Common Name": "Hoary Comma",
+    "Family": "Nymphalidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Vanessa cardui",
+    "Common Name": "Painted Lady",
+    "Family": "Nymphalidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Hesperia comma",
+    "Common Name": "Common Branded Skipper",
+    "Family": "Hesperiidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Boloria selene",
+    "Common Name": "Silver-Bordered Fritillary",
+    "Family": "Nymphalidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Cercyonis meadii",
+    "Common Name": "Mead's Wood-Nymph",
+    "Family": "Nymphalidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Oarisma garita",
+    "Common Name": "Garita Skipperling",
+    "Family": "Hesperiidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Parnassius clodius",
+    "Common Name": "Clodius Parnassian",
+    "Family": "Papilionidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Cercyonis oetus",
+    "Common Name": "Small Wood-Nymph",
+    "Family": "Nymphalidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Lycaena cupreus",
+    "Common Name": "Lustrous Copper",
+    "Family": "Lycaenidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Leptotes marina",
+    "Common Name": "Marine Blue",
+    "Family": "Lycaenidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Hesperia nevada",
+    "Common Name": "Nevada Skipper",
+    "Family": "Hesperiidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Speyeria mormonia",
+    "Common Name": "Mormon Fritillary",
+    "Family": "Nymphalidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Oeneis jutta",
+    "Common Name": "Jutta Arctic",
+    "Family": "Nymphalidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Euchloe hyantis",
+    "Common Name": "Pearly Marble",
+    "Family": "Pieridae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Lycaena helloides",
+    "Common Name": "Purplish Copper",
+    "Family": "Lycaenidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Glaucopsyche lygdamus",
+    "Common Name": "Silvery Blue",
+    "Family": "Lycaenidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Atlides halesus",
+    "Common Name": "Great Purple Hairstreak",
+    "Family": "Lycaenidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Nymphalis californica",
+    "Common Name": "California Tortoiseshell",
+    "Family": "Nymphalidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Neophasia menapia",
+    "Common Name": "Pine White",
+    "Family": "Pieridae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Papilio machaon",
+    "Common Name": "Swallowtail",
+    "Family": "Papilionidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Thorybes mexicana",
+    "Common Name": "Mexican Cloudywing",
+    "Family": "Hesperiidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Colias pelidne",
+    "Common Name": "Pelidne Sulphur",
+    "Family": "Pieridae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Strymon melinus",
+    "Common Name": "Gray Hairstreak",
+    "Family": "Lycaenidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Limenitis lorquini",
+    "Common Name": "Lorquin's Admiral",
+    "Family": "Nymphalidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Erynnis persius",
+    "Common Name": "Persius Dusky-Wing",
+    "Family": "Hesperiidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Pieris virginiensis",
+    "Common Name": "West Virginia White",
+    "Family": "Pieridae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Speyeria atlantis",
+    "Common Name": "Atlantis Fritillary",
+    "Family": "Nymphalidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Nymphalis antiopa",
+    "Common Name": "Mourning Cloak",
+    "Family": "Nymphalidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Vanessa atalanta",
+    "Common Name": "Red Admiral",
+    "Family": "Nymphalidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Lycaena rubidus",
+    "Common Name": "Ruddy Copper",
+    "Family": "Lycaenidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Pieris napi",
+    "Common Name": "Gray-Veined White",
+    "Family": "Pieridae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Colias eurytheme",
+    "Common Name": "Orange Sulphur",
+    "Family": "Pieridae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Oeneis chryxus",
+    "Common Name": "Ivallda Arctic",
+    "Family": "Nymphalidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Speyeria edwardsii",
+    "Common Name": "Edwards' Fritillary",
+    "Family": "Nymphalidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Papilio multicaudata",
+    "Common Name": "Two-Tailed Swallowtail",
+    "Family": "Papilionidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Erebia epipsodea",
+    "Common Name": "Common Alpine",
+    "Family": "Nymphalidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Lycaena mariposa",
+    "Common Name": "Mariposa Copper",
+    "Family": "Lycaenidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Epargyreus clarus",
+    "Common Name": "Silver-Spotted Skipper",
+    "Family": "Hesperiidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Polites themistocles",
+    "Common Name": "Tawny-Edged Skipper",
+    "Family": "Hesperiidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Callophrys fotis",
+    "Common Name": "Desert Elfin",
+    "Family": "Lycaenidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Callophrys augustus",
+    "Common Name": null,
+    "Family": "Lycaenidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Nymphalis vaualbum",
+    "Common Name": "Compton Tortoiseshell",
+    "Family": "Nymphalidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Phoebis sennae",
+    "Common Name": "Cloudless Sulphur",
+    "Family": "Pieridae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Glaucopsyche piasus",
+    "Common Name": "Arrowhead Blue",
+    "Family": "Lycaenidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Chlosyne palla",
+    "Common Name": "Northern Checkerspot",
+    "Family": "Nymphalidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Satyrium fuliginosum",
+    "Common Name": "Sooty Gossamer-Wing",
+    "Family": "Lycaenidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Polygonia satyrus",
+    "Common Name": "Satyr Anglewing",
+    "Family": "Nymphalidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Pieris callidice",
+    "Common Name": null,
+    "Family": "Pieridae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Pieris protodice",
+    "Common Name": null,
+    "Family": "Pieridae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Polites sonora",
+    "Common Name": "Sonoran Skipper",
+    "Family": "Hesperiidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Pyrgus communis",
+    "Common Name": "Common Checkered-Skipper",
+    "Family": "Hesperiidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Polites sabuleti",
+    "Common Name": "Sandhill Skipper",
+    "Family": "Hesperiidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Boloria freija",
+    "Common Name": "Freija Fritillary",
+    "Family": "Nymphalidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Chlosyne leanira",
+    "Common Name": "Leanira Checkerspot",
+    "Family": "Nymphalidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Satyrium californica",
+    "Common Name": "California Hairstreak",
+    "Family": "Lycaenidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Celastrina argiolus",
+    "Common Name": "Spring/Summer Azure",
+    "Family": "Lycaenidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Speyeria zerene",
+    "Common Name": "Zerene Fritillary",
+    "Family": "Nymphalidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Coenonympha haydenii",
+    "Common Name": "Hayden's Ringlet",
+    "Family": "Nymphalidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Anthocharis sara",
+    "Common Name": "Sara Orangetip",
+    "Family": "Pieridae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Speyeria hydaspe",
+    "Common Name": "Hydaspe Fritillary",
+    "Family": "Nymphalidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Colias scudderi",
+    "Common Name": "Scudder's Sulphur",
+    "Family": "Pieridae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Vanessa virginiensis",
+    "Common Name": "American Lady",
+    "Family": "Nymphalidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Ochlodes yuma",
+    "Common Name": "Yuma Skipper",
+    "Family": "Hesperiidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Speyeria coronis",
+    "Common Name": "Coronis Fritillary",
+    "Family": "Nymphalidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Erynnis brizo",
+    "Common Name": "Sleepy Duskywing",
+    "Family": "Hesperiidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Phyciodes pallida",
+    "Common Name": "Pale Crescent",
+    "Family": "Nymphalidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Colias alexandra",
+    "Common Name": "Queen Alexandra's Sulphur",
+    "Family": "Pieridae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Hemiargus isola",
+    "Common Name": "Reakirt's Blue",
+    "Family": "Lycaenidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Papilio eurymedon",
+    "Common Name": "Pale Swallowtail",
+    "Family": "Papilionidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Hesperopsis libya",
+    "Common Name": "Mojave Sootywing",
+    "Family": "Hesperiidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Piruna pirus",
+    "Common Name": "Russet Skipperling",
+    "Family": "Hesperiidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Pieris rapae",
+    "Common Name": "Cabbage White",
+    "Family": "Pieridae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Speyeria cybele",
+    "Common Name": "Great Spangled Fritillary",
+    "Family": "Nymphalidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Polygonia faunus",
+    "Common Name": "Faun",
+    "Family": "Nymphalidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Aguna asander",
+    "Common Name": "Gold-Spotted Aguna",
+    "Family": "Hesperiidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Erynnis icelus",
+    "Common Name": "Dreamy Dusky-Wing",
+    "Family": "Hesperiidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Danaus gilippus",
+    "Common Name": "Queen",
+    "Family": "Nymphalidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Pholisora catullus",
+    "Common Name": "Common Sootywing",
+    "Family": "Hesperiidae",
+    "Taxonomic Group": "Butterflies"
+  },
+  {
+    "Scientific Name": "Bombus frigidus",
+    "Common Name": "Frigid Bumble Bee",
+    "Family": "Apidae",
+    "Taxonomic Group": "Bumblebees"
+  },
+  {
+    "Scientific Name": "Bombus bifarius",
+    "Common Name": "Two Form Bumble Bee",
+    "Family": "Apidae",
+    "Taxonomic Group": "Bumblebees"
+  },
+  {
+    "Scientific Name": "Bombus suckleyi",
+    "Common Name": "Suckley Cuckoo Bumble Bee",
+    "Family": "Apidae",
+    "Taxonomic Group": "Bumblebees"
+  },
+  {
+    "Scientific Name": "Bombus insularis",
+    "Common Name": "Orange-Rumped Bumblebee",
+    "Family": "Apidae",
+    "Taxonomic Group": "Bumblebees"
+  },
+  {
+    "Scientific Name": "Bombus bohemicus",
+    "Common Name": "Barbut's Cuckoo-Bee",
+    "Family": "Apidae",
+    "Taxonomic Group": "Bumblebees"
+  },
+  {
+    "Scientific Name": "Bombus flavifrons",
+    "Common Name": "Yellow Head Bumble Bee",
+    "Family": "Apidae",
+    "Taxonomic Group": "Bumblebees"
+  },
+  {
+    "Scientific Name": "Bombus vagans",
+    "Common Name": "Half-Black Bumble Bee",
+    "Family": "Apidae",
+    "Taxonomic Group": "Bumblebees"
+  },
+  {
+    "Scientific Name": "Bombus mixtus",
+    "Common Name": "Sanderson's Bumble Bee",
+    "Family": "Apidae",
+    "Taxonomic Group": "Bumblebees"
+  },
+  {
+    "Scientific Name": "Bombus huntii",
+    "Common Name": "Hunt Bumble Bee",
+    "Family": "Apidae",
+    "Taxonomic Group": "Bumblebees"
+  },
+  {
+    "Scientific Name": "Bombus balteatus",
+    "Common Name": "Golden-Belted Bumblebee",
+    "Family": "Apidae",
+    "Taxonomic Group": "Bumblebees"
+  },
+  {
+    "Scientific Name": "Bombus cryptarum",
+    "Common Name": "Cryptic Bumble Bee",
+    "Family": "Apidae",
+    "Taxonomic Group": "Bumblebees"
+  },
+  {
+    "Scientific Name": "Bombus nevadensis",
+    "Common Name": "Black And Gold Bumble Bee",
+    "Family": "Apidae",
+    "Taxonomic Group": "Bumblebees"
+  },
+  {
+    "Scientific Name": "Bombus sylvicola",
+    "Common Name": "Forest Bumble Bee",
+    "Family": "Apidae",
+    "Taxonomic Group": "Bumblebees"
+  },
+  {
+    "Scientific Name": "Bombus rufocinctus",
+    "Common Name": "Sanderson's Bumble Bee",
+    "Family": "Apidae",
+    "Taxonomic Group": "Bumblebees"
+  },
+  {
+    "Scientific Name": "Bombus occidentalis",
+    "Common Name": "Western Bumble Bee",
+    "Family": "Apidae",
+    "Taxonomic Group": "Bumblebees"
+  },
+  {
+    "Scientific Name": "Bombus melanopygus",
+    "Common Name": "Black Tail Bumble Bee",
+    "Family": "Apidae",
+    "Taxonomic Group": "Bumblebees"
+  },
+  {
+    "Scientific Name": "Bombus terricola",
+    "Common Name": "Yellowbanded Bumble Bee",
+    "Family": "Apidae",
+    "Taxonomic Group": "Bumblebees"
+  },
+  {
+    "Scientific Name": "Bombus fervidus",
+    "Common Name": "Yellow Bumble Bee",
+    "Family": "Apidae",
+    "Taxonomic Group": "Bumblebees"
+  },
+  {
+    "Scientific Name": "Bombus pensylvanicus",
+    "Common Name": "American Bumble Bee",
+    "Family": "Apidae",
+    "Taxonomic Group": "Bumblebees"
+  },
+  {
+    "Scientific Name": "Bombus morrisoni",
+    "Common Name": "Morrison Bumble Bee",
+    "Family": "Apidae",
+    "Taxonomic Group": "Bumblebees"
+  },
+  {
+    "Scientific Name": "Bombus appositus",
+    "Common Name": "A Bumble Bee",
+    "Family": "Apidae",
+    "Taxonomic Group": "Bumblebees"
+  },
+  {
+    "Scientific Name": "Bombus griseocollis",
+    "Common Name": "Brown-Belted Bumble Bee",
+    "Family": "Apidae",
+    "Taxonomic Group": "Bumblebees"
+  },
+  {
+    "Scientific Name": "Bombus flavidus",
+    "Common Name": "Fernald Cuckoo Bumble Bee",
+    "Family": "Apidae",
+    "Taxonomic Group": "Bumblebees"
+  },
+  {
+    "Scientific Name": "Bombus centralis",
+    "Common Name": "Central Bumble Bee",
+    "Family": "Apidae",
+    "Taxonomic Group": "Bumblebees"
+  },
+  {
+    "Scientific Name": "Stylurus olivaceus",
+    "Common Name": "Olive Clubtail",
+    "Family": "Gomphidae",
+    "Taxonomic Group": "Dragonflies"
+  },
+  {
+    "Scientific Name": "Rhionaeschna multicolor",
+    "Common Name": "Blue-Eyed Darner",
+    "Family": "Aeshnidae",
+    "Taxonomic Group": "Dragonflies"
+  },
+  {
+    "Scientific Name": "Cordulia shurtleffi",
+    "Common Name": "American Emerald",
+    "Family": "Corduliidae",
+    "Taxonomic Group": "Dragonflies"
+  },
+  {
+    "Scientific Name": "Enallagma anna",
+    "Common Name": "River Bluet",
+    "Family": "Coenagrionidae",
+    "Taxonomic Group": "Dragonflies"
+  },
+  {
+    "Scientific Name": "Aeshna umbrosa",
+    "Common Name": "Shadow Darner",
+    "Family": "Aeshnidae",
+    "Taxonomic Group": "Dragonflies"
+  },
+  {
+    "Scientific Name": "Somatochlora semicircularis",
+    "Common Name": "Mountain Emerald",
+    "Family": "Corduliidae",
+    "Taxonomic Group": "Dragonflies"
+  },
+  {
+    "Scientific Name": "Ischnura cervula",
+    "Common Name": "Pacific Forktail",
+    "Family": "Coenagrionidae",
+    "Taxonomic Group": "Dragonflies"
+  },
+  {
+    "Scientific Name": "Sympetrum semicinctum",
+    "Common Name": "Band-Winged Meadowhawk",
+    "Family": "Libellulidae",
+    "Taxonomic Group": "Dragonflies"
+  },
+  {
+    "Scientific Name": "Anax junius",
+    "Common Name": "Green Darner",
+    "Family": "Aeshnidae",
+    "Taxonomic Group": "Dragonflies"
+  },
+  {
+    "Scientific Name": "Libellula composita",
+    "Common Name": "Bleached Skimmer",
+    "Family": "Libellulidae",
+    "Taxonomic Group": "Dragonflies"
+  },
+  {
+    "Scientific Name": "Leucorrhinia borealis",
+    "Common Name": "Boreal Whiteface",
+    "Family": "Libellulidae",
+    "Taxonomic Group": "Dragonflies"
+  },
+  {
+    "Scientific Name": "Sympetrum madidum",
+    "Common Name": "Red-Veined Meadowhawk",
+    "Family": "Libellulidae",
+    "Taxonomic Group": "Dragonflies"
+  },
+  {
+    "Scientific Name": "Sympetrum internum",
+    "Common Name": "Cherry-Faced Meadowhawk",
+    "Family": "Libellulidae",
+    "Taxonomic Group": "Dragonflies"
+  },
+  {
+    "Scientific Name": "Stylurus intricatus",
+    "Common Name": "Brimstone Clubtail",
+    "Family": "Gomphidae",
+    "Taxonomic Group": "Dragonflies"
+  },
+  {
+    "Scientific Name": "Sympetrum costiferum",
+    "Common Name": "Saffron-Winged Meadowhawk",
+    "Family": "Libellulidae",
+    "Taxonomic Group": "Dragonflies"
+  },
+  {
+    "Scientific Name": "Hetaerina americana",
+    "Common Name": "American Rubyspot",
+    "Family": "Calopterygidae",
+    "Taxonomic Group": "Dragonflies"
+  },
+  {
+    "Scientific Name": "Libellula luctuosa",
+    "Common Name": "Widow Skimmer",
+    "Family": "Libellulidae",
+    "Taxonomic Group": "Dragonflies"
+  },
+  {
+    "Scientific Name": "Plathemis lydia",
+    "Common Name": "Common Whitetail",
+    "Family": "Libellulidae",
+    "Taxonomic Group": "Dragonflies"
+  },
+  {
+    "Scientific Name": "Aeshna sitchensis",
+    "Common Name": "Zigzag Darner",
+    "Family": "Aeshnidae",
+    "Taxonomic Group": "Dragonflies"
+  },
+  {
+    "Scientific Name": "Argia emma",
+    "Common Name": "Emma's Dancer",
+    "Family": "Coenagrionidae",
+    "Taxonomic Group": "Dragonflies"
+  },
+  {
+    "Scientific Name": "Sympetrum corruptum",
+    "Common Name": "Variegated Meadowhawk",
+    "Family": "Libellulidae",
+    "Taxonomic Group": "Dragonflies"
+  },
+  {
+    "Scientific Name": "Cordulegaster dorsalis",
+    "Common Name": "Pacific Spiketail",
+    "Family": "Cordulegastridae",
+    "Taxonomic Group": "Dragonflies"
+  },
+  {
+    "Scientific Name": "Libellula pulchella",
+    "Common Name": "Twelve-Spotted Skimmer",
+    "Family": "Libellulidae",
+    "Taxonomic Group": "Dragonflies"
+  },
+  {
+    "Scientific Name": "Enallagma clausum",
+    "Common Name": "Alkali Bluet",
+    "Family": "Coenagrionidae",
+    "Taxonomic Group": "Dragonflies"
+  },
+  {
+    "Scientific Name": "Argia vivida",
+    "Common Name": "Vivid Dancer",
+    "Family": "Coenagrionidae",
+    "Taxonomic Group": "Dragonflies"
+  },
+  {
+    "Scientific Name": "Tramea lacerata",
+    "Common Name": "Black Saddlebags",
+    "Family": "Libellulidae",
+    "Taxonomic Group": "Dragonflies"
+  },
+  {
+    "Scientific Name": "Aeshna eremita",
+    "Common Name": "Lake Darner",
+    "Family": "Aeshnidae",
+    "Taxonomic Group": "Dragonflies"
+  },
+  {
+    "Scientific Name": "Macromia magnifica",
+    "Common Name": "Western River Cruiser",
+    "Family": "Corduliidae",
+    "Taxonomic Group": "Dragonflies"
+  },
+  {
+    "Scientific Name": "Erythemis collocata",
+    "Common Name": "Western Pondhawk",
+    "Family": "Libellulidae",
+    "Taxonomic Group": "Dragonflies"
+  },
+  {
+    "Scientific Name": "Leucorrhinia intacta",
+    "Common Name": "Dot-Tailed Whiteface",
+    "Family": "Libellulidae",
+    "Taxonomic Group": "Dragonflies"
+  },
+  {
+    "Scientific Name": "Pantala flavescens",
+    "Common Name": "Wandering Glider",
+    "Family": "Libellulidae",
+    "Taxonomic Group": "Dragonflies"
+  },
+  {
+    "Scientific Name": "Rhionaeschna californica",
+    "Common Name": "California Darner",
+    "Family": "Aeshnidae",
+    "Taxonomic Group": "Dragonflies"
+  },
+  {
+    "Scientific Name": "Leucorrhinia hudsonica",
+    "Common Name": "Hudsonian Whiteface",
+    "Family": "Libellulidae",
+    "Taxonomic Group": "Dragonflies"
+  },
+  {
+    "Scientific Name": "Enallagma carunculatum",
+    "Common Name": "Tule Bluet",
+    "Family": "Coenagrionidae",
+    "Taxonomic Group": "Dragonflies"
+  },
+  {
+    "Scientific Name": "Pantala hymenaea",
+    "Common Name": "Spot-Winged Glider",
+    "Family": "Libellulidae",
+    "Taxonomic Group": "Dragonflies"
+  },
+  {
+    "Scientific Name": "Ischnura perparva",
+    "Common Name": "Western Forktail",
+    "Family": "Coenagrionidae",
+    "Taxonomic Group": "Dragonflies"
+  },
+  {
+    "Scientific Name": "Aeshna palmata",
+    "Common Name": "Paddle-Tailed Darner",
+    "Family": "Aeshnidae",
+    "Taxonomic Group": "Dragonflies"
+  },
+  {
+    "Scientific Name": "Somatochlora hudsonica",
+    "Common Name": "Hudsonian Emerald",
+    "Family": "Corduliidae",
+    "Taxonomic Group": "Dragonflies"
+  },
+  {
+    "Scientific Name": "Ophiogomphus severus",
+    "Common Name": "Pale Snaketail",
+    "Family": "Gomphidae",
+    "Taxonomic Group": "Dragonflies"
+  },
+  {
+    "Scientific Name": "Gomphus externus",
+    "Common Name": "Plains Clubtail",
+    "Family": "Gomphidae",
+    "Taxonomic Group": "Dragonflies"
+  },
+  {
+    "Scientific Name": "Aeshna constricta",
+    "Common Name": "Lance-Tipped Darner",
+    "Family": "Aeshnidae",
+    "Taxonomic Group": "Dragonflies"
+  },
+  {
+    "Scientific Name": "Libellula saturata",
+    "Common Name": "Flame Skimmer",
+    "Family": "Libellulidae",
+    "Taxonomic Group": "Dragonflies"
+  },
+  {
+    "Scientific Name": "Ischnura denticollis",
+    "Common Name": "Black-Fronted Forktail",
+    "Family": "Coenagrionidae",
+    "Taxonomic Group": "Dragonflies"
+  },
+  {
+    "Scientific Name": "Lestes disjunctus",
+    "Common Name": "Northern Spreadwing",
+    "Family": "Lestidae",
+    "Taxonomic Group": "Dragonflies"
+  },
+  {
+    "Scientific Name": "Lestes unguiculatus",
+    "Common Name": "Lyre-Tipped Spreadwing",
+    "Family": "Lestidae",
+    "Taxonomic Group": "Dragonflies"
+  },
+  {
+    "Scientific Name": "Enallagma boreale",
+    "Common Name": "Boreal Bluet",
+    "Family": "Coenagrionidae",
+    "Taxonomic Group": "Dragonflies"
+  },
+  {
+    "Scientific Name": "Ischnura barberi",
+    "Common Name": "Desert Forktail",
+    "Family": "Coenagrionidae",
+    "Taxonomic Group": "Dragonflies"
+  },
+  {
+    "Scientific Name": "Aeshna juncea",
+    "Common Name": "Common Hawker",
+    "Family": "Aeshnidae",
+    "Taxonomic Group": "Dragonflies"
+  },
+  {
+    "Scientific Name": "Lestes dryas",
+    "Common Name": "Scarce Emerald Damselfly",
+    "Family": "Lestidae",
+    "Taxonomic Group": "Dragonflies"
+  },
+  {
+    "Scientific Name": "Libellula quadrimaculata",
+    "Common Name": "Four-Spotted Chaser",
+    "Family": "Libellulidae",
+    "Taxonomic Group": "Dragonflies"
+  },
+  {
+    "Scientific Name": "Tramea onusta",
+    "Common Name": "Red Saddlebags",
+    "Family": "Libellulidae",
+    "Taxonomic Group": "Dragonflies"
+  },
+  {
+    "Scientific Name": "Aeshna interrupta",
+    "Common Name": "Variable Darner",
+    "Family": "Aeshnidae",
+    "Taxonomic Group": "Dragonflies"
+  },
+  {
+    "Scientific Name": "Amphiagrion abbreviatum",
+    "Common Name": "Western Red Damsel",
+    "Family": "Coenagrionidae",
+    "Taxonomic Group": "Dragonflies"
+  },
+  {
+    "Scientific Name": "Sympetrum pallipes",
+    "Common Name": "Striped Meadowhawk",
+    "Family": "Libellulidae",
+    "Taxonomic Group": "Dragonflies"
+  },
+  {
+    "Scientific Name": "Sympetrum danae",
+    "Common Name": "Black Darter",
+    "Family": "Libellulidae",
+    "Taxonomic Group": "Dragonflies"
+  },
+  {
+    "Scientific Name": "Anax walsinghami",
+    "Common Name": "Giant Green Darner",
+    "Family": "Aeshnidae",
+    "Taxonomic Group": "Dragonflies"
+  },
+  {
+    "Scientific Name": "Argia alberta",
+    "Common Name": "Paiute Dancer",
+    "Family": "Coenagrionidae",
+    "Taxonomic Group": "Dragonflies"
+  },
+  {
+    "Scientific Name": "Enallagma ebrium",
+    "Common Name": "Marsh Bluet",
+    "Family": "Coenagrionidae",
+    "Taxonomic Group": "Dragonflies"
+  },
+  {
+    "Scientific Name": "Calopteryx aequabilis",
+    "Common Name": "River Jewelwing",
+    "Family": "Calopterygidae",
+    "Taxonomic Group": "Dragonflies"
+  },
+  {
+    "Scientific Name": "Sympetrum obtrusum",
+    "Common Name": "White-Faced Meadowhawk",
+    "Family": "Libellulidae",
+    "Taxonomic Group": "Dragonflies"
+  },
+  {
+    "Scientific Name": "Libellula forensis",
+    "Common Name": "Eight-Spotted Skimmer",
+    "Family": "Libellulidae",
+    "Taxonomic Group": "Dragonflies"
+  },
+  {
+    "Scientific Name": "Enallagma civile",
+    "Common Name": "Familiar Bluet",
+    "Family": "Coenagrionidae",
+    "Taxonomic Group": "Dragonflies"
+  },
+  {
+    "Scientific Name": "Plathemis subornata",
+    "Common Name": "Desert Whitetail",
+    "Family": "Libellulidae",
+    "Taxonomic Group": "Dragonflies"
+  },
+  {
+    "Scientific Name": "Coenagrion resolutum",
+    "Common Name": "Taiga Bluet",
+    "Family": "Coenagrionidae",
+    "Taxonomic Group": "Dragonflies"
+  },
+  {
+    "Scientific Name": "Libellula nodisticta",
+    "Common Name": "Hoary Skimmer",
+    "Family": "Libellulidae",
+    "Taxonomic Group": "Dragonflies"
+  },
+  {
+    "Scientific Name": "Lestes congener",
+    "Common Name": "Spotted Spreadwing",
+    "Family": "Lestidae",
+    "Taxonomic Group": "Dragonflies"
+  },
+  {
+    "Scientific Name": "Enallagma annexum",
+    "Common Name": "Northern Bluet",
+    "Family": "Coenagrionidae",
+    "Taxonomic Group": "Dragonflies"
+  },
+  {
+    "Scientific Name": "Pachydiplax longipennis",
+    "Common Name": "Blue Dasher",
+    "Family": "Libellulidae",
+    "Taxonomic Group": "Dragonflies"
+  },
+  {
+    "Scientific Name": "Erpetogomphus compositus",
+    "Common Name": "White-Belted Ringtail",
+    "Family": "Gomphidae",
+    "Taxonomic Group": "Dragonflies"
+  },
+  {
+    "Scientific Name": "Pinus longaeva",
+    "Common Name": "Great Basin Bristlecone Pine",
+    "Family": "Pinaceae",
+    "Taxonomic Group": "Trees"
+  },
+  {
+    "Scientific Name": "Pinus edulis",
+    "Common Name": "Colorado Pinyon",
+    "Family": "Pinaceae",
+    "Taxonomic Group": "Trees"
+  },
+  {
+    "Scientific Name": "Salix amygdaloides",
+    "Common Name": "Peach-Leaf Willow",
+    "Family": "Salicaceae",
+    "Taxonomic Group": "Trees"
+  },
+  {
+    "Scientific Name": "Populus balsamifera",
+    "Common Name": "Balsam Poplar",
+    "Family": "Salicaceae",
+    "Taxonomic Group": "Trees"
+  },
+  {
+    "Scientific Name": "Salix exigua",
+    "Common Name": "Sandbar Willow",
+    "Family": "Salicaceae",
+    "Taxonomic Group": "Trees"
+  },
+  {
+    "Scientific Name": "Salix lasiandra",
+    "Common Name": "Pacific Willow",
+    "Family": "Salicaceae",
+    "Taxonomic Group": "Trees"
+  },
+  {
+    "Scientific Name": "Sambucus melanocarpa",
+    "Common Name": "European Red Elder",
+    "Family": "Adoxaceae",
+    "Taxonomic Group": "Trees"
+  },
+  {
+    "Scientific Name": "Populus trichocarpa",
+    "Common Name": "Western Balsam Poplar",
+    "Family": "Salicaceae",
+    "Taxonomic Group": "Trees"
+  },
+  {
+    "Scientific Name": "Quercus gambelii",
+    "Common Name": "Gambel Oak",
+    "Family": "Fagaceae",
+    "Taxonomic Group": "Trees"
+  },
+  {
+    "Scientific Name": "Juniperus osteosperma",
+    "Common Name": "Utah Juniper",
+    "Family": "Cupressaceae",
+    "Taxonomic Group": "Trees"
+  },
+  {
+    "Scientific Name": "Cowania mexicana",
+    "Common Name": null,
+    "Family": "Rosaceae",
+    "Taxonomic Group": "Trees"
+  },
+  {
+    "Scientific Name": "Salix geyeriana",
+    "Common Name": "Geyer's Willow",
+    "Family": "Salicaceae",
+    "Taxonomic Group": "Trees"
+  },
+  {
+    "Scientific Name": "Populus tremuloides",
+    "Common Name": "Quaking Aspen",
+    "Family": "Salicaceae",
+    "Taxonomic Group": "Trees"
+  },
+  {
+    "Scientific Name": "Salix mackenzieana",
+    "Common Name": "Mackenzie's Willow",
+    "Family": "Salicaceae",
+    "Taxonomic Group": "Trees"
+  },
+  {
+    "Scientific Name": "Picea pungens",
+    "Common Name": "Blue Spruce",
+    "Family": "Pinaceae",
+    "Taxonomic Group": "Trees"
+  },
+  {
+    "Scientific Name": "Betula occidentalis",
+    "Common Name": "Water Birch",
+    "Family": "Betulaceae",
+    "Taxonomic Group": "Trees"
+  },
+  {
+    "Scientific Name": "Juniperus communis",
+    "Common Name": "Common Juniper",
+    "Family": "Cupressaceae",
+    "Taxonomic Group": "Trees"
+  },
+  {
+    "Scientific Name": "Cercocarpus ledifolius",
+    "Common Name": "Curl-Leaf Mountain-Mahogany",
+    "Family": "Rosaceae",
+    "Taxonomic Group": "Trees"
+  },
+  {
+    "Scientific Name": "Shepherdia argentea",
+    "Common Name": "Silver Buffaloberry",
+    "Family": "Elaeagnaceae",
+    "Taxonomic Group": "Trees"
+  },
+  {
+    "Scientific Name": "Amelanchier alnifolia",
+    "Common Name": "Juneberry",
+    "Family": "Rosaceae",
+    "Taxonomic Group": "Trees"
+  },
+  {
+    "Scientific Name": "Celtis reticulata",
+    "Common Name": "Netleaf Hackberry",
+    "Family": "Cannabaceae",
+    "Taxonomic Group": "Trees"
+  },
+  {
+    "Scientific Name": "Sambucus glauca",
+    "Common Name": "Blue Elderberry",
+    "Family": "Adoxaceae",
+    "Taxonomic Group": "Trees"
+  },
+  {
+    "Scientific Name": "Rhus glabra",
+    "Common Name": "Smooth Sumac",
+    "Family": "Anacardiaceae",
+    "Taxonomic Group": "Trees"
+  },
+  {
+    "Scientific Name": "Alnus tenuifolia",
+    "Common Name": "Mountain Alder",
+    "Family": "Betulaceae",
+    "Taxonomic Group": "Trees"
+  },
+  {
+    "Scientific Name": "Juniperus scopulorum",
+    "Common Name": "Rocky Mountain Juniper",
+    "Family": "Cupressaceae",
+    "Taxonomic Group": "Trees"
+  },
+  {
+    "Scientific Name": "Prunus virginiana",
+    "Common Name": "Chokecherry",
+    "Family": "Rosaceae",
+    "Taxonomic Group": "Trees"
+  },
+  {
+    "Scientific Name": "Pinus ponderosa",
+    "Common Name": "Ponderosa Pine",
+    "Family": "Pinaceae",
+    "Taxonomic Group": "Trees"
+  },
+  {
+    "Scientific Name": "Abies lasiocarpa",
+    "Common Name": "Subalpine Fir",
+    "Family": "Pinaceae",
+    "Taxonomic Group": "Trees"
+  },
+  {
+    "Scientific Name": "Pinus flexilis",
+    "Common Name": "Limber Pine",
+    "Family": "Pinaceae",
+    "Taxonomic Group": "Trees"
+  },
+  {
+    "Scientific Name": "Pinus aristata",
+    "Common Name": "Rocky Mountains Bristlecone Pine",
+    "Family": "Pinaceae",
+    "Taxonomic Group": "Trees"
+  },
+  {
+    "Scientific Name": "Acer glabrum",
+    "Common Name": "California Mountain Maple",
+    "Family": "Sapindaceae",
+    "Taxonomic Group": "Trees"
+  },
+  {
+    "Scientific Name": "Salix scouleriana",
+    "Common Name": "Scouler Willow",
+    "Family": "Salicaceae",
+    "Taxonomic Group": "Trees"
+  },
+  {
+    "Scientific Name": "Picea engelmannii",
+    "Common Name": "Engelmann Spruce",
+    "Family": "Pinaceae",
+    "Taxonomic Group": "Trees"
+  },
+  {
+    "Scientific Name": "Acer grandidentatum",
+    "Common Name": "Bigtooth Maple",
+    "Family": "Sapindaceae",
+    "Taxonomic Group": "Trees"
+  },
+  {
+    "Scientific Name": "Pseudotsuga menziesii",
+    "Common Name": "Coast Douglas-Fir",
+    "Family": "Pinaceae",
+    "Taxonomic Group": "Trees"
+  },
+  {
+    "Scientific Name": "Pinus monophylla",
+    "Common Name": "Singleleaf Pinyon",
+    "Family": "Pinaceae",
+    "Taxonomic Group": "Trees"
+  },
+  {
+    "Scientific Name": "Populus angustifolia",
+    "Common Name": "Willow Cottonwood",
+    "Family": "Salicaceae",
+    "Taxonomic Group": "Trees"
+  },
+  {
+    "Scientific Name": "Artemisia tridentata",
+    "Common Name": "Basin Sagebrush",
+    "Family": "Compositae",
+    "Taxonomic Group": "Trees"
+  },
+  {
+    "Scientific Name": "Salix bebbiana",
+    "Common Name": "Gray Willow",
+    "Family": "Salicaceae",
+    "Taxonomic Group": "Trees"
+  },
+  {
+    "Scientific Name": "Amelanchier utahensis",
+    "Common Name": "Utah Serviceberry",
+    "Family": "Rosaceae",
+    "Taxonomic Group": "Trees"
+  },
+  {
+    "Scientific Name": "Abies concolor",
+    "Common Name": "White Fir",
+    "Family": "Pinaceae",
+    "Taxonomic Group": "Trees"
+  },
+  {
+    "Scientific Name": "Sorbus scopulina",
+    "Common Name": "Western Mountain-Ash",
+    "Family": "Rosaceae",
+    "Taxonomic Group": "Trees"
+  },
+  {
+    "Scientific Name": "Crataegus douglasii",
+    "Common Name": "Black Hawthorn",
+    "Family": "Rosaceae",
+    "Taxonomic Group": "Trees"
+  },
+  {
+    "Scientific Name": "Crataegus succulenta",
+    "Common Name": "Fleshy Hawthorn",
+    "Family": "Rosaceae",
+    "Taxonomic Group": "Trees"
+  },
+  {
+    "Scientific Name": "Cornus stolonifera",
+    "Common Name": "Redosier",
+    "Family": "Cornaceae",
+    "Taxonomic Group": "Trees"
+  },
+  {
+    "Scientific Name": "Pinus contorta",
+    "Common Name": "Lodgepole Pine",
+    "Family": "Pinaceae",
+    "Taxonomic Group": "Trees"
+  },
+  {
+    "Scientific Name": "Acer negundo",
+    "Common Name": "Ash-Leaf Maple",
+    "Family": "Sapindaceae",
+    "Taxonomic Group": "Trees"
+  },
+  {
+    "Scientific Name": "Pediocactus simpsonii",
+    "Common Name": "Simpson's Foot Cactus",
+    "Family": "Cactaceae",
+    "Taxonomic Group": "Cacti"
+  },
+  {
+    "Scientific Name": "Echinocereus coccineus",
+    "Common Name": "White-Spine Claret-Cup Cactus",
+    "Family": "Cactaceae",
+    "Taxonomic Group": "Cacti"
+  },
+  {
+    "Scientific Name": "Opuntia fragilis",
+    "Common Name": "Fragile Prickly-Pear",
+    "Family": "Cactaceae",
+    "Taxonomic Group": "Cacti"
+  },
+  {
+    "Scientific Name": "Opuntia polyacantha",
+    "Common Name": "Hedgehog Prickly-Pear",
+    "Family": "Cactaceae",
+    "Taxonomic Group": "Cacti"
+  },
+  {
+    "Scientific Name": "Escobaria vivipara",
+    "Common Name": "Pincushion Cactus",
+    "Family": "Cactaceae",
+    "Taxonomic Group": "Cacti"
+  },
+  {
+    "Scientific Name": "Echinocereus engelmannii",
+    "Common Name": "Engelmann's Hedgehog Cactus",
+    "Family": "Cactaceae",
+    "Taxonomic Group": "Cacti"
+  },
+  {
+    "Scientific Name": "Sclerocactus parviflorus",
+    "Common Name": "Smallflower Fishhook Cactus",
+    "Family": "Cactaceae",
+    "Taxonomic Group": "Cacti"
+  },
+  {
+    "Scientific Name": "Sclerocactus spinosior",
+    "Common Name": "Desert Valley Fishhook Cactus",
+    "Family": "Cactaceae",
+    "Taxonomic Group": "Cacti"
+  }
+]

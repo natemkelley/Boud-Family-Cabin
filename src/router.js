@@ -75,6 +75,14 @@ const router = new Router({
         meta: {
             requiresAuth: true
         }
+    },
+    {
+        path: '/animals',
+        name: 'animals',
+        component: () => import('./views/Animals.vue'),
+        meta: {
+            requiresAuth: true
+        }
     }
   ]
 })

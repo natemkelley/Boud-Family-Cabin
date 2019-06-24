@@ -8,10 +8,12 @@
       <div class="row" > 
         <div class="col s12 m12 l5 weather">
           <div class="card">
-            <div class="card-content weather">
-              <span class="card-title">Weather</span>
-                <div id="weather"></div>
-            </div>
+              <div class="card-content weather">
+                <router-link @click.native="clickRoute" to="/weather">
+                  <span class="card-title">Weather</span>
+                    <div id="weather"></div>
+                </router-link>
+               </div>
           </div>
         </div>  
         <div class="col s12 m12 l7">
