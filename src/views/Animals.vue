@@ -1,7 +1,5 @@
 <template>
   <div class="hello container">
-    <h1>Animals</h1>
-
     <div class="row">          
         <div v-if="animals">
               <nav>
@@ -22,9 +20,9 @@
                   <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
                 </li>
               </ul>
-            <!--<div class="col s6 m7" v-for="animal of animals" >
+            <div class="col s6 m7" v-for="animal of animals" >
                   <img class="materialboxed" :src="animal.localImage"/>
-              </div>-->
+              </div>
         </div>
         <div v-else class="center bigger">
             <circle-loader></circle-loader>
