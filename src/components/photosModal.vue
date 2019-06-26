@@ -47,7 +47,9 @@
 </template>
 
 <script>
-    import firebase from "firebase"
+    import firebase from 'firebase/app'
+    import 'firebase/database'
+    import 'firebase/auth'
     import ImageUploader from 'vue-image-upload-resize'
     import Vue from 'vue'
     Vue.use(ImageUploader);
@@ -167,6 +169,7 @@
         margin-right: 10px;
         margin-top: -5px;
     }
+
 </style>
 
 <style scoped>
@@ -174,4 +177,5 @@
         position: absolute;
         margin-left: -45px;
     }
+
 </style>

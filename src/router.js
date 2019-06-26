@@ -3,7 +3,8 @@ import Router from 'vue-router'
 import Login from './views/Login.vue'
 import Home from './views/Home.vue'
 
-import firebase from 'firebase'
+import firebase from 'firebase/app'
+import 'firebase/auth'
 
 Vue.use(Router)
 

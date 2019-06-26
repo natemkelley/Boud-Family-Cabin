@@ -29,7 +29,8 @@
 </template>
 
 <script>
-    import firebase from 'firebase';
+    import firebase from 'firebase/app'
+    import 'firebase/database'
     import moment from 'moment'
     import LogsTable from '../components/LogsTable.vue';
 
@@ -40,7 +41,7 @@
                 searchQuery: '',
                 columnData: ['photo', 'name', 'time'],
                 rowData: [],
-                tableRows:[]
+                tableRows: []
             }
         },
         mounted() {
@@ -77,8 +78,8 @@
         min-height: 85vh;
         margin-top: 35px
     }
-    
-    .table{
+
+    .table {
         padding: 27px
     }
 

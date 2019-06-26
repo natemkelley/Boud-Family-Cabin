@@ -51,7 +51,9 @@
 
 <script>
     import Login from '../views/Login.vue';
-    import firebase from 'firebase';
+    import firebase from 'firebase/app'
+    import 'firebase/database'
+    import 'firebase/auth'
     import TapTarget from './TapTarget.vue';
 
     export default {
@@ -76,11 +78,11 @@
             this.randomColor();
             this.getUserInfo();
         },
-        watch:{
-            $route (to, from){
+        watch: {
+            $route(to, from) {
                 this.updateRouteName(to.name)
             }
-        }, 
+        },
         methods: {
             getUserInfo: function() {
                 firebase.auth().onAuthStateChanged((user) => {
@@ -90,13 +92,15 @@
                         this.profilePic = user.photoURL;
                         this.email = user.email;
                         logUser(user.providerData[0])
-                        if(user.displayName.includes('Kelley')){
+                        if (user.displayName.includes('Kelley')) {
                             this.admin = true;
-                            M.toast({html: 'Howdy Admin'})
+                            M.toast({
+                                html: 'Howdy Admin'
+                            })
                         }
                     }
                 });
-                
+
                 function logUser(user) {
                     let time = Date.now();
                     let ref = 'logs/userLogs/' + time;
@@ -142,7 +146,9 @@
             },
             intiSideNav: function() {
                 var elems = document.querySelectorAll('.sidenav');
-                var instances = M.Sidenav.init(elems,{preventScrolling:true});
+                var instances = M.Sidenav.init(elems, {
+                    preventScrolling: true
+                });
             },
             randomColor: function() {
                 var colorArray = ['light-blue darken-4', 'white', 'white', 'white']
@@ -168,7 +174,7 @@
                 instance.close();
                 this.updateRouteName();
             },
-            updateRouteName: function(routeName){
+            updateRouteName: function(routeName) {
                 var name = location.pathname.split('/')[1];
                 this.activePage = routeName || name || 'Boud Cabin';
             }

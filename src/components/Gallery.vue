@@ -25,7 +25,8 @@
 <script>
     import Masonry from 'masonry-layout';
     import imagesLoaded from 'imagesloaded';
-    import firebase from 'firebase';
+    import firebase from 'firebase/app'
+    import 'firebase/database'
     import moment from 'moment';
     import Vue from 'vue';
     
