@@ -9,7 +9,7 @@
         <div class="col s12 m12 l5 weather">
           <div class="card">
               <div class="card-content weather">
-                <router-link @click.native="clickRoute" to="/weather">
+                <router-link  to="/weather">
                   <span class="card-title">Weather</span>
                     <div id="weather"></div>
                 </router-link>
@@ -21,10 +21,10 @@
             <div class="card-content">
               <span class="card-title">Quick Links</span>
                 <ul class="collection">
-                    <li class="collection-item active"><router-link @click.native="clickRoute" to="/home"><i class="material-icons">home</i>Home</router-link></li>
-                    <li class="collection-item"><router-link @click.native="clickRoute" to="/webcams"><i class="material-icons">linked_camera</i>Webcams</router-link></li>
-                    <li class="collection-item"><router-link @click.native="clickRoute" to="/photos"><i class="material-icons">add_a_photo</i>Photos</router-link></li>
-                    <li class="collection-item"><router-link @click.native="clickRoute" to="/weather"><i class="material-icons">cloud_queue</i>Weather</router-link></li>
+                    <li class="collection-item active"><router-link  to="/home"><i class="material-icons">home</i>Home</router-link></li>
+                    <li class="collection-item"><router-link  to="/webcams"><i class="material-icons">linked_camera</i>Webcams</router-link></li>
+                    <li class="collection-item"><router-link  to="/photos"><i class="material-icons">add_a_photo</i>Photos</router-link></li>
+                    <li class="collection-item"><router-link  to="/weather"><i class="material-icons">cloud_queue</i>Weather</router-link></li>
                 </ul>            
                 </div>
           </div>
@@ -43,6 +43,22 @@
             if (!document.getElementById("weather").innerHTML) {
                 postscribe('#weather', weather);
             }
+
+
+
+            let deferredPrompt;
+
+            window.addEventListener('beforeinstallprompt', (e) => {
+                console.log('here')
+                e.preventDefault();
+                // Stash the event so it can be triggered later.
+                deferredPrompt = e;
+
+                // Update UI notify the user they can add to home screen
+                btnAdd.style.display = 'block';
+            });
+
+
         }
     }
 
@@ -131,4 +147,5 @@
             min-height: 410px;
         }
     }
+
 </style>
