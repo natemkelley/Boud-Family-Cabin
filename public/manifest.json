@@ -3,12 +3,12 @@
   "name": "Boud Family Cabin",
   "icons": [
     {
-      "src":"",
-      "sizes": "",
-      "type": ""
+      "src":"./Favicon.png",
+      "sizes": "150x150",
+      "type": "image/png"
     }
   ],
-  "start_url": "/home",
+  "start_url": "index.html",
   "background_color": "#01579b",
   "Theme_color": "#01579b",
   "display": "standalone"

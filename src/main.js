@@ -6,9 +6,26 @@ import 'materialize-css'
 import 'materialize-css/dist/css/materialize.css'
 import 'material-icons'
 
-import firebase from 'firebase'
+import firebase from 'firebase/app'
+import 'firebase/auth'
 
 Vue.config.productionTip = false
+
+//service worker request
+const prod = process.env.NODE_ENV === 'production'
+const shouldSW = 'serviceWorker' in navigator && prod
+const shouldSWDev = 'serviceWorker' in navigator && !prod
+if (shouldSW) {
+    navigator.serviceWorker.register('/service-worker.js').then(() => {
+        console.log("Service Worker Registered!")
+    })
+} else if (shouldSWDev) {
+    /*navigator.serviceWorker.register('/service-workder-dev.js').then(() => {
+      console.log('Service Worker Registered!')
+    })*/
+    console.warn('get this service worker fixed in dev mode')
+}
+
 
 let app = '';
 const firebaseConfig = {
@@ -30,5 +47,5 @@ firebase.auth().onAuthStateChanged((user) => {
             router,
             render: h => h(App)
         }).$mount('#app')
-    } 
+    }
 })

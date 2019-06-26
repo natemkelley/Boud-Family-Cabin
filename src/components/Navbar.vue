@@ -37,7 +37,7 @@
             <li>
                 <div class="divider"></div>
             </li>
-            <li><router-link @click.native="clickRoute" to="/animals">Animals</router-link></li>
+            <li><router-link @click.native="clickRoute" to="/animals"><i class="material-icons">pets</i>Wildlife</router-link></li>
             <li><a class="waves-effect" href="#!">Quotes</a></li>
             <li><a class="waves-effect" href="#!">Suggestions</a></li>
             <li><router-link @click.native="clickRoute" to="/logs" v-if="admin">Logs</router-link></li>
@@ -114,7 +114,7 @@
                     });
 
                     function logOlderThanTwentyMinutes(logs, time, uname) {
-                        let TENMINUTES = 20 * 60 * 1000;
+                        let TENMINUTES = 30 * 60 * 1000; //30 minutes
                         let newest = getNewestLogByName(uname);
                         let returnVal = false;
 

@@ -6709,7 +6709,6 @@
     ],
     "mapImg": [],
     "rawImages": [
-      "https://upload.wikimedia.org/wikipedia/commons/c/c7/Arctic-Lineage-Canine-Distemper-Virus-as-a-Cause-of-Death-in-Apennine-Wolves-%28Canis-lupus%29-in-Italy-pone.0082356.s001.ogv",
       "https://upload.wikimedia.org/wikipedia/commons/0/05/Beringian_wolf_reconstruction.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/8/82/Black_and_White_Wolves.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/9/97/Canis_lupus_Parc_des_Loups_002.jpg",
@@ -9127,9 +9126,9 @@
     "statusImg": [],
     "mapImg": [],
     "rawImages": [
-      "http://nathistoc.bio.uci.edu/lepidopt/lycaenid/aaaa_1838.jpg"
+      "https://nathistoc.bio.uci.edu/lepidopt/lycaenid/aaaa_1838.jpg"
     ],
-    "mainImage": "http://nathistoc.bio.uci.edu/lepidopt/lycaenid/aaaa_1838.jpg",
+    "mainImage": "https://nathistoc.bio.uci.edu/lepidopt/lycaenid/aaaa_1838.jpg",
     "localImage": "animalImages/aaaa_1838.jpg"
   },
   {
@@ -11773,9 +11772,9 @@
     "statusImg": [],
     "mapImg": [],
     "rawImages": [
-      "http://azdragonfly.org/sites/default/files/species/desert-whitetail/img2019rpibs.jpg"
+      "https://azdragonfly.org/sites/default/files/species/desert-whitetail/img2019rpibs.jpg"
     ],
-    "mainImage": "http://azdragonfly.org/sites/default/files/species/desert-whitetail/img2019rpibs.jpg",
+    "mainImage": "https://azdragonfly.org/sites/default/files/species/desert-whitetail/img2019rpibs.jpg",
     "localImage": "animalImages/img2019rpibs.jpg"
   },
   {
@@ -11838,9 +11837,9 @@
     "statusImg": [],
     "mapImg": [],
     "rawImages": [
-      "http://greglasley.com/images/NorthAmericanDragonfliesandDamselflies/Northern-Bluet-0003.jpg"
+      "https://greglasley.com/images/NorthAmericanDragonfliesandDamselflies/Northern-Bluet-0003.jpg"
     ],
-    "mainImage": "http://greglasley.com/images/NorthAmericanDragonfliesandDamselflies/Northern-Bluet-0003.jpg",
+    "mainImage": "https://greglasley.com/images/NorthAmericanDragonfliesandDamselflies/Northern-Bluet-0003.jpg",
     "localImage": "animalImages/Northern-Bluet-0003.jpg"
   },
   {

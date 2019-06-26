@@ -1,12 +1,12 @@
 <template>
   <div class="hello container">
-    <h1>{{ temp }}</h1>
       <div class="row"> 
         <div class="col m12 offset-m0 s12" id="simple" style="">
         </div>
         <div class="col m12 offset-m0 s12" id="linear" style="">
         </div>
-        <div class="col m12 offset-m0 s12" id="complex" style="">
+        <div class="col m12 offset-m0 s12" style="">
+            <div id="complex"></div>
         </div>
         <div class="col m12 offset-m0 s12" id="map" style="">
         </div>
@@ -19,17 +19,6 @@
 
     export default {
         name: 'Weather',
-        data() {
-            return {
-                wind: '',
-                temp: '',
-                humidity: '',
-                sunrise: '',
-                sunset: '',
-                desc: '',
-                weather: '...'
-            }
-        },
         mounted() {
             this.createCharts();
         },
@@ -62,6 +51,10 @@
 
     .col {
         padding-top: 25px;
+    }
+    
+    #complex{
+        max-width: 100%
     }
 
 </style>
