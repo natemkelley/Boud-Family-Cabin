@@ -7,7 +7,7 @@
                     <div class="input-field">
                       <input id="search" type="search" v-model="searchQuery" v-on:keyup="filterResults()">
                       <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-                      <i class="material-icons">close</i>
+                      <!--<i class="material-icons">close</i>-->
                     </div>
                   </form>
                 </div>
@@ -102,7 +102,7 @@
             },
             filterResults(override) {
                 let searchQuery = this.searchQuery
-                if ((searchQuery.length < 3)) {
+                if ((searchQuery.length < 1)) {
                     this.displayAnimals = this.allAnimals
                     this.createTaxArray()
                     return

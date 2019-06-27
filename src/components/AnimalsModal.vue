@@ -7,7 +7,8 @@
                         <h4>{{shownAnimal.CommonName}}</h4>
                     </li>
                     <li class="collection-item">                
-                        <img class="responsive-img" v-if="shownAnimal.mainImage" :src="shownAnimal.mainImage">
+                        <img class="responsive-img" :src="shownAnimal.mainImage" @load="loaded" v-show="loadedImage">
+                        <img class="responsive-img" src="https://cdn-images-1.medium.com/max/1600/1*9EBHIOzhE1XfMYoKz1JcsQ.gif" v-show="!loadedImage">
                     </li>
                 </ul>
                 <ul class="collection with-header" v-if="shownAnimal.statusImg">
@@ -55,7 +56,9 @@
             return {
                 instance: '',
                 shownAnimal: {},
-                test: null
+                mainImageCopy: null,
+                oldCommonName: null,
+                loadedImage: false,
             }
         },
         props: {
@@ -67,8 +70,11 @@
             let elems = document.querySelectorAll('.modal');
             let instances = M.Modal.init(elems, {
                 onCloseEnd: function(modal, trigger) {
-                    that.test = that.shownAnimal
-                    that.shownAnimal.mainImage = "https://media1.tenor.com/images/3aaadc45f4da67e52850a02aedf68040/tenor.gif?itemid=13427670"
+                    that.mainImageCopy = that.shownAnimal.mainImage
+                    that.oldCommonName = that.shownAnimal.CommonName
+                    console.log('after merge')
+                    console.log(that.mainImageCopy)
+                    console.log(that.shownAnimal.mainImage)
                 }
             });
             var instance = M.Modal.getInstance(elems[0]);
@@ -80,11 +86,16 @@
             },
             openModal: function() {
                 this.instance.open();
+            },
+            loaded() {
+                console.log('loaded')
+                this.loadedImage = true
             }
         },
         watch: {
             clickedAnimal: function(newObj) {
                 if (newObj.hasOwnProperty("CommonName")) {
+                    console.log('setting new obj')
                     this.openModal();
                     this.shownAnimal = newObj
                 }
@@ -92,11 +103,11 @@
             },
             tryToOpen: function(number) {
                 console.log(number)
-                this.openModal();
-                if ((this.shownAnimal == this.test) && (this.test != null)) {
-                    this.shownAnimal = this.test
-                    this.test = null;
+                console.log(this.shownAnimal)
+                if (this.shownAnimal.CommonName != this.oldCommonName) {
+                    this.loadedImage = false;
                 }
+                this.openModal();
             }
         }
     }
