@@ -84,6 +84,14 @@ const router = new Router({
         meta: {
             requiresAuth: true
         }
+    },
+    {
+        path: '/quotes',
+        name: 'quotes',
+        component: () => import('./views/Quotes.vue'),
+        meta: {
+            requiresAuth: true
+        }
     }
   ]
 })

@@ -28,17 +28,16 @@
                 </div>
             </li>
             
-            <li><router-link @click.native="clickRoute" to="/home"><i class="material-icons">home</i>Home</router-link></li>
-            <li><router-link @click.native="clickRoute" to="/webcams"><i class="material-icons">linked_camera</i>Webcams</router-link></li>
-            <li><router-link @click.native="clickRoute" to="/photos"><i class="material-icons">add_a_photo</i>Photos</router-link></li>
-            <li><router-link @click.native="clickRoute" to="/weather"><i class="material-icons">cloud_queue</i>Weather</router-link></li>
+            <li><router-link @click.native="clickRoute" to="/home" class="waves-effect"><i class="material-icons">home</i>Home</router-link></li>
+            <li><router-link @click.native="clickRoute" to="/webcams" class="waves-effect"><i class="material-icons">linked_camera</i>Webcams</router-link></li>
+            <li><router-link @click.native="clickRoute" to="/weather" class="waves-effect"><i class="material-icons">cloud_queue</i>Weather</router-link></li>
+            <li><router-link @click.native="clickRoute" to="/animals" class="waves-effect"><i class="material-icons">pets</i>Wildlife</router-link></li>
 
-            
             <li>
                 <div class="divider"></div>
             </li>
-            <li><router-link @click.native="clickRoute" to="/animals"><i class="material-icons">pets</i>Wildlife</router-link></li>
-            <li><a class="waves-effect" href="#!">Quotes</a></li>
+            <li><router-link @click.native="clickRoute" to="/photos"><!--<i class="material-icons">add_a_photo</i>-->Photos</router-link></li>
+            <li><router-link @click.native="clickRoute" to="/quotes" class="waves-effect"><!--<i class="material-icons">add_a_photo</i>-->Quotes</router-link></li>
             <li><a class="waves-effect" href="#!">Suggestions</a></li>
             <li><router-link @click.native="clickRoute" to="/logs" v-if="admin">Logs</router-link></li>
 

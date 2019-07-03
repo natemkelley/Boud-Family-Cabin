@@ -37,7 +37,7 @@
 /* eslint-disable indent, no-unused-vars, no-multiple-empty-lines, max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
-var precacheConfig = [["dist/service-worker-dev.js","32aef906b076335507ace066abef1195"],["dist/service-worker.js","1e1a9ec9a3c6ce541b1966a4c8b8399f"],["dist/sw-config.js","3a6a16a7120b3d178f10375a3d97089c"]];
+var precacheConfig = [["dist/service-worker-dev.js","32aef906b076335507ace066abef1195"],["dist/service-worker.js","50dc41686093af38c164893cc9592321"],["dist/sw-config.js","3a6a16a7120b3d178f10375a3d97089c"]];
 var cacheName = 'sw-precache-v3-boud-family-cabin-' + (self.registration ? self.registration.scope : '');
 
 

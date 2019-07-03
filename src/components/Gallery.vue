@@ -1,6 +1,6 @@
 <template>
     <div class="gallery">
-          <div class="switch right" v-bind:class="{ checkmate: checked}">
+        <div class="switch right" v-bind:class="{ checkmate: checked}">
             <label>
               Off
               <input type="checkbox" v-model="checked">
@@ -88,8 +88,7 @@
 
             },
             
-        },
-        
+        }
     }
 
 </script>

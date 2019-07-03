@@ -44,21 +44,18 @@
                 postscribe('#weather', weather);
             }
 
+            setTimeout(function() {
+                let deferredPrompt;
+                window.addEventListener('beforeinstallprompt', (e) => {
+                    console.log('here')
+                    e.preventDefault();
+                    // Stash the event so it can be triggered later.
+                    deferredPrompt = e;
 
-
-            let deferredPrompt;
-
-            window.addEventListener('beforeinstallprompt', (e) => {
-                console.log('here')
-                e.preventDefault();
-                // Stash the event so it can be triggered later.
-                deferredPrompt = e;
-
-                // Update UI notify the user they can add to home screen
-                btnAdd.style.display = 'block';
-            });
-
-
+                    // Update UI notify the user they can add to home screen
+                    btnAdd.style.display = 'block';
+                });
+            }, 3500)
         }
     }
 

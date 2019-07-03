@@ -50,6 +50,8 @@
 </template>
 
 <script>
+    import AnimalRawImage from './AnimalRawImage.vue'
+    
     export default {
         name: 'AnimalsModal',
         data() {
@@ -95,20 +97,20 @@
         watch: {
             clickedAnimal: function(newObj) {
                 if (newObj.hasOwnProperty("CommonName")) {
-                    console.log('setting new obj')
                     this.openModal();
                     this.shownAnimal = newObj
                 }
 
             },
             tryToOpen: function(number) {
-                console.log(number)
-                console.log(this.shownAnimal)
                 if (this.shownAnimal.CommonName != this.oldCommonName) {
                     this.loadedImage = false;
                 }
                 this.openModal();
             }
+        },
+        components: {
+            AnimalRawImage
         }
     }
 
