@@ -50,6 +50,7 @@
     import firebase from 'firebase/app'
     import 'firebase/database'
     import 'firebase/auth'
+    import 'firebase/storage'
     import ImageUploader from 'vue-image-upload-resize'
     import Vue from 'vue'
     Vue.use(ImageUploader);
@@ -78,7 +79,7 @@
                         dateModified = originalFile.lastModified;
                         fileName = originalFile.name + '_' + originalFile.lastModified;
                         fileName = fileName.replace(/[^\w\s]/gi, '');
-                        var storageRef = firebase.storage().ref();
+                        var storageRef = firebase.storage().ref('/');
                         uploadTask = storageRef.child(fileName).putString(file, 'data_url');
                     } else {
                         dateModified = file.lastModified;
