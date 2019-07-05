@@ -8,8 +8,10 @@
                     </li>
                     <li class="collection-item">                
                         <img class="responsive-img" :src="shownAnimal.mainImage" @load="loaded" v-show="loadedImage">
-                        <img class="responsive-img" src="https://cdn-images-1.medium.com/max/1600/1*9EBHIOzhE1XfMYoKz1JcsQ.gif" v-show="!loadedImage">
-                    </li>
+                        <div class="center" v-show="!loadedImage">
+                            <circle-loader></circle-loader>
+                        </div>                    
+                </li>
                 </ul>
                 <ul class="collection with-header" v-if="shownAnimal.statusImg">
                     <li class="collection-header"><h6>Conservation Status</h6></li>
@@ -38,7 +40,8 @@
                 <ul class="collection with-header" v-if="shownAnimal.rawImages">
                     <li class="collection-header"><h6>Images</h6></li>
                     <li class="collection-item image" v-for="(image,index) of shownAnimal.rawImages">                
-                        <img class="responsive-img" :src="image" @error="imageLoadError(index)">
+                        <!--<img class="responsive-img" :src="image" @error="imageLoadError(index)">-->
+                        <animal-raw-image v-bind:image="image"></animal-raw-image>
                     </li>
                 </ul>
             </div>
@@ -51,7 +54,8 @@
 
 <script>
     import AnimalRawImage from './AnimalRawImage.vue'
-    
+    import CircleLoader from './CircleLoader.vue'
+
     export default {
         name: 'AnimalsModal',
         data() {
@@ -74,9 +78,6 @@
                 onCloseEnd: function(modal, trigger) {
                     that.mainImageCopy = that.shownAnimal.mainImage
                     that.oldCommonName = that.shownAnimal.CommonName
-                    console.log('after merge')
-                    console.log(that.mainImageCopy)
-                    console.log(that.shownAnimal.mainImage)
                 }
             });
             var instance = M.Modal.getInstance(elems[0]);
@@ -90,7 +91,6 @@
                 this.instance.open();
             },
             loaded() {
-                console.log('loaded')
                 this.loadedImage = true
             }
         },
@@ -110,7 +110,8 @@
             }
         },
         components: {
-            AnimalRawImage
+            AnimalRawImage,
+            CircleLoader
         }
     }
 
@@ -157,6 +158,10 @@
 
     .main .collection-item {
         padding: 0px
+    }
+    
+    .center{
+        padding: 35px 0px
     }
 
     @media only screen and (min-width: 600px) {

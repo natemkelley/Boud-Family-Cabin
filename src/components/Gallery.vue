@@ -21,14 +21,14 @@
         
             <div class="navs sideNavLeft" v-on:click="swapImage('left')">
                 <a>
-                    <span class="circle-nav">
+                    <span class="circle-nav waves-effect waves-circle waves-light">
                         <i class="material-icons">chevron_left</i>
                     </span>
                 </a>
             </div>
             <div class="navs sideNavRight " v-on:click="swapImage('right')">
                 <a >
-                    <span class="circle-nav">
+                    <span class="circle-nav waves-effect waves-circle waves-light">
                         <i class="material-icons">chevron_right</i>
                     </span>
                 </a>
@@ -76,7 +76,7 @@
                         that.showToggle = true;
                         let toggles = document.getElementsByClassName('navs');
                         for (var i = 0; i < toggles.length; i++) {
-                            toggles[i].style.opacity = 0.85;
+                            toggles[i].style.opacity = 0.40;
                         }
                     },
                     onCloseStart: function() {
@@ -85,7 +85,9 @@
                         for (var i = 0; i < toggles.length; i++) {
                             toggles[i].style.opacity = 0;
                         }
-                    }
+                    },
+                    inDuration: 0,
+                    outDuration: 200
                 });
             },
             createGrid: function() {
@@ -106,7 +108,6 @@
                 for (var i in jsonObj) {
                     this.images.push(jsonObj[i]);
                 }
-                console.log(this.images)
             },
             removeImage(image) {
                 var imageRef = firebase.storage().ref(image.fileName);
@@ -121,15 +122,41 @@
 
             },
             toggleImages(image) {
-                console.log(image)
-                this.currentImage = image;
+                this.currentImage = image
             },
             swapImage(direction) {
-                console.log(direction)
-                if(direction == 'left'){
-                    console.log(this.currentImage)
-                } else{
-                    console.log(this.images)
+                let that = this;
+                let elems = document.querySelectorAll('.materialboxed');
+                let activeImage = document.querySelectorAll('.materialboxed.active');
+                let currentInstance = M.Materialbox.getInstance(activeImage[0]);
+                let nextIndex = getNextImageIndex();
+                let nextInstance = M.Materialbox.getInstance(elems[nextIndex])
+                that.currentImage = that.images[nextIndex]
+
+                currentInstance.close();
+                nextInstance.open();
+
+                function getNextImageIndex() {
+                    let returnIndex = -1;
+                    that.images.forEach(function(element, index) {
+                        if (element.fileName == that.currentImage.fileName) {
+                            if (direction == 'left') {
+                                returnIndex = index - 1
+                            } else {
+                                returnIndex = index + 1
+                            }
+                        }
+                    });
+
+                    if (returnIndex > (that.images.length - 1)) {
+                        returnIndex = 0
+                    }
+
+                    if (returnIndex < 0) {
+                        returnIndex = (that.images.length - 1)
+                    }
+
+                    return returnIndex
                 }
             }
         }
@@ -221,6 +248,10 @@
         right: 0;
         margin-right: -40px;
 
+    }
+
+    .sideNavRight .material-icons {
+        margin-left: -20px;
     }
 
     .circle-nav .material-icons {

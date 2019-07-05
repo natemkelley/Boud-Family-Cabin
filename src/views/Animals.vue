@@ -30,6 +30,9 @@
         },
         mounted() {
             this.getAnimals()
+            
+              M.toast({html: 'The animals feature is still in beta.', classes: 'orange darken-2',displayLength: 6500});
+
         },
         updated() {
             let elems = document.querySelectorAll('.collapsible')
@@ -61,7 +64,6 @@
     .bigger {
         margin-top: 15%;
     }
-
 
     /*https://listjs.com/*/
 
