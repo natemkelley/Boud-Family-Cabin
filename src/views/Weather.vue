@@ -31,7 +31,7 @@
                 var script = "<script type='text/javascript' src='https://darksky.net/widget/graph/40.6202,-111.5919/us12/en.js?width=100%&height=320&textColor=333333&bgColor=transparent&transparency=true&fontFamily=Default&customFont=&units=us&graph=temperature_graph&timeColor=333333&tempColor=333333&lineColor=333333&markerColor=333333'><\/script>";
                 postscribe('#linear', script)
 
-                var script = "<script type='text/javascript' src='https://darksky.net/widget/graph-bar/40.6202,-111.5919/us12/en.js?width=100%&height=420&title=Full Forecast&textColor=333333&bgColor=transparent&transparency=true&skyColor=undefined&fontFamily=Default&customFont=&units=us&timeColor=333333&tempColor=333333&currentDetailsOption=true'><\/script>";
+                var script = "<script type='text/javascript' src='https://darksky.net/widget/graph-bar/40.6202,-111.5919/us12/en.js?width=100%&height=400&title=Full Forecast&textColor=333333&bgColor=FFFFFF&transparency=false&skyColor=undefined&fontFamily=Default&customFont=&units=us&timeColor=333333&tempColor=333333&currentDetailsOption=true'><\/script>";
                 postscribe('#complex', script);
 
                 var map = "<script src='https://darksky.net/map-embed/@radar,40.709,-111.555,7.js?embed=true&timeControl=true&fieldControl=true&defaultField=radar'><\/script>"
