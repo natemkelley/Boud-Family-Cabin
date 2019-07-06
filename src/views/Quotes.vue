@@ -1,8 +1,6 @@
 <template>
-  <div class="hello container">
+  <div class="container">
      <h1>Quotes</h1>
-
-        
         <div class="card "  v-for="quote of quotes">
             <div class="card-content">
               <span class="card-title grey-text text-darken-4">{{quote.quote}}</span>
@@ -11,7 +9,8 @@
                   <span class="card-title grey-text text-darken-4">{{quote.name}}</span>
             </div>
           </div>  
-        
+      
+      <quotes-upload></quotes-upload>
   </div>
 </template>
 
@@ -19,6 +18,7 @@
     import firebase from 'firebase/app'
     import 'firebase/database'
     import moment from 'moment';
+    import QuotesUpload from '../components/QuoteUpload.vue'
 
     export default {
         name: 'Quotes',
@@ -37,9 +37,11 @@
                     image: '/Favicon.png'
                 })
             }
-
         },
-        methods: {}
+        methods: {},
+        components: {
+            QuotesUpload,
+        }
     }
 
 </script>
