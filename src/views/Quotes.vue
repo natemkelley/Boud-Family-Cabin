@@ -41,6 +41,11 @@
         methods: {},
         components: {
             QuotesUpload,
+        },
+        mounted() {
+            firebase.database().ref('/quotes').on('value', snapshot => {
+                console.log(snapshot.val());
+            });
         }
     }
 
