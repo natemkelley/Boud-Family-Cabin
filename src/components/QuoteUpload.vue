@@ -230,6 +230,14 @@
     .row {
         margin-bottom: 12px
     }
+    
+    .card-action .row .col{
+    float: left;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 0rem!important;
+    min-height: 1px;
+    }
 
     .modal-close {
         margin: 10px 0px
