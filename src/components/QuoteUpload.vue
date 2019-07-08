@@ -1,7 +1,7 @@
 <template>
     <div >
         <div class="fixed-action-btn" >
-          <a class="btn-floating btn-large red">
+          <a class="waves-effect waves-light btn-floating btn-large red">
             <i class="large material-icons">add</i>
           </a>
           <ul>
@@ -32,7 +32,7 @@
                     </div>  
                     <div class="row">
                       <div class="input-field col s12">
-                        <textarea id="textarea2" class="materialize-textarea" rows="3" data-length="300"></textarea>
+                        <textarea id="textarea2" class="materialize-textarea" rows="3" data-length="1250"></textarea>
                         <label for="textarea2">Textarea</label>
                       </div>
                     </div>

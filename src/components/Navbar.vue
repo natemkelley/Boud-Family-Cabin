@@ -38,7 +38,6 @@
             </li>
             <li><router-link @click.native="clickRoute" to="/photos"><!--<i class="material-icons">add_a_photo</i>-->Photos</router-link></li>
             <li><router-link @click.native="clickRoute" to="/quotes" class="waves-effect"><!--<i class="material-icons">add_a_photo</i>-->Quotes</router-link></li>
-            <li><a class="waves-effect" href="#!">Suggestions</a></li>
             <li><router-link @click.native="clickRoute" to="/logs" v-if="admin">Logs</router-link></li>
 
             <li><a v-on:click="toggleLog" class="logout">Logout</a></li>

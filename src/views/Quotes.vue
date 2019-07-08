@@ -1,33 +1,56 @@
 <template>
-  <div class="container page">
-     <h1>Quotes</h1>
-      
-      
-      
-      <div class="grid " >
-          <div class="grid-sizer"></div>
-          <div class="grid-item card" v-for="quote of quotes">
-            <div class="card-content">
-                {{quote.quotes}}
+  <div class="page">
+      <div class="container">
+         <h1>Quotes</h1> 
+          
+          <div class="switch right" v-bind:class="{checkmate: checked}">
+            <label>
+              Off
+              <input type="checkbox" v-model="checked">
+              <span class="lever"></span>
+              On
+            </label>
+          </div>
+          
+         <nav v-if="quotes">
+            <div class="nav-wrapper light-blue darken-4">
+              <form v-on:submit.prevent="filterResults(true)">
+                <div class="input-field">
+                  <input id="search" type="search" v-model="searchQuery" v-on:keyup="filterResults()">
+                  <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                  <!--<i class="material-icons">close</i>-->
+                </div>
+              </form>
             </div>
-            <div class="card-action">
-                <div class="row">
-                    <div class="col s9">
-                        <span class="grey-text text-darken-4 activator tester">{{quote.names}}</span>
-                    </div>
-                    <div class="col s3">
-                        <span class="new badge blue darken-3 tooltipped" data-badge-caption="" @click="updateLikes(quote)" data-position="top" :data-tooltip="quote.likers | likersfixed"><span class="likes">{{quote.likes}}<i class="material-icons right-align">thumb_up</i></span></span>
+          </nav>
+          
+          <div class="grid" v-if="quotes">
+              <div class="grid-sizer"></div>
+              <div class=" grid-item card" v-for="quote of quotes">
+                <div class=" card-content activator">
+                    {{quote.quotes}}
+                </div>
+                <div class="card-action">
+                    <div class="row">
+                        <div class="col s9">
+                            <span class="grey-text text-darken-4 activator tester">{{quote.names}}</span>
+                        </div>
+                        <div class="col s3">
+                            <span class="waves-effect waves-light new badge blue darken-3 tooltipped" data-badge-caption="" @click="updateLikes(quote)" data-position="top" :data-tooltip="quote.likers | likersfixed"><span class="likes">{{quote.likes}}<i class="material-icons right-align">thumb_up</i></span></span>
+                        </div>
                     </div>
                 </div>
-            </div>
                 <div class="card-reveal light-blue darken-4 white-text">
-                  <span class="card-title white-text text-darken-4"><i class="material-icons right">close</i></span>
-                  <h5>{{quote.names}}</h5>
-                  <p>Uploaded by: {{ quote.uploaderName}}</p>
-                  <p>{{ quote.date | moment }}</p>
-                </div>
+                      <span class="card-title white-text text-darken-4">{{quote.names}}<i class="material-icons right">close</i></span>
+                      <p>Uploaded by {{ quote.uploaderName}}</p>
+                      <p>{{ quote.date | moment }}</p>
+                      <p>Liked by {{quote.likers | likersfixed}}</p>
+                    </div>
+                <a class="remove-btn btn-floating btn-large waves-effect waves-light red" @click="removeQuote(quote)" v-if="checked"><i class="material-icons">clear</i></a>
+              </div>
           </div>
       </div>
+
       <quotes-upload></quotes-upload>
   </div>
 </template>
@@ -43,7 +66,8 @@
         name: 'Quotes',
         data() {
             return {
-                quotes: []
+                quotes: [],
+                checked: false,
             }
         },
         methods: {
@@ -76,6 +100,32 @@
                     dater.likers.push(firebase.auth().currentUser.displayName);
                 }
                 firebase.database().ref('/quotes/quote/' + dater.id).set(dater);
+            },
+            removeQuote(quote) {
+                var json = JSON.stringify(quote);
+                firebase.database().ref('/quotes/quote/' + quote.id).remove();
+                this.undoToast(quote)
+            },
+            undoToast(quote) {
+                var toastHTML = "<span>Removed quote by " + quote.names + "</span><button class='btn-flat toast-action undo' quotedata='" + JSON.stringify(quote) + "'>Undo</button>";
+                M.toast({
+                    html: toastHTML,
+                    displayLength: 6000,
+                    classes: 'red darken-3'
+                });
+                var anchors = document.getElementsByClassName('undo');
+                for (var i = 0; i < anchors.length; i++) {
+                    var anchor = anchors[i];
+                    anchor.onclick = function() {
+                        var undoJSON = JSON.parse(anchor.getAttribute("quotedata"));
+                        firebase.database().ref('/quotes/quote/' + undoJSON.id).set(undoJSON);
+                        M.toast({
+                            html: '<span>Restored quote!</span>',
+                            classes: 'green darken-1',
+                            displayLength: 3000
+                        });
+                    }
+                }
             }
         },
         components: {
@@ -88,6 +138,7 @@
                 for (var key in quotes) {
                     this.quotes.push(quotes[key])
                 }
+                this.quotes.reverse()
             });
             this.createGrid();
         },
@@ -96,12 +147,13 @@
         },
         filters: {
             moment: function(date) {
-                return moment(date).format('MMMM Do YYYY');
+                return moment(date).format('LLL');
             },
-            likersfixed: function(likers){
+            likersfixed: function(likers) {
                 var swagger = Array.from(likers);
                 swagger.shift()
-                return swagger
+                var x = swagger.toString().replace(",", ", ")
+                return x
             }
         }
     }
@@ -110,11 +162,8 @@
 
 <style scoped>
     .page {
-        min-height: 81vh;
-    }
-
-    .grid-item--width2 {
-        width: 20%;
+        min-height: 78vh;
+        padding-bottom: 25px;
     }
 
     .grid-sizer,
@@ -125,16 +174,11 @@
 
     .activator .grey-text {
         pointer-events: none;
-
     }
 
     h5 {
-        font-size: 1.rem;
+        font-size: 1.44rem;
         line-height: 103%;
-    }
-
-    .thumb {
-        margin-right: -3px!important;
     }
 
     .likes {
@@ -148,23 +192,58 @@
         margin-top: 2px;
     }
 
-    .col1 {
-        max-width: 80%;
-    }
-
-    .col2 {
-        max-width: 20%;
+    .card-action .row .col {
+        padding: 0px
     }
 
     .card-action .row {
         margin-bottom: 0px
     }
 
-    @media only screen and (max-width: 550px) {
+    .card-action .badge {
+        min-width: 50px;
+    }
+
+    .remove-btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: scale(0.65);
+        opacity: 0.70;
+        margin-right: -5px;
+        margin-top: -5px;
+    }
+
+    .switch {
+        margin-top: -45px;
+        opacity: 0.15;
+        transition: 0.5s;
+    }
+
+    .switch:hover {
+        opacity: 0.95!important;
+    }
+
+    .checkmate {
+        opacity: 0.95!important;
+    }
+
+    @media only screen and (max-width: 850px) {
+        .grid-sizer,
+        .grid-item {
+            width: 47%;
+            margin-bottom: 5px;
+        }
+    }
+
+    @media only screen and (max-width: 494px) {
         .grid-sizer,
         .grid-item {
             width: 100%;
             margin-bottom: 5px;
+        }
+        .switch {
+            transform: scale(0.95);
         }
     }
 
