@@ -26,7 +26,7 @@
           
           <div class="grid" v-if="quotes">
               <div class="grid-sizer"></div>
-              <div class=" grid-item card" v-for="quote of quotes">
+              <div class=" grid-item card" v-for="quote of filteredQuotes">
                 <div class=" card-content activator">
                     {{quote.quotes}}
                 </div>
@@ -61,6 +61,7 @@
     import moment from 'moment';
     import QuotesUpload from '../components/QuoteUpload.vue'
     import Masonry from 'masonry-layout';
+    import Fuse from 'fuse.js'
 
     export default {
         name: 'Quotes',
@@ -68,6 +69,8 @@
             return {
                 quotes: [],
                 checked: false,
+                searchQuery: null,
+                filteredQuotes: []
             }
         },
         methods: {
@@ -126,6 +129,33 @@
                         });
                     }
                 }
+            },
+            filterResults() {
+                var options = {
+                    shouldSort: true,
+                    minMatchCharLength: 3,
+                    threshold: 0.2,
+                    keys: [{
+                        name: "names",
+                        weight: 0.4
+                    }, {
+                        name: "quotes",
+                        weight: 0.5
+                    }, {
+                        date: "date",
+                        weight: 0.1
+                    }]
+                };
+
+                var fuse = new Fuse(this.quotes, options)
+
+                if (this.searchQuery.length < 2) {
+                    this.filteredQuotes = this.quotes
+                } else {
+                    var results = fuse.search(this.searchQuery)
+                    console.log(results)
+                    this.filteredQuotes = results
+                }
             }
         },
         components: {
@@ -139,6 +169,7 @@
                     this.quotes.push(quotes[key])
                 }
                 this.quotes.reverse()
+                this.filteredQuotes = this.quotes;
             });
             this.createGrid();
         },
@@ -203,6 +234,10 @@
     .card-action .badge {
         min-width: 50px;
     }
+    
+    .card-content{
+            white-space: pre-line!important;
+    }
 
     .remove-btn {
         position: absolute;
@@ -227,6 +262,18 @@
     .checkmate {
         opacity: 0.95!important;
     }
+    
+    nav{
+        margin-bottom: 8px;
+    }
+
+    nav input {
+        color: white
+    }
+
+    nav input:focus {
+        color: black!important
+    }
 
     @media only screen and (max-width: 850px) {
         .grid-sizer,
@@ -240,7 +287,8 @@
         .grid-sizer,
         .grid-item {
             width: 100%;
-            margin-bottom: 5px;
+            margin: 0px;
+            margin-top: 5px;
         }
         .switch {
             transform: scale(0.95);
