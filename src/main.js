@@ -17,7 +17,7 @@ const shouldSW = 'serviceWorker' in navigator && prod
 const shouldSWDev = 'serviceWorker' in navigator && !prod
 if (shouldSW) {
     navigator.serviceWorker.register('/service-worker.js').then(() => {
-        console.log("Service Worker Registered!")
+        console.log("Service Worker Registered!");
     })
 } else if (shouldSWDev) {
     /*navigator.serviceWorker.register('/service-workder-dev.js').then(() => {

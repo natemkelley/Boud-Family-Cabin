@@ -1,7 +1,7 @@
 <template>
   <div class="hello container">
       <div class="row"> 
-        <div class="col m12 offset-m0 s12" id="simple" style="">
+        <div class="col m12 offset-m0 s12" id="simple" style="margin-top:37px">
         </div>
         <div class="col m12 offset-m0 s12" id="linear" style="">
         </div>
@@ -10,6 +10,11 @@
         </div>
         <div class="col m12 offset-m0 s12" id="map" style="">
         </div>
+          
+        <div class="testMap" id="testMap"> 
+        </div>  
+          
+          
     </div>
   </div>
 </template>
@@ -24,18 +29,24 @@
         },
         methods: {
             createCharts: function() {
+                let devicewidth = document.getElementById("complex").offsetWidth
+
                 //simple weather
                 var script = "<script type='text/javascript' src='https://darksky.net/widget/default/42.360082,-71.05888/us12/en.js?width=100%&height=423&title=Boud Cabin&textColor=333333&bgColor=transparent&transparency=true&skyColor=undefined&fontFamily=Default&customFont=&units=us&htColor=333333&ltColor=C7C7C7&displaySum=yes&displayHeader=yes'><\/script>";
+                if(devicewidth > 870){
+                    script = '<iframe id="forecast_embed" frameborder="0" height="245" width="100%" src="//forecast.io/embed/#lat=40.6202&lon=-111.5919&name=Boud Family Cabin"></iframe>' 
+                }
                 postscribe('#simple', script)
 
-                var script = "<script type='text/javascript' src='https://darksky.net/widget/graph/40.6202,-111.5919/us12/en.js?width=100%&height=320&textColor=333333&bgColor=transparent&transparency=true&fontFamily=Default&customFont=&units=us&graph=temperature_graph&timeColor=333333&tempColor=333333&lineColor=333333&markerColor=333333'><\/script>";
+                var script = "<script type='text/javascript' src='https://darksky.net/widget/graph/40.6202,-111.5919/us12/en.js?width=100%&height=320&title=Boud Family Cabin&textColor=333333&bgColor=transparent&transparency=true&fontFamily=Default&customFont=&units=us&graph=temperature_graph&timeColor=333333&tempColor=333333&lineColor=2300ea&markerColor=7d95dd'><\/script>";
                 postscribe('#linear', script)
 
-                var script = "<script type='text/javascript' src='https://darksky.net/widget/graph-bar/40.6202,-111.5919/us12/en.js?width=100%&height=400&title=Full Forecast&textColor=333333&bgColor=FFFFFF&transparency=false&skyColor=undefined&fontFamily=Default&customFont=&units=us&timeColor=333333&tempColor=333333&currentDetailsOption=true'><\/script>";
+                var script = "<script type='text/javascript' src='https://darksky.net/widget/graph-bar/40.6202,-111.5919/us12/en.js?width=" + devicewidth + "px&height=450&title=Full Forecast&textColor=333333&bgColor=FFFFFF&transparency=true&skyColor=undefined&fontFamily=Default&customFont=&units=us&timeColor=333333&tempColor=333333&currentDetailsOption=true'><\/script>";
                 postscribe('#complex', script);
 
-                var map = "<script src='https://darksky.net/map-embed/@radar,40.709,-111.555,7.js?embed=true&timeControl=true&fieldControl=true&defaultField=radar'><\/script>"
-                postscribe('#map', map);
+                var map = "<script src='https://darksky.net/map-embed/@radar,40.708,-111.017,7.js?embed=true&timeControl=true&fieldControl=true&defaultField=radar'><\/script>"
+
+                postscribe('#testMap', map);
             }
         }
     }
@@ -52,9 +63,16 @@
     .col {
         padding-top: 25px;
     }
-    
-    #complex{
+
+    #complex {
         max-width: 100%
+    }
+
+    @supports (-webkit-overflow-scrolling: touch) {
+        .testMap {
+            position: relative;
+            margin-left: -15px;
+        }
     }
 
 </style>
