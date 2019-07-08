@@ -23,6 +23,34 @@
                 var instance = M.TapTarget.getInstance(elems[0]).open();
                 this.setShown();
             }
+            if (!localStorage.installed) {
+                let isIOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+                let webpage = "https://www.lifewire.com/home-screen-icons-in-safari-for-iphone-and-amp-ipod-touch-4103654"
+               
+                if(!isIOS){
+                    webpage = "https://www.howtogeek.com/196087/how-to-add-websites-to-the-home-screen-on-any-smartphone-or-tablet/"
+                }
+                
+                var toastHTML = "<span>This is a web app! Have you installed it yet?</span><a href='"+webpage+"' target='_blank' class='btn-flat toast-action not-installed'>How?</a><button class='btn-flat toast-action installed'>Yes I have!</button>";
+                M.toast({
+                    html: toastHTML,
+                    displayLength: 10000,
+                    classes: 'green darken-3'
+                });
+                var anchors = document.getElementsByClassName('installed');
+                for (var i = 0; i < anchors.length; i++) {
+                    var anchor = anchors[i];
+                    anchor.onclick = function() {
+                        localStorage.installed = true;
+                        M.Toast.dismissAll();
+                        M.toast({
+                            html: '<span>Thanks for installing the app!</span>',
+                            displayLength: 3000,
+                            classes: 'green darken-3'
+                        });
+                    }
+                }
+            }
         },
         methods: {
             setShown: function() {
@@ -75,6 +103,17 @@
         box-shadow: 0 1.5px 1.5px 0 rgba(47, 47, 47, 0.25);
         padding: 0px 15px 0px 15px;
         margin: 0!important
+    }
+
+    .installed {
+        line-height: 15px!important;
+    }
+
+</style>
+
+<style scoped>
+    .toast {
+        line-height: 15px!important;
     }
 
 </style>
