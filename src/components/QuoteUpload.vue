@@ -1,9 +1,13 @@
 <template>
-    <div>
+    <div >
         <div class="fixed-action-btn" >
-          <a class="modal-trigger btn-floating btn-large red" href="#modal1">
+          <a class="btn-floating btn-large red">
             <i class="large material-icons">add</i>
           </a>
+          <ul>
+            <li><a class="btn-floating green lighten-1 modal-trigger" href="#modal2"><i class="material-icons">person_add</i></a></li>
+            <li><a class="btn-floating blue darken-1 modal-trigger" href="#modal1"><i class="material-icons">format_quote</i></a></li>
+          </ul>
         </div>
 
           <!-- Modal Structure -->
@@ -14,11 +18,8 @@
                     <div class="row" style="margin-top: 35px">
                       <div class="input-field col s12">
                         <select multiple @change="onChange($event)">
-                          <option value="1111111">Option 1</option>
-                          <option value="2222222">Option 2</option>
-                          <option value="3333333">Option 3</option>
-                          <option value="44444444">Option 4</option>
-                          <option value="other"><div class="icon-inline-fix"><i class="material-icons inline-icon">person_add</i>Add Person</div></option>
+                              <option v-for="quoter in sortedPersons" :value="quoter.name">{{quoter.name}}</option>
+                          <option value="other"><div class="icon-inline-fix"><i class="material-icons inline-icon">person_add</i>Add a person that's not listed</div></option>
                         </select>
                         <label>Select Person(s)</label>
                       </div>
@@ -43,6 +44,30 @@
                   </button>
             </div>
           </div>
+        
+          <div id="modal2" class="modal modal-fixed-footer">
+            <div class="modal-content">
+              <h4>Add a Person</h4>
+                  <form>
+                    <div class="row" style="margin-top: 35px">
+                        <div class="input-field col s12">
+                          <input id="icon_prefix" value="" type="text" class="validate newPerson">
+                          <label for="icon_prefix" class="active">Additional Person</label>
+                        </div>                
+                    </div>  
+                    <div class="row" style="margin-top: 15px">
+                        <ul class="collection">
+                            <li class="collection-item" v-for="quoter in sortedPersons"><div>{{quoter.name}}<a class="secondary-content red-text text-darken-1" @click="deletePerson(quoter)"><i class="material-icons">delete_forever</i></a></div></li>
+                        </ul>
+                    </div>  
+                  </form>
+            </div>
+            <div class="modal-footer">
+                  <button href="#!" class="modal-close btn waves-effect waves-light green darken-2" v-on:click="submit2">Submit
+                    <i class="material-icons right">send</i>
+                  </button>
+            </div>
+          </div>
     </div>
 </template>
 
@@ -56,6 +81,7 @@
         data() {
             return {
                 showOther: false,
+                quoters: []
             }
         },
         methods: {
@@ -74,13 +100,10 @@
                 }
                 document.querySelector('.otherInputField').value = people.toString().replace(/,/g, ", ");
                 M.updateTextFields();
-                console.log(document.querySelector('.otherInputField').value)
             },
             submit() {
                 var thisdate = new Date().toString();
                 var id = new Date().getTime();
-
-                console.log(document.querySelector('.otherInputField').value)
                 if (document.querySelector('.otherInputField').value.length < 2) {
                     M.toast({
                         html: 'No people selected.',
@@ -88,30 +111,97 @@
                     })
                     return
                 }
-
-                if (document.querySelector('#textarea2').value.length< 5) {
+                if (document.querySelector('#textarea2').value.length < 5) {
                     M.toast({
                         html: 'No quote detected.',
                         classes: "red darken-1"
                     })
                     return
                 }
-
+                let uploaderName = firebase.auth().currentUser.displayName;
+                
+                console.log(document.querySelector('#textarea2').value)
                 var info = {
                     names: document.querySelector('.otherInputField').value,
                     quotes: document.querySelector('#textarea2').value,
                     date: thisdate,
+                    uploaderName: uploaderName,
+                    likes:0,
+                    likers:['init'],
+                    id: id
                 }
-                console.log(info);
-                firebase.database().ref('/quotes/' + id).set(info);
-                console.log('here')
+                firebase.database().ref('/quotes/quote/' + id).set(info);
+            },
+            submit2() {
+                var thisdate = new Date().toString();
+                var id = new Date().getTime();
+                if (document.querySelector('.newPerson').value.length < 2) {
+                    M.toast({
+                        html: 'No person.',
+                        classes: "red darken-1"
+                    })
+                    return
+                }
+                var info = {
+                    name: document.querySelector('.newPerson').value,
+                    id: id,
+                }
+
+                var duplicate = false
+                this.quoters.forEach(function(pers) {
+                    if (pers == info.name) {
+                        M.toast({
+                            html: 'Person Already Exists',
+                            classes: "red darken-1"
+                        })
+                        duplicate = true
+                    }
+                })
+
+                if (duplicate) {
+                    return
+                }
+
+                firebase.database().ref('/quotes/person/' + id).set(info);
+                M.toast({
+                    html: 'Added ' + document.querySelector('.newPerson').value,
+                    classes: "green darken-1"
+                })
+            },
+            deletePerson(quoter) {
+                console.log(quoter)
+                if (confirm("Sure you want to delete this person?")) {
+                    firebase.database().ref('/quotes/person/' + quoter.id).remove();
+                }
             }
         },
         mounted() {
+            var that = this;
+            firebase.database().ref('/quotes/person/').on('value', snapshot => {
+                that.quoters = [];
+                var persons = snapshot.val();
+                for (var key in persons) {
+                    that.quoters.push(persons[key])
+                }
+                M.FormSelect.init(document.querySelectorAll('select'));
+            });
+
             M.Modal.init(document.querySelectorAll('.modal'));
             M.CharacterCounter.init(document.querySelectorAll('#textarea2'));
             M.FormSelect.init(document.querySelectorAll('select'));
+            M.FloatingActionButton.init(document.querySelectorAll('.fixed-action-btn'), {
+                'direction': 'left',
+                hoverEnabled: false
+            });
         },
+        updated() {
+            M.FormSelect.init(document.querySelectorAll('select'));
+        },
+        computed: {
+            sortedPersons: function() {
+                return this.quoters.sort((t1,t2) => t1.name < t2.name ? -1 : 1);
+            }
+        }
     }
 
 </script>
@@ -143,6 +233,15 @@
 
     .modal-close {
         margin: 10px 0px
+    }
+
+    #modal2 .collection {
+        max-height: 30vh;
+        overflow: scroll;
+    }
+    
+    .card-content{
+            white-space: pre-line;
     }
 
 </style>
