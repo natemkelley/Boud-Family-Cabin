@@ -11,7 +11,10 @@
               <div class="card-content weather">
                 <router-link  to="/weather">
                   <span class="card-title">Weather</span>
-                    <div id="weather"></div>
+                    <div id="weather" v-show="loaded"></div>
+                    <div class="center bigger">
+                        <circle-loader v-if="!loaded"></circle-loader>
+                    </div>
                 </router-link>
                </div>
           </div>
@@ -35,20 +38,28 @@
 
 <script>
     import postscribe from 'postscribe'
-
+    import CircleLoader from '../components/CircleLoader.vue';
+    
     export default {
         name: 'Home',
         mounted() {
+            var that = this;
             let weather = "<script type='text/javascript' src='https://darksky.net/widget/default/42.360082,-71.05888/us12/en.js?width=100%&height=355&title=Boud Family Cabin&textColor=333333&bgColor=transparent&transparency=true&skyColor=undefined&fontFamily=Default&customFont=&units=us&htColor=333333&ltColor=C7C7C7&displaySum=yes&displayHeader=yes'><\/script>";
-            
+
             if (!document.getElementById("weather").innerHTML) {
-                postscribe('#weather', weather);
+                postscribe('#weather', weather, {
+                    done: function() {
+                        setTimeout(function() {
+                            that.loaded = true
+                        }, 550)
+                    }
+                });
             }
 
             setTimeout(function() {
                 let deferredPrompt;
                 window.addEventListener('beforeinstallprompt', (e) => {
-                    console.log('here')
+                    console.log('before installed prompt')
                     e.preventDefault();
                     // Stash the event so it can be triggered later.
                     deferredPrompt = e;
@@ -57,6 +68,14 @@
                     btnAdd.style.display = 'block';
                 });
             }, 3500)
+        },
+        data() {
+            return {
+                loaded: false,
+            }
+        },
+        components: {
+            CircleLoader
         }
     }
 
@@ -95,7 +114,7 @@
     }
 
     .weather {
-        min-height: 345px!important;
+        min-height: 325px!important;
     }
 
     .row {
@@ -125,6 +144,11 @@
     .header-image {
         height: 150px;
     }
+    
+    .bigger{
+        margin-top: 33%;
+        transform: scale(1.25)
+    }
 
     @media only screen and (max-width: 470px) {
         iframe {
@@ -142,7 +166,7 @@
             margin-top: 15px;
         }
         #weather {
-            min-height: 410px;
+            min-height: 340px;
         }
     }
 

@@ -1,72 +1,86 @@
 <template>
-  <table class="highlight">
-    <thead>
-        <tr>
-            <th v-for="key in columns"
-              @click="sortBy(key)"
-              :class="{ active: sortKey == key }">
-              {{ key | capitalize }}
-              <span class="arrow" :class="sortOrders[key] > 0 ? 'asc' : 'dsc'">
-              </span>
-            </th>
-        </tr>
-    </thead>
-    <tbody>
-      <tr v-for="entry in filteredHeroes">
-        <td class="photocolumn">
-            <img :src="entry.photo" alt="" class="circle">
-        </td>
-        <td class="namecolumn">
-          {{entry.name}}
-        </td>
-        <td class="timecolumn">
-          {{entry.time}}
-        </td>
-      </tr>
-    </tbody>
-  </table>
+    <div>
+      <table class="highlight">
+        <thead>
+            <tr>
+                <th v-for="key in columns">{{key|capitalize}}</th>
+            </tr>
+        </thead>
+        <tbody>
+          <tr v-for="entry in filteredItems">
+            <td class="photocolumn">
+                <img :src="entry.photo" alt="" class="circle">
+            </td>
+            <td class="namecolumn">
+              {{entry.name}}
+            </td>
+            <td class="timecolumn">
+              {{entry.time}}
+            </td>
+          </tr>
+        </tbody>
+      </table>
+        <ul class="pagination left-align row">
+            <li class=""><a href="#!" v-on:click="chevron('dec')"><i class="material-icons">chevron_left</i></a></li>
+            <li class="waves-effect" v-for="(count, index) in pageCount" v-on:click="clickPaginate(count)" v-bind:class="{ active: (activePage == (count)) }"><a href="#!">{{count}}</a></li>
+            <li class="waves-effect"><a href="#!" v-on:click="chevron('inc')"><i class="material-icons">chevron_right</i></a></li>
+            <li class="right">
+                <select class="browser-default" @change="onChange($event)">
+                <option value="5">5</option>
+                <option value="10" selected="selected">10</option>
+                <option value="20">20</option>
+                <option value="50">50</option>
+                <option value="50">100</option>
+              </select>
+            </li>
+        </ul>
+    </div>
 </template>
 
 <script>
+    import Fuse from 'fuse.js'
+    import moment from 'moment'
+
     export default {
         name: 'LogTables',
         props: {
             rowData: Array,
             columns: Array,
-            filterKey: String
+            searchQuery: String
         },
         data: function() {
-            var sortOrders = {}
-            this.columns.forEach(function(key) {
-                sortOrders[key] = 1
-            })
             return {
-                sortKey: '',
-                sortOrders: sortOrders
+                pageNumbers: 10,
+                activePage: 1,
+                backup: [],
+                newRowData: []
             }
         },
         computed: {
-            filteredHeroes: function() {
-                var sortKey = this.sortKey
-                var filterKey = this.filterKey && this.filterKey.toLowerCase()
-                var order = this.sortOrders[sortKey] || 1
-                var rowData = this.rowData
-                if (filterKey) {
-                    rowData = rowData.filter(function(row) {
-                        return Object.keys(row).some(function(key) {
-                            return String(row[key]).toLowerCase().indexOf(filterKey) > -1
-                        })
-                    })
+            sortedItems: function() {
+                if ((this.newRowData.length == 0)) {
+                    this.newRowData = this.rowData
                 }
-                if (sortKey) {
-                    rowData = rowData.slice().sort(function(a, b) {
-                        a = a[sortKey]
-                        b = b[sortKey]
-                        return (a === b ? 0 : a > b ? 1 : -1) * order
-                    })
+
+                this.newRowData.sort((a, b) => {
+                    return new Date(a.time) - new Date(b.time);
+                });
+                this.newRowData.reverse();
+                return this.newRowData;
+            },
+            pageCount() {
+                let l = Math.ceil(this.newRowData.length / this.pageNumbers);
+                var arr = []
+                for (var i = 1; i <= l; i++) {
+                    arr.push(i)
                 }
-                return rowData
-            }
+                return arr
+            },
+            filteredItems() {
+                let start = ((this.activePage - 1) * this.pageNumbers);
+                let end = Number(start) + Number(this.pageNumbers);
+                return this.sortedItems.slice(start, end)
+            },
         },
         filters: {
             capitalize: function(str) {
@@ -74,9 +88,42 @@
             }
         },
         methods: {
-            sortBy: function(key) {
-                this.sortKey = key
-                this.sortOrders[key] = this.sortOrders[key] * -1
+            clickPaginate(clickedNum) {
+                if (!clickedNum) {
+                    clickedNum = 1
+                }
+                this.activePage = clickedNum
+            },
+            onChange(event) {
+                this.pageNumbers = event.target.value
+            },
+            chevron(incdec) {
+                if (incdec == 'inc') {
+                    if (this.activePage + 1 <= this.pageCount.length) {
+                        this.clickPaginate(this.activePage + 1)
+                    } else {
+                        this.clickPaginate(1)
+                    }
+                } else {
+                    if (this.activePage - 1 > 0) {
+                        this.clickPaginate(this.activePage - 1)
+                    } else {
+                        this.clickPaginate(this.pageCount.length)
+                    }
+                }
+            }
+        },
+        watch: {
+            searchQuery: function(query) {
+                var options = {
+                    shouldSort: true,
+                    threshold: 0.35,
+                    keys: ["name","time"]
+                };
+
+                var fuse = new Fuse(this.sortedItems, options)
+
+                this.newRowData = fuse.search(query)
             }
         }
     }
@@ -129,6 +176,10 @@
     th.active .arrow[data-v-6f75ebdf] {
         opacity: 1;
         background: transparent;
+    }
+
+    .pagination li.active {
+        background-color: #5a983f;
     }
 
 </style>

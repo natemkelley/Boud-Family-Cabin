@@ -30,7 +30,13 @@
                     name: "Eagle's Nest"
                 }, {
                     id: 'LXWVYoBluT4',
-                    name: 'Beach Cam'
+                    name: 'Cabin Back Door'
+                }, {
+                    id: 'DY5RYp4sxYc',
+                    name: 'Cabin Front Door'
+                }, {
+                    id: 'KGuCGd726RA',
+                    name: 'Cabin Living Room'
                 }],
                 playerVars: {
                     autoplay: 1

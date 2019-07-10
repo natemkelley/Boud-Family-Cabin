@@ -20,7 +20,8 @@
             if (this.loggedIn && (!localStorage.shown || this.dateIsTwoWeeksOld())) {
                 var elems = document.querySelectorAll('.tap-target');
                 var instances = M.TapTarget.init(elems);
-                var instance = M.TapTarget.getInstance(elems[0]).open();
+                var instance = M.TapTarget.getInstance(elems[0]);
+                instance.open();
                 this.setShown();
             }
             if (!localStorage.installed) {
@@ -35,7 +36,7 @@
                 M.toast({
                     html: toastHTML,
                     displayLength: 10000,
-                    classes: 'green darken-3'
+                    classes: 'light-blue darken-3'
                 });
                 var anchors = document.getElementsByClassName('installed');
                 for (var i = 0; i < anchors.length; i++) {

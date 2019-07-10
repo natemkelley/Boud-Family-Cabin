@@ -18,7 +18,7 @@
                     <logs-table
                     :rowData="rowData"
                     :columns="columnData"
-                    :filter-key="searchQuery">
+                    :searchQuery="searchQuery">
                   </logs-table>
                 </div>
             </div>

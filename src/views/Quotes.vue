@@ -1,7 +1,7 @@
 <template>
   <div class="page">
       <div class="container">
-         <h1>Quotes</h1> 
+         <h1 class="center-align">Quotes</h1> 
           
           <div class="switch right" v-bind:class="{checkmate: checked}">
             <label>
@@ -26,7 +26,7 @@
           
           <div class="grid" v-if="quotes">
               <div class="grid-sizer"></div>
-              <div class=" grid-item card" v-for="quote of filteredQuotes">
+              <div class=" grid-item card " v-for="quote of filteredQuotes">
                 <div class=" card-content activator">
                     {{quote.quotes}}
                 </div>
@@ -69,7 +69,7 @@
             return {
                 quotes: [],
                 checked: false,
-                searchQuery: null,
+                searchQuery: '',
                 filteredQuotes: []
             }
         },
@@ -133,8 +133,8 @@
             filterResults() {
                 var options = {
                     shouldSort: true,
-                    minMatchCharLength: 3,
-                    threshold: 0.2,
+                    threshold: 0.55,
+                    distance: 1000,
                     keys: [{
                         name: "names",
                         weight: 0.4
@@ -153,7 +153,6 @@
                     this.filteredQuotes = this.quotes
                 } else {
                     var results = fuse.search(this.searchQuery)
-                    console.log(results)
                     this.filteredQuotes = results
                 }
             }
@@ -169,7 +168,9 @@
                     this.quotes.push(quotes[key])
                 }
                 this.quotes.reverse()
-                this.filteredQuotes = this.quotes;
+                if ((this.searchQuery.length < 1)) {
+                    this.filteredQuotes = this.quotes;
+                }
             });
             this.createGrid();
         },
@@ -234,9 +235,9 @@
     .card-action .badge {
         min-width: 50px;
     }
-    
-    .card-content{
-            white-space: pre-line!important;
+
+    .card-content {
+        white-space: pre-line!important;
     }
 
     .remove-btn {
@@ -262,8 +263,8 @@
     .checkmate {
         opacity: 0.95!important;
     }
-    
-    nav{
+
+    nav {
         margin-bottom: 8px;
     }
 

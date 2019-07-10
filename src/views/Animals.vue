@@ -31,7 +31,7 @@
         mounted() {
             this.getAnimals()
             
-              M.toast({html: 'The animals feature is still in beta.', classes: 'orange darken-2',displayLength: 6500});
+              M.toast({html: 'The animals feature is still in beta.', classes: 'orange darken-2',displayLength: 2500});
 
         },
         updated() {
@@ -41,7 +41,6 @@
         methods: {
             getAnimals: function() {
                 firebase.database().ref('/animals').once('value').then(snapshot => {
-                    console.log(snapshot.val())
                     this.allAnimals = snapshot.val();
                     this.finishedLoading = true;
                 })

@@ -71,10 +71,10 @@
         mounted() {
             this.intiSideNav();
             this.updateRouteName();
+            this.getUserInfo();
         },
         created() {
             this.randomColor();
-            this.getUserInfo();
         },
         watch: {
             $route(to, from) {
@@ -89,63 +89,16 @@
                         this.userName = user.displayName;
                         this.profilePic = user.photoURL;
                         this.email = user.email;
-                        logUser(user.providerData[0])
-                        if (user.displayName.includes('Kelley')) {
+                        if (user.displayName.includes('Kelley')||user.displayName.includes('Boud')) {
                             this.admin = true;
-                            M.toast({
-                                html: 'Howdy Admin'
-                            })
                         }
                     }
                 });
-
-                function logUser(user) {
-                    let time = Date.now();
-                    let ref = 'logs/userLogs/' + time;
-                    let userName = user.displayName;
-                    firebase.database().ref('logs/userLogs/').once('value').then(function(snapshot) {
-                        let data = snapshot.val();
-                        let proceed = logOlderThanTwentyMinutes(data, time, userName)
-                        if (proceed) {
-                            firebase.database().ref(ref).set({
-                                name: user.displayName,
-                                log: time,
-                                photoURL: user.photoURL
-                            });
-                        }
-                    });
-
-                    function logOlderThanTwentyMinutes(logs, time, uname) {
-                        let TENMINUTES = 30 * 60 * 1000; //30 minutes
-                        let newest = getNewestLogByName(uname);
-                        let returnVal = false;
-
-                        if (newest) {
-                            if (time > (newest + TENMINUTES)) {
-                                returnVal = true
-                            }
-                        } else {
-                            returnVal = true;
-                        }
-
-                        return returnVal
-
-                        function getNewestLogByName(name) {
-                            let newest = 0;
-                            for (var key in logs) {
-                                if (logs[key].log > newest) {
-                                    newest = logs[key].log
-                                }
-                            }
-                            return newest
-                        }
-                    }
-                }
             },
             intiSideNav: function() {
                 var elems = document.querySelectorAll('.sidenav');
                 var instances = M.Sidenav.init(elems, {
-                    preventScrolling: true
+                    preventScrolling: false
                 });
             },
             randomColor: function() {
@@ -166,7 +119,6 @@
                 })
             },
             clickRoute: function() {
-                console.log('click')
                 var elems = document.querySelector('.sidenav');
                 var instance = M.Sidenav.init(elems);
                 instance.close();
@@ -203,10 +155,8 @@
     .logout {
         position: fixed;
         bottom: 0;
-        bottom: 0;
         width: 299px;
         left: 0;
-        margin-bottom: 1px;
         background-color: rgba(255, 32, 32, 0.03)!important;
     }
 

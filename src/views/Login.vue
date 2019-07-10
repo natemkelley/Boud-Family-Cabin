@@ -29,12 +29,10 @@
 <script>
     import firebase from 'firebase/app'
     import 'firebase/database'
-    
+    import 'firebase/auth'
+
     export default {
         name: 'Login',
-        data() {
-            return {}
-        },
         methods: {
             glogin: function() {
                 var provider = new firebase.auth.GoogleAuthProvider();
@@ -43,24 +41,39 @@
                     let userName = result.additionalUserInfo.profile.name;
                     if (result.additionalUserInfo.isNewUser) {
                         that.toast(userName + " your account has been created")
-                    } else {
-                        that.toast('Welcome Back ' + userName + "!")
                     }
                     that.$router.replace('home')
                 }).catch(function(error) {
                     console.error(error);
                     that.toast(error, true);
+                    let time = Date.now();
+                    firebase.database().ref('error/' + time.toString()).set({
+                        error: error,
+                        time: time,
+                        type: 'Google',
+                        name: firebase.auth().currentUser.displayName
+                    }).then(() => {
+                        that.toast('Error logged in database')
+                    })
                 });
             },
             flogin: function() {
                 var that = this;
                 var provider = new firebase.auth.FacebookAuthProvider();
                 firebase.auth().signInWithPopup(provider).then(function(result) {
-                    that.toast("Welcome Back " + result.additionalUserInfo.profile.name)
                     that.$router.replace('home')
                 }).catch(function(error) {
                     console.error(error);
                     that.toast(error, true);
+                    let time = Date.now();
+                    firebase.database().ref('error/' + time.toString()).set({
+                        error: error,
+                        time: time,
+                        type: 'Facebook',
+                        name: firebase.auth().currentUser.displayName
+                    }).then(() => {
+                        that.toast('FB error logged in database')
+                    })
                 });
             },
             toast: function(message, error) {
@@ -72,7 +85,7 @@
                 M.toast({
                     html: message,
                     classes: classToAdd + ' darken-1',
-                    displayLength: 8200
+                    displayLength: 4000
                 });
             },
             signOut: function() {
@@ -113,6 +126,10 @@
 </script>
 
 <style scoped>
+    .card-image img {
+        background: gray;
+    }
+
     .login-page {
         margin-top: 3.4vh;
         font-family: Roboto;

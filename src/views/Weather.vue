@@ -13,8 +13,6 @@
           
         <div class="testMap" id="testMap"> 
         </div>  
-          
-          
     </div>
   </div>
 </template>
@@ -38,7 +36,7 @@
                 }
                 postscribe('#simple', script)
 
-                var script = "<script type='text/javascript' src='https://darksky.net/widget/graph/40.6202,-111.5919/us12/en.js?width=100%&height=320&title=Boud Family Cabin&textColor=333333&bgColor=transparent&transparency=true&fontFamily=Default&customFont=&units=us&graph=temperature_graph&timeColor=333333&tempColor=333333&lineColor=2300ea&markerColor=7d95dd'><\/script>";
+                var script = "<script type='text/javascript' src='https://darksky.net/widget/graph/40.6202,-111.5919/us12/en.js?width=100%&height=320&title=Boud Family Cabin&textColor=333333&bgColor=transparent&transparency=true&fontFamily=Default&customFont=&units=us&graph=temperature_graph&timeColor=333333&tempColor=333333&lineColor=4fa717&markerColor=3d8111'><\/script>";
                 postscribe('#linear', script)
 
                 var script = "<script type='text/javascript' src='https://darksky.net/widget/graph-bar/40.6202,-111.5919/us12/en.js?width=" + devicewidth + "px&height=450&title=Full Forecast&textColor=333333&bgColor=FFFFFF&transparency=true&skyColor=undefined&fontFamily=Default&customFont=&units=us&timeColor=333333&tempColor=333333&currentDetailsOption=true'><\/script>";
