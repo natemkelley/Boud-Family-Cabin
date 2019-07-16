@@ -14,7 +14,6 @@
 <script>
     import firebase from 'firebase/app'
     import 'firebase/database'
-    import wiki from 'wikijs';
     import CircleLoader from '../components/CircleLoader.vue'
     import AnimalsGallery from '../components/AnimalsGallery.vue'
 
@@ -22,28 +21,37 @@
         name: 'Animals',
         data() {
             return {
-                allAnimals: false,
-                taxonomies: '',
-                animals: false,
+                allAnimals: [],
                 finishedLoading: false
             }
         },
         mounted() {
-            this.getAnimals()
-            
-              M.toast({html: 'The animals feature is still in beta.', classes: 'orange darken-2',displayLength: 2500});
-
+            M.Toast.dismissAll();
+            M.toast({
+                html: 'This feature is still in beta.',
+                classes: 'orange darken-2',
+                displayLength: 2000
+            });
         },
-        updated() {
-            let elems = document.querySelectorAll('.collapsible')
-            M.Collapsible.init(elems)
+        created() {
+            this.getAnimals()
         },
         methods: {
             getAnimals: function() {
-                firebase.database().ref('/animals').once('value').then(snapshot => {
-                    this.allAnimals = snapshot.val();
-                    this.finishedLoading = true;
-                })
+                if (!localStorage.animal) {
+                    firebase.database().ref('/animals').once('value').then(snapshot => {
+                        this.allAnimals = snapshot.val();
+                        this.finishedLoading = true;
+                        localStorage.setItem("animal", JSON.stringify(this.allAnimals));
+                    })
+                } else {
+                    this.allAnimals = JSON.parse(localStorage.animal)
+                    setTimeout(()=> {
+                        console.log(this.finishedLoading)
+                        this.finishedLoading = true;
+                        console.log(this.finishedLoading)
+                    }, 200);
+                }
             }
         },
         components: {

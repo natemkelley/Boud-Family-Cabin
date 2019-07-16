@@ -1,9 +1,18 @@
 <template>
   <div class="hello container">
       <div class="row" >
-        <div class="col s12 m12 fill header-image">
-            <img class="object-fit_fill" src="../assets/bcc2.jpg">
-        </div>
+          
+           <div class="slider">
+                <ul class="slides">
+                  <li v-for="(image, propertyName, index) in slider">
+                    <img :src="image.photoURL"> 
+                    <div class=" center-align" v-if="index==0">
+                      <h4 class="light grey-text text-lighten-3">Welcome to the Boud Family Cabin</h4>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
       </div>
       <div class="row" > 
         <div class="col s12 m12 l5 weather">
@@ -12,8 +21,10 @@
                 <router-link  to="/weather">
                   <span class="card-title">Weather</span>
                     <div id="weather" v-show="loaded"></div>
-                    <div class="center bigger">
-                        <circle-loader v-if="!loaded"></circle-loader>
+                    <div class="center" v-if="!loaded">
+                        <div class="bigger">
+                        <circle-loader ></circle-loader>
+                        </div>
                     </div>
                 </router-link>
                </div>
@@ -39,10 +50,14 @@
 <script>
     import postscribe from 'postscribe'
     import CircleLoader from '../components/CircleLoader.vue';
-    
+    import firebase from 'firebase/app'
+    import 'firebase/database'
+
     export default {
         name: 'Home',
         mounted() {
+            this.initing()
+
             var that = this;
             let weather = "<script type='text/javascript' src='https://darksky.net/widget/default/42.360082,-71.05888/us12/en.js?width=100%&height=355&title=Boud Family Cabin&textColor=333333&bgColor=transparent&transparency=true&skyColor=undefined&fontFamily=Default&customFont=&units=us&htColor=333333&ltColor=C7C7C7&displaySum=yes&displayHeader=yes'><\/script>";
 
@@ -72,10 +87,50 @@
         data() {
             return {
                 loaded: false,
+                slider: {
+                    123: {
+                        photoURL: "/img/bcc2.e89ef672.jpg",
+                        timestamp: 1560791383835,
+                    }
+                }
             }
         },
         components: {
             CircleLoader
+        },
+        created() {
+            this.initSlider()
+        },
+        updated: function() {
+            this.initing()
+        },
+        methods: {
+            initSlider: function() {
+                var that = this;
+                var ref = firebase.database().ref('/photos');
+                ref.on('value', snapshot => {
+                    var result = [];
+                    for (var i in snapshot.val()) {
+                        result.push([snapshot.val()[i]]);
+                    }
+
+                    for (var i = 0; i < 5; i++) {
+                        var rand = result[Math.floor(Math.random() * result.length)];
+                        var timestamp = String(rand[0].timestamp);
+                        this.slider[timestamp] = rand[0];
+                    }
+                });
+
+            },
+            initing: function() {
+                let options = {
+                    indicators: false,
+                    height: 200,
+                    interval: 5000
+                }
+                var elems = document.querySelectorAll('.slider');
+                M.Slider.init(elems, options);
+            }
         }
     }
 
@@ -121,53 +176,41 @@
         margin-top: 25px;
     }
 
-    .fill {
-        display: flex;
-        justify-content: center;
-        align-items: top;
-        overflow: hidden;
-    }
 
-    .fill img {
-        flex-shrink: 0;
-        min-width: 100%;
-        min-height: 100%;
-        -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
-        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
-    }
-
-    .object-fit_fill {
-        object-fit: cover;
-        object-position: 0px 10%;
-    }
-
-    .header-image {
-        height: 150px;
-    }
-    
-    .bigger{
+    .bigger {
         margin-top: 33%;
-        transform: scale(1.25)
+        transform: scale(1.25);
+    }
+
+    h4 {
+        text-shadow: 2px 8px 9px #000000;
+        color: #fff;
+        position: absolute;
+        top: 15%;
+        left: 15%;
+        width: 70%;
+        opacity: 0.95;
+    }
+
+    @media only screen and (max-width: 789px) {
+        #weather {
+            transform: scale(1.95);
+            -webkit-transform: scale(1.24);
+            margin-top: 35px;
+            margin-bottom: 40px;
+        }
+
+        .weather {
+            min-height: 300px;
+        }
     }
 
     @media only screen and (max-width: 470px) {
-        iframe {
+        /*iframe {
             transform: scale(1.25);
+            -webkit-transform: scale(1.24);
             margin-top: 15px;
-        }
-    }
-
-</style>
-
-<style>
-    @media only screen and (max-width: 789px) {
-        #weather iframe {
-            transform: scale(1.25);
-            margin-top: 15px;
-        }
-        #weather {
-            min-height: 340px;
-        }
+        }*/
     }
 
 </style>

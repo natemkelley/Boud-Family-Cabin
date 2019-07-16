@@ -5,6 +5,7 @@ module.exports = {
     'dist/**.js',
     '../dist/**.js',
     'animalImages/**.*',
+    'img/**.*'  
   ]
 }
 

@@ -100,6 +100,7 @@
                     gutter: 5
                 });
                 imagesLoaded(grid).on('progress', function() {
+                    console.log('updating')
                     msnry.layout();
                 });
             },

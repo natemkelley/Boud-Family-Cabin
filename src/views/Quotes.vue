@@ -5,10 +5,8 @@
           
           <div class="switch right" v-bind:class="{checkmate: checked}">
             <label>
-              Off
               <input type="checkbox" v-model="checked">
               <span class="lever"></span>
-              On
             </label>
           </div>
           
@@ -32,8 +30,8 @@
                 </div>
                 <div class="card-action">
                     <div class="row">
-                        <div class="col s9">
-                            <span class="grey-text text-darken-4 activator tester">{{quote.names}}</span>
+                        <div class="col s9 activator">
+                            <span class="grey-text text-darken-4  tester">{{quote.names}}</span>
                         </div>
                         <div class="col s3">
                             <span class="waves-effect waves-light new badge blue darken-3 tooltipped" data-badge-caption="" @click="updateLikes(quote)" data-position="top" :data-tooltip="quote.likers | likersfixed"><span class="likes">{{quote.likes}}<i class="material-icons right-align">thumb_up</i></span></span>
@@ -172,14 +170,14 @@
                     this.filteredQuotes = this.quotes;
                 }
             });
-            this.createGrid();
         },
         updated() {
             this.createGrid()
         },
         filters: {
             moment: function(date) {
-                return moment(date).format('LLL');
+                var newDate = new Date(date)
+                return moment(newDate).format('LLL');
             },
             likersfixed: function(likers) {
                 var swagger = Array.from(likers);

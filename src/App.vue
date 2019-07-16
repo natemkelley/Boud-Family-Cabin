@@ -21,19 +21,19 @@
             NavBar,
             FooterX
         },
+        data() {
+            return {
+                changed: false
+            }
+        },
         mounted() {
-            console.log('app mounted')
-            var changed = false;
-            firebase.auth().onAuthStateChanged(function(user) {
-                if (user && !changed) {
-                    changed = true;
-                    setTimeout(function() {
+            firebase.auth().onAuthStateChanged((user) => {
+                if (user && !this.changed) {
+                    this.changed = true;
+                    setTimeout(()=> {
                         logUser();
-                        logAttempt();
                     }, 3000);
-                } else {
-                    // No user is signed in.
-                }
+                } 
             });
 
             function logUser(user) {
@@ -42,7 +42,7 @@
                 let userName = firebase.auth().currentUser.displayName;
                 let photoURL = firebase.auth().currentUser.photoURL;
 
-                firebase.database().ref('logs/userLogs/').once('value').then(function(snapshot) {
+                firebase.database().ref('logs/userLogs/').on('value', snapshot => {
                     console.log('inside logs')
                     let data = snapshot.val();
                     let proceed = logOlderThanTwentyMinutes(data, time, userName)
@@ -58,7 +58,7 @@
                 });
 
                 function logOlderThanTwentyMinutes(logs, time, uname) {
-                    let TENMINUTES = 10 * 60 * 1000; //30 minutes
+                    let TENMINUTES = 60 * 1000; //30 minutes
                     let newest = getNewestLogByName(uname);
                     let returnVal = false;
 
@@ -75,8 +75,10 @@
                     function getNewestLogByName(name) {
                         let newest = 0;
                         for (var key in logs) {
-                            if (logs[key].log > newest) {
-                                newest = logs[key].log
+                            if (logs[key].name == name) {
+                                if (logs[key].log > newest) {
+                                    newest = logs[key].log
+                                }
                             }
                         }
                         return newest
@@ -84,16 +86,6 @@
                 }
             }
 
-            function logAttempt() {
-                let time = Date.now();
-                setTimeout(function() {
-                    firebase.database().ref('attempt/' + time).set({
-                        time: time,
-                        name: firebase.auth().currentUser.displayName,
-                        type:firebase.auth().currentUser.photoURL
-                    })
-                }, 3000);
-            }
         }
     };
 

@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div >
         <div class="col s12 m8 offset-m2">
               <nav>
                 <div class="nav-wrapper light-green darken-3">
@@ -7,28 +7,28 @@
                     <div class="input-field">
                       <input id="search" type="search" v-model="searchQuery" v-on:keyup="filterResults()">
                       <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                      <!--<i class="material-icons">close</i>-->
                     </div>
                   </form>
                 </div>
               </nav>
-            
-            <div v-for="(tax, propertyName, index) of jsonAnimals">
-                <ul class="collapsible popout">
-                    <li @click="setRenderAnimals(propertyName)">
-                      <div class="collapsible-header">{{tax.name}}<span class="badge">{{tax.animals.length}}</span></div>
-                        <div class="collapsible-body" v-if="renderAnimals.indexOf(propertyName) > -1">
-                             <div class="card horizontal" v-for="animal of tax.animals" v-on:click="clickAnimal(animal)">
-                                <div class="card-image waves-effect waves-block waves-light">
-                                  <img class="object-fit_cover" :src="animal.localImage">
-                                </div>
-                                <div class="card-content">
-                                  <span class="card-title grey-text text-darken-4">{{animal.CommonName}}</span>
-                                </div>
-                              </div>  
-                        </div>
-                    </li>
-                  </ul>
-            </div>
+
+            <ul class="collapsible popout">
+                <li v-for="tax of taxonomies">
+                  <div class="collapsible-header">{{tax.name}}<span class="badge">{{tax.count}}</span></div>
+                    <div class="collapsible-body">
+                         <div class="card horizontal"  v-for="animal of displayAnimals" v-if="tax.name === animal.TaxonomicGroup" v-on:click="clickAnimal(animal)">
+                            <div class="card-image waves-effect waves-block waves-light">
+                              <img class="object-fit_cover" :src="animal.localImage">
+                            </div>
+                            <div class="card-content">
+                              <span class="card-title grey-text text-darken-4">{{animal.CommonName}}</span>
+                              <p></p>
+                            </div>
+                          </div>  
+                    </div>
+                </li>
+              </ul>
         </div>
         <animals-modal v-bind:clickedAnimal="clickedAnimal" v-bind:tryToOpen="tryToOpen"></animals-modal>
     </div>
@@ -47,9 +47,7 @@
                 publicPath: process.env.BASE_URL,
                 searchQuery: '',
                 clickedAnimal: {},
-                tryToOpen: 0,
-                jsonAnimals: {},
-                renderAnimals: []
+                tryToOpen: 0
             }
         },
         props: {
@@ -59,7 +57,7 @@
             M.Collapsible.init(document.querySelectorAll('.collapsible'))
         },
         created() {
-            //this.correctImages()
+            this.correctImages()
         },
         mounted() {
             this.createTaxArray()
@@ -69,50 +67,65 @@
                 if (!animals) {
                     animals = this.allAnimals
                 }
-                let jsontaxNameArray = {};
-                let counter = 0;
+                let that = this;
+                var taxArray = []
+                var returnArray = []
                 animals.forEach(function(obj) {
-                    counter++
-                    if (!jsontaxNameArray.hasOwnProperty(obj.TaxonomicGroup)) {
-                        jsontaxNameArray[obj.TaxonomicGroup] = {
-                            name: obj.TaxonomicGroup,
-                            animals: []
-                        }
+                    if (taxArray.indexOf(obj.TaxonomicGroup) === -1) {
+                        taxArray.push(obj.TaxonomicGroup);
                     }
-                    jsontaxNameArray[obj.TaxonomicGroup].animals.push(obj)
                 })
-                console.log(counter)
-                this.jsonAnimals = jsontaxNameArray;
+                taxArray.forEach(function(tax) {
+                    let counter = 0;
+                    animals.forEach(function(animal) {
+                        if (animal.TaxonomicGroup == tax) {
+                            counter++
+                        }
+                    })
+                    returnArray.push({
+                        name: tax,
+                        count: counter
+                    })
+                })
+                this.taxonomies = returnArray
+                console.log('created tax array')
+            },
+            correctImages() {
+                let array = [];
+                this.allAnimals.forEach(obj => {
+                    if (!obj.localImage.includes('http')) {
+                        obj.localImage = this.publicPath + obj.localImage
+                    }
+                    array.push(obj)
+                })
+                this.displayAnimals = array
+                console.log('corrected images')
             },
             filterResults(override) {
                 let searchQuery = this.searchQuery
-                if (searchQuery.length < 1) {
-                    this.createTaxArray()
-                    return
-                }
 
                 var options = {
                     shouldSort: true,
-                    minMatchCharLength: 2,
+                    minMatchCharLength: 3,
                     threshold: 0.2,
-                    distance: 300,
                     keys: [{
                         name: "CommonName",
-                        weight: 0.4
+                        weight: 0.6
                     }, {
                         name: "summary",
-                        weight: 0.3
+                        weight: 0.2
                     }, {
                         name: "TaxonomicGroup",
                         weight: 0.2
-                    }, {
-                        name: 'genus',
-                        weight: 0.1
                     }]
                 };
 
                 var fuse = new Fuse(this.allAnimals, options)
-                this.createTaxArray(fuse.search(searchQuery))
+
+                var results = fuse.search(searchQuery)
+
+                this.displayAnimals = results
+                this.createTaxArray(results)
             },
             clickAnimal(data) {
                 this.clickedAnimal = data
@@ -120,15 +133,6 @@
             },
             incTry() {
                 this.tryToOpen = this.tryToOpen + 1;
-            },
-            setRenderAnimals(prop) {
-                if (this.renderAnimals.length > 3) {
-                    this.renderAnimals = []
-                }
-                if (this.renderAnimals.indexOf(prop) === -1) {
-                    this.renderAnimals.push(prop)
-                }
-                console.log(this.renderAnimals)
             }
         },
         components: {

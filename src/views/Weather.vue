@@ -53,7 +53,7 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
     .hello {
-        min-height: 75vh;
+        min-height: 90vh;
         padding-bottom: 25px;
     }
 

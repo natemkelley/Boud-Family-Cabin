@@ -131,6 +131,7 @@
                     id: id
                 }
                 firebase.database().ref('/quotes/quote/' + id).set(info);
+                document.querySelector('#textarea2').value = ''
             },
             submit2() {
                 var thisdate = new Date().toString();

@@ -27,8 +27,8 @@
             <li class="right">
                 <select class="browser-default" @change="onChange($event)">
                 <option value="5">5</option>
-                <option value="10" selected="selected">10</option>
-                <option value="20">20</option>
+                <option value="10" >10</option>
+                <option value="20" selected="selected">20</option>
                 <option value="50">50</option>
                 <option value="50">100</option>
               </select>
@@ -79,7 +79,8 @@
             filteredItems() {
                 let start = ((this.activePage - 1) * this.pageNumbers);
                 let end = Number(start) + Number(this.pageNumbers);
-                return this.sortedItems.slice(start, end)
+                //return this.sortedItems.slice(start, end);
+                return (start, end)
             },
         },
         filters: {
@@ -118,7 +119,7 @@
                 var options = {
                     shouldSort: true,
                     threshold: 0.35,
-                    keys: ["name","time"]
+                    keys: ["name", "time"]
                 };
 
                 var fuse = new Fuse(this.sortedItems, options)

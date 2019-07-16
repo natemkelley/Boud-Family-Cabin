@@ -55,5 +55,8 @@
     .center{
         padding: 25px 0px
     }
+    img {
+        min-width: 99%!important;
+    }
 
 </style>

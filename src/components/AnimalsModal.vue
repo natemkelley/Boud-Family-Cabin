@@ -163,6 +163,10 @@
     .center{
         padding: 35px 0px
     }
+    
+        .collection-item img {
+        min-width: 99%!important;
+    }
 
     @media only screen and (min-width: 600px) {
         .bottom-sheet {
