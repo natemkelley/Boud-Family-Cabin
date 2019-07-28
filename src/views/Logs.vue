@@ -24,7 +24,6 @@
             </div>
         </div>
     </div>
-
   </div>
 </template>
 
@@ -46,21 +45,20 @@
         },
         mounted() {
             firebase.database().ref('logs/userLogs/').once('value').then(snapshot => {
+                console.log(snapshot.val())
                 this.addRowTable(snapshot.val());
             })
         },
         updated() {},
         methods: {
-            onRowClick: function(row) {
-                console.log(row)
-            },
             addRowTable: function(data) {
                 for (let key in data) {
                     let time = moment(data[key].log).format("lll")
                     this.rowData.push({
                         name: data[key].name,
                         time: time,
-                        photo: data[key].photoURL
+                        photo: data[key].photoURL,
+                        id: data[key].log
                     })
                 }
             }

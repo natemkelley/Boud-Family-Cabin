@@ -43,7 +43,7 @@
                 let photoURL = firebase.auth().currentUser.photoURL;
 
                 firebase.database().ref('logs/userLogs/').on('value', snapshot => {
-                    console.log('inside logs')
+                    //console.log('inside logs')
                     let data = snapshot.val();
                     let proceed = logOlderThanTwentyMinutes(data, time, userName)
                     if (proceed) {
@@ -52,7 +52,7 @@
                             log: time,
                             photoURL: photoURL
                         }).then(function(swagshot) {
-                            console.log('success')
+                            console.log('logged user')
                         });
                     }
                 });

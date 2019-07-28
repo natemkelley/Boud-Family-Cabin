@@ -1,37 +1,37 @@
 <template>
     <div>
-      <table class="highlight">
-        <thead>
-            <tr>
-                <th v-for="key in columns">{{key|capitalize}}</th>
-            </tr>
-        </thead>
-        <tbody>
-          <tr v-for="entry in filteredItems">
-            <td class="photocolumn">
-                <img :src="entry.photo" alt="" class="circle">
-            </td>
-            <td class="namecolumn">
-              {{entry.name}}
-            </td>
-            <td class="timecolumn">
-              {{entry.time}}
-            </td>
-          </tr>
-        </tbody>
-      </table>
+        <table class="highlight">
+            <thead>
+                <tr>
+                    <th v-for="key in columns">{{key|capitalize}}</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="entry in filteredItems" v-on:click="click(entry)">
+                    <td class="photocolumn">
+                        <img :src="entry.photo" alt="" class="circle">
+                    </td>
+                    <td class="namecolumn">
+                        {{entry.name}}
+                    </td>
+                    <td class="timecolumn">
+                        {{entry.time}}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
         <ul class="pagination left-align row">
             <li class=""><a href="#!" v-on:click="chevron('dec')"><i class="material-icons">chevron_left</i></a></li>
             <li class="waves-effect" v-for="(count, index) in pageCount" v-on:click="clickPaginate(count)" v-bind:class="{ active: (activePage == (count)) }"><a href="#!">{{count}}</a></li>
             <li class="waves-effect"><a href="#!" v-on:click="chevron('inc')"><i class="material-icons">chevron_right</i></a></li>
             <li class="right">
                 <select class="browser-default" @change="onChange($event)">
-                <option value="5">5</option>
-                <option value="10" >10</option>
-                <option value="20" selected="selected">20</option>
-                <option value="50">50</option>
-                <option value="50">100</option>
-              </select>
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="20" selected="selected">20</option>
+                    <option value="50">50</option>
+                    <option value="50">100</option>
+                </select>
             </li>
         </ul>
     </div>
@@ -39,8 +39,9 @@
 
 <script>
     import Fuse from 'fuse.js'
-    import moment from 'moment'
-
+    import firebase from 'firebase/app'
+    import 'firebase/database'
+    
     export default {
         name: 'LogTables',
         props: {
@@ -79,8 +80,7 @@
             filteredItems() {
                 let start = ((this.activePage - 1) * this.pageNumbers);
                 let end = Number(start) + Number(this.pageNumbers);
-                //return this.sortedItems.slice(start, end);
-                return (start, end)
+                return this.sortedItems.slice(start, end);
             },
         },
         filters: {
@@ -112,6 +112,10 @@
                         this.clickPaginate(this.pageCount.length)
                     }
                 }
+            },
+            click(entry) {
+                firebase.database().ref('/logs/userLogs/'+ entry.id).remove();
+                alert('removed')
             }
         },
         watch: {
